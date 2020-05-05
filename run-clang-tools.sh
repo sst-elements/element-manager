@@ -6,21 +6,24 @@ if [ "${@[-1]}" = "--copy" ]; then
 fi
 
 if [ "${@[-1]}" = "--headers" ]; then
-    cd ${REPO_DIR}/${1}
-    find . -type f -exec sed -i "s/sst\/elements\/${1}\///g" {} \;
-    find . -type f -exec sed -i "s/<sst_config.h>/<sst\/core\/sst_config.h>/g" {} \;
-    source fix-headers.sh
+    find ${REPO_DIR}/${1} -type f -exec sed -i "s/sst\/elements\/${1}\///g" {} \;
+    find ${REPO_DIR}/${1} -type f -exec sed -i "s/<sst_config.h>/<sst\/core\/sst_config.h>/g" {} \;
+    source fix-headers/${1}.sh
 fi
 
 if [ "${@[-1]}" = "--tidy" ]; then
-    run-clang-tidy.py -p ${REPO_DIR}/${1}/build -fix
-    run-clang-tidy.py -p ${REPO_DIR}/${1}/build -checks="-*,modernize-use-override" -fix
+    cp .clang-tidy ${REPO_DIR}/${1}
+    run-clang-tidy.py -p ${REPO_DIR}/${1}/build -header-filter="${REPO_DIR}/${1}/*" -fix
+    run-clang-tidy.py -p ${REPO_DIR}/${1}/build -header-filter="${REPO_DIR}/${1}/*" -checks="-*,modernize-use-override" -fix
+    rm ${REPO_DIR}/${1}/.clang-tidy
 elif [ "${@[-1]}" = "--tidy2" ]; then
+    cp .clang-tidy ${REPO_DIR}/${1}
     find ${REPO_DIR}/${1}/ \( -name "*.cc" -o -name "*.h" -o -name "*.hpp" -o -name "*.cpp" \) \
-        -exec clang-tidy -p ${REPO_DIR}/${1}/build -header-filter="${1}/*" -fix-errors -fix {} \;
+        -exec clang-tidy -p ${REPO_DIR}/${1}/build -header-filter="${REPO_DIR}/${1}/*" -fix-errors {} \;
     find ${REPO_DIR}/${1}/ \( -name "*.cc" -o -name "*.h" -o -name "*.hpp" -o -name "*.cpp" \) \
-        -exec clang-tidy -p ${REPO_DIR}/${1}/build -header-filter="${1}/*" \
-        -checks="-*,modernize-use-override" -fix-errors -fix {} \;
+        -exec clang-tidy -p ${REPO_DIR}/${1}/build -header-filter="${REPO_DIR}/${1}/*" \
+        -checks="-*,modernize-use-override" -fix-errors {} \;
+    rm ${REPO_DIR}/${1}/.clang-tidy
 fi
 
 if [ "${@[-1]}" = "--format" ]; then
