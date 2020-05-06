@@ -1,0 +1,778 @@
+Enabled checks:
+    clang-analyzer-apiModeling.StdCLibraryFunctions
+    clang-analyzer-apiModeling.TrustNonnull
+    clang-analyzer-apiModeling.google.GTest
+    clang-analyzer-apiModeling.llvm.CastValue
+    clang-analyzer-apiModeling.llvm.ReturnValue
+    clang-analyzer-core.CallAndMessage
+    clang-analyzer-core.DivideZero
+    clang-analyzer-core.DynamicTypePropagation
+    clang-analyzer-core.NonNullParamChecker
+    clang-analyzer-core.NonnilStringConstants
+    clang-analyzer-core.NullDereference
+    clang-analyzer-core.StackAddrEscapeBase
+    clang-analyzer-core.StackAddressEscape
+    clang-analyzer-core.UndefinedBinaryOperatorResult
+    clang-analyzer-core.VLASize
+    clang-analyzer-core.builtin.BuiltinFunctions
+    clang-analyzer-core.builtin.NoReturnFunctions
+    clang-analyzer-core.uninitialized.ArraySubscript
+    clang-analyzer-core.uninitialized.Assign
+    clang-analyzer-core.uninitialized.Branch
+    clang-analyzer-core.uninitialized.CapturedBlockVariable
+    clang-analyzer-core.uninitialized.UndefReturn
+    clang-analyzer-cplusplus.InnerPointer
+    clang-analyzer-cplusplus.Move
+    clang-analyzer-cplusplus.NewDelete
+    clang-analyzer-cplusplus.NewDeleteLeaks
+    clang-analyzer-cplusplus.PureVirtualCall
+    clang-analyzer-cplusplus.SelfAssignment
+    clang-analyzer-cplusplus.SmartPtr
+    clang-analyzer-cplusplus.VirtualCallModeling
+    clang-analyzer-deadcode.DeadStores
+    clang-analyzer-fuchsia.HandleChecker
+    clang-analyzer-nullability.NullPassedToNonnull
+    clang-analyzer-nullability.NullReturnedFromNonnull
+    clang-analyzer-nullability.NullabilityBase
+    clang-analyzer-nullability.NullableDereferenced
+    clang-analyzer-nullability.NullablePassedToNonnull
+    clang-analyzer-nullability.NullableReturnedFromNonnull
+    clang-analyzer-optin.cplusplus.UninitializedObject
+    clang-analyzer-optin.cplusplus.VirtualCall
+    clang-analyzer-optin.mpi.MPI-Checker
+    clang-analyzer-optin.osx.OSObjectCStyleCast
+    clang-analyzer-optin.osx.cocoa.localizability.EmptyLocalizationContextChecker
+    clang-analyzer-optin.osx.cocoa.localizability.NonLocalizedStringChecker
+    clang-analyzer-optin.performance.GCDAntipattern
+    clang-analyzer-optin.performance.Padding
+    clang-analyzer-optin.portability.UnixAPI
+    clang-analyzer-osx.API
+    clang-analyzer-osx.MIG
+    clang-analyzer-osx.NSOrCFErrorDerefChecker
+    clang-analyzer-osx.NumberObjectConversion
+    clang-analyzer-osx.OSObjectRetainCount
+    clang-analyzer-osx.ObjCProperty
+    clang-analyzer-osx.SecKeychainAPI
+    clang-analyzer-osx.cocoa.AtSync
+    clang-analyzer-osx.cocoa.AutoreleaseWrite
+    clang-analyzer-osx.cocoa.ClassRelease
+    clang-analyzer-osx.cocoa.Dealloc
+    clang-analyzer-osx.cocoa.IncompatibleMethodTypes
+    clang-analyzer-osx.cocoa.Loops
+    clang-analyzer-osx.cocoa.MissingSuperCall
+    clang-analyzer-osx.cocoa.NSAutoreleasePool
+    clang-analyzer-osx.cocoa.NSError
+    clang-analyzer-osx.cocoa.NilArg
+    clang-analyzer-osx.cocoa.NonNilReturnValue
+    clang-analyzer-osx.cocoa.ObjCGenerics
+    clang-analyzer-osx.cocoa.RetainCount
+    clang-analyzer-osx.cocoa.RetainCountBase
+    clang-analyzer-osx.cocoa.RunLoopAutoreleaseLeak
+    clang-analyzer-osx.cocoa.SelfInit
+    clang-analyzer-osx.cocoa.SuperDealloc
+    clang-analyzer-osx.cocoa.UnusedIvars
+    clang-analyzer-osx.cocoa.VariadicMethodTypes
+    clang-analyzer-osx.coreFoundation.CFError
+    clang-analyzer-osx.coreFoundation.CFNumber
+    clang-analyzer-osx.coreFoundation.CFRetainRelease
+    clang-analyzer-osx.coreFoundation.containers.OutOfBounds
+    clang-analyzer-osx.coreFoundation.containers.PointerSizedValues
+    clang-analyzer-security.FloatLoopCounter
+    clang-analyzer-security.insecureAPI.DeprecatedOrUnsafeBufferHandling
+    clang-analyzer-security.insecureAPI.SecuritySyntaxChecker
+    clang-analyzer-security.insecureAPI.UncheckedReturn
+    clang-analyzer-security.insecureAPI.bcmp
+    clang-analyzer-security.insecureAPI.bcopy
+    clang-analyzer-security.insecureAPI.bzero
+    clang-analyzer-security.insecureAPI.decodeValueOfObjCType
+    clang-analyzer-security.insecureAPI.getpw
+    clang-analyzer-security.insecureAPI.gets
+    clang-analyzer-security.insecureAPI.mkstemp
+    clang-analyzer-security.insecureAPI.mktemp
+    clang-analyzer-security.insecureAPI.rand
+    clang-analyzer-security.insecureAPI.strcpy
+    clang-analyzer-security.insecureAPI.vfork
+    clang-analyzer-unix.API
+    clang-analyzer-unix.DynamicMemoryModeling
+    clang-analyzer-unix.Malloc
+    clang-analyzer-unix.MallocSizeof
+    clang-analyzer-unix.MismatchedDeallocator
+    clang-analyzer-unix.Vfork
+    clang-analyzer-unix.cstring.BadSizeArg
+    clang-analyzer-unix.cstring.CStringModeling
+    clang-analyzer-unix.cstring.NullArg
+    clang-analyzer-valist.CopyToSelf
+    clang-analyzer-valist.Uninitialized
+    clang-analyzer-valist.Unterminated
+    clang-analyzer-valist.ValistBase
+    misc-unused-alias-decls
+    misc-unused-parameters
+    misc-unused-using-decls
+    modernize-avoid-bind
+    modernize-avoid-c-arrays
+    modernize-concat-nested-namespaces
+    modernize-deprecated-headers
+    modernize-deprecated-ios-base-aliases
+    modernize-loop-convert
+    modernize-make-shared
+    modernize-make-unique
+    modernize-pass-by-value
+    modernize-raw-string-literal
+    modernize-redundant-void-arg
+    modernize-replace-auto-ptr
+    modernize-replace-random-shuffle
+    modernize-return-braced-init-list
+    modernize-shrink-to-fit
+    modernize-unary-static-assert
+    modernize-use-auto
+    modernize-use-bool-literals
+    modernize-use-default-member-init
+    modernize-use-emplace
+    modernize-use-equals-default
+    modernize-use-equals-delete
+    modernize-use-nodiscard
+    modernize-use-noexcept
+    modernize-use-nullptr
+    modernize-use-transparent-functors
+    modernize-use-uncaught-exceptions
+    modernize-use-using
+
+clang-apply-replacements version 10.0.0
+clang-tidy -header-filter=/home/sabbir/sst-elements-org/Opal/* -export-fixes /tmp/tmpuyoy6_is/tmp5exqathb.yaml -p=/home/sabbir/sst-elements-org/Opal/build /home/sabbir/sst-elements-org/Opal/mempool.cpp
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEvent.h:101:5: warning: use auto when initializing with new to avoid duplicating the type name [modernize-use-auto]
+    MemEvent *me = new MemEvent(*this);
+    ^~~~~~~~
+    auto
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEvent.h:112:5: warning: use auto when initializing with new to avoid duplicating the type name [modernize-use-auto]
+    MemEvent *me = new MemEvent(*this);
+    ^~~~~~~~
+    auto
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEvent.h:137:5: warning: use auto when initializing with a cast to avoid duplicating the type name [modernize-use-auto]
+    MemEvent *ev1 = static_cast<MemEvent *>(ev);
+    ^~~~~~~~
+    auto
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEvent.h:163:16: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+  Addr getAddr(void) const { return addr_; }
+               ^~~~
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEvent.h:188:20: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+  uint32_t getSize(void) const { return size_; }
+                   ^~~~
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEvent.h:221:23: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+  dataVec &getPayload(void) {
+                      ^~~~
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEvent.h:264:22: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+  bool isDataRequest(void) const {
+                     ^~~~
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEvent.h:268:19: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+  bool isResponse(void) const {
+                  ^~~~
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEvent.h:272:20: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+  bool isWriteback(void) const { return CommandWriteback[(int)cmd_]; }
+                   ^~~~
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEvent.h:275:23: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+  bool isCPUSideEvent(void) const { return CommandCPUSide[(int)cmd_]; }
+                      ^~~~
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEvent.h:283:27: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+  virtual MemEvent *clone(void) override { return new MemEvent(*this); }
+                          ^~~~
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:37:39: warning: use 'using' instead of 'typedef' [modernize-use-using]
+  typedef std::vector<uint8_t> dataVec; /** Data Payload type */
+                                      ^
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:65:5: warning: use auto when initializing with new to avoid duplicating the type name [modernize-use-auto]
+    MemEventBase *me = new MemEventBase(*this);
+    ^~~~~~~~~~~~
+    auto
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:87:17: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+  id_type getID(void) const { return eventID_; }
+                ^~~~
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:90:27: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+  id_type getResponseToID(void) const { return responseToID_; }
+                          ^~~~
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:93:18: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+  Command getCmd(void) const { return cmd_; }
+                 ^~~~
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:98:29: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+  const std::string &getSrc(void) const { return src_; }
+                            ^~~~
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:103:29: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+  const std::string &getDst(void) const { return dst_; }
+                            ^~~~
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:109:31: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+  const std::string &getRqstr(void) const { return rqstr_; }
+                              ^~~~
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:114:21: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+  uint32_t getFlags(void) const { return flags_; }
+                    ^~~~
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:124:18: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+  void clearFlag(void) { flags_ = 0; }
+                 ^~~~
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:166:7: warning: Value stored to 'addComma' is never read [clang-analyzer-deadcode.DeadStores]
+      addComma = true;
+      ^
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:166:7: note: Value stored to 'addComma' is never read
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:207:31: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+  virtual MemEventBase *clone(void) override { return new MemEventBase(*this); }
+                              ^~~~
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:220:3: warning: use '= default' to define a trivial default constructor [modernize-use-equals-default]
+  MemEventBase() {} // For serialization only
+  ^              ~~
+                 = default;
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:268:31: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+  virtual MemEventInit *clone(void) override { return new MemEventInit(*this); }
+                              ^~~~
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:307:3: warning: use '= default' to define a trivial default constructor [modernize-use-equals-default]
+  MemEventInit() {} // For serialization only
+  ^              ~~
+                 = default;
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:352:40: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+  virtual MemEventInitCoherence *clone(void) override {
+                                       ^~~~
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:375:3: warning: use '= default' to define a trivial default constructor [modernize-use-equals-default]
+  MemEventInitCoherence() {} // For serialization only
+  ^                       ~~
+                          = default;
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:401:37: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+  virtual MemEventInitRegion *clone(void) override {
+                                    ^~~~
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:415:3: warning: use '= default' to define a trivial default constructor [modernize-use-equals-default]
+  MemEventInitRegion() {} // For serialization only
+  ^                    ~~
+                       = default;
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memTypes.h:143:14: warning: do not declare C-style arrays, use std::array<> instead [modernize-avoid-c-arrays]
+static const Command CommandResponse[] = {
+             ^
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memTypes.h:150:14: warning: do not declare C-style arrays, use std::array<> instead [modernize-avoid-c-arrays]
+static const BasicCommandClass BasicCommandClassArr[] = {
+             ^
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memTypes.h:157:14: warning: do not declare C-style arrays, use std::array<> instead [modernize-avoid-c-arrays]
+static const CommandClass CommandClassArr[] = {
+             ^
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memTypes.h:163:14: warning: do not declare C-style arrays, use std::array<> instead [modernize-avoid-c-arrays]
+static const bool CommandCPUSide[] = {
+             ^
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memTypes.h:169:14: warning: do not declare C-style arrays, use std::array<> instead [modernize-avoid-c-arrays]
+static const bool CommandWriteback[] = {
+             ^
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memTypes.h:177:14: warning: do not declare C-style arrays, use std::array<> instead [modernize-avoid-c-arrays]
+static const char *CommandString[] __attribute__((unused)) = {
+             ^
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memTypes.h:183:14: warning: do not declare C-style arrays, use std::array<> instead [modernize-avoid-c-arrays]
+static const MemEventType MemEventTypeArr[] = {
+             ^
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memTypes.h:255:8: warning: use 'using' instead of 'typedef' [modernize-use-using]
+} State;
+       ^
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memTypes.h:259:14: warning: do not declare C-style arrays, use std::array<> instead [modernize-avoid-c-arrays]
+static const char *StateString[] __attribute__((unused)) = {
+             ^
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memTypes.h:265:8: warning: do not declare C-style arrays, use std::array<> instead [modernize-avoid-c-arrays]
+static State NextState[] __attribute__((unused)) = {
+       ^
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/util.h:117:3: warning: use auto when declaring iterators [modernize-use-auto]
+  std::set<std::string>::iterator iter = keys.begin();
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  auto
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/util.h:131:1: warning: use 'using' instead of 'typedef' [modernize-use-using]
+typedef enum { IGNORE, DONE, STALL, BLOCK, REJECT } CacheAction;
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+using CacheAction = enum CacheAction
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/util.h:131:64: warning: use 'using' instead of 'typedef' [modernize-use-using]
+typedef enum { IGNORE, DONE, STALL, BLOCK, REJECT } CacheAction;
+                                                               ^
+/home/sabbir/sst-elements-org/Opal/Opal_Event.h:57:3: warning: use '= default' to define a trivial default constructor [modernize-use-equals-default]
+                OpalEvent() {} // For serialization
+                ^           ~~
+                            = default;
+/home/sabbir/sst-elements-org/Opal/mempool.cpp:136:4: warning: use auto when initializing with new to avoid duplicating the type name [modernize-use-auto]
+                        Frame *frame = new Frame(frameAddr,0);
+                        ^~~~~
+                        auto
+/home/sabbir/sst-elements-org/Opal/mempool.cpp:176:3: warning: use auto when initializing with new to avoid duplicating the type name [modernize-use-auto]
+                Frame *temp = new Frame(frameAddr,0);
+                ^~~~~
+                auto
+/home/sabbir/sst-elements-org/Opal/mempool.h:43:31: warning: parameter 'md' is unused [misc-unused-parameters]
+                Frame(uint64_t st, uint64_t md) { starting_address = st; metadata = 0;}
+                                            ^~
+                                             /*md*/
+/home/sabbir/sst-elements-org/Opal/mempool.h:45:3: warning: use '= default' to define a trivial destructor [modernize-use-equals-default]
+                ~Frame(){}
+                ^       ~~
+                        = default;
+clang-tidy -header-filter=/home/sabbir/sst-elements-org/Opal/* -export-fixes /tmp/tmpuyoy6_is/tmp99g4kdj2.yaml -p=/home/sabbir/sst-elements-org/Opal/build /home/sabbir/sst-elements-org/Opal/Opal.cc
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEvent.h:101:5: warning: use auto when initializing with new to avoid duplicating the type name [modernize-use-auto]
+    MemEvent *me = new MemEvent(*this);
+    ^~~~~~~~
+    auto
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEvent.h:112:5: warning: use auto when initializing with new to avoid duplicating the type name [modernize-use-auto]
+    MemEvent *me = new MemEvent(*this);
+    ^~~~~~~~
+    auto
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEvent.h:137:5: warning: use auto when initializing with a cast to avoid duplicating the type name [modernize-use-auto]
+    MemEvent *ev1 = static_cast<MemEvent *>(ev);
+    ^~~~~~~~
+    auto
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEvent.h:163:16: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+  Addr getAddr(void) const { return addr_; }
+               ^~~~
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEvent.h:188:20: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+  uint32_t getSize(void) const { return size_; }
+                   ^~~~
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEvent.h:221:23: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+  dataVec &getPayload(void) {
+                      ^~~~
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEvent.h:264:22: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+  bool isDataRequest(void) const {
+                     ^~~~
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEvent.h:268:19: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+  bool isResponse(void) const {
+                  ^~~~
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEvent.h:272:20: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+  bool isWriteback(void) const { return CommandWriteback[(int)cmd_]; }
+                   ^~~~
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEvent.h:275:23: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+  bool isCPUSideEvent(void) const { return CommandCPUSide[(int)cmd_]; }
+                      ^~~~
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEvent.h:283:27: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+  virtual MemEvent *clone(void) override { return new MemEvent(*this); }
+                          ^~~~
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:65:5: warning: use auto when initializing with new to avoid duplicating the type name [modernize-use-auto]
+    MemEventBase *me = new MemEventBase(*this);
+    ^~~~~~~~~~~~
+    auto
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:87:17: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+  id_type getID(void) const { return eventID_; }
+                ^~~~
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:90:27: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+  id_type getResponseToID(void) const { return responseToID_; }
+                          ^~~~
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:93:18: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+  Command getCmd(void) const { return cmd_; }
+                 ^~~~
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:98:29: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+  const std::string &getSrc(void) const { return src_; }
+                            ^~~~
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:103:29: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+  const std::string &getDst(void) const { return dst_; }
+                            ^~~~
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:109:31: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+  const std::string &getRqstr(void) const { return rqstr_; }
+                              ^~~~
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:114:21: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+  uint32_t getFlags(void) const { return flags_; }
+                    ^~~~
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:124:18: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+  void clearFlag(void) { flags_ = 0; }
+                 ^~~~
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:166:7: warning: Value stored to 'addComma' is never read [clang-analyzer-deadcode.DeadStores]
+      addComma = true;
+      ^
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:166:7: note: Value stored to 'addComma' is never read
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:207:31: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+  virtual MemEventBase *clone(void) override { return new MemEventBase(*this); }
+                              ^~~~
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:220:3: warning: use '= default' to define a trivial default constructor [modernize-use-equals-default]
+  MemEventBase() {} // For serialization only
+  ^              ~~
+                 = default;
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:268:31: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+  virtual MemEventInit *clone(void) override { return new MemEventInit(*this); }
+                              ^~~~
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:307:3: warning: use '= default' to define a trivial default constructor [modernize-use-equals-default]
+  MemEventInit() {} // For serialization only
+  ^              ~~
+                 = default;
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:352:40: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+  virtual MemEventInitCoherence *clone(void) override {
+                                       ^~~~
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:375:3: warning: use '= default' to define a trivial default constructor [modernize-use-equals-default]
+  MemEventInitCoherence() {} // For serialization only
+  ^                       ~~
+                          = default;
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:401:37: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+  virtual MemEventInitRegion *clone(void) override {
+                                    ^~~~
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:415:3: warning: use '= default' to define a trivial default constructor [modernize-use-equals-default]
+  MemEventInitRegion() {} // For serialization only
+  ^                    ~~
+                       = default;
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memTypes.h:143:14: warning: do not declare C-style arrays, use std::array<> instead [modernize-avoid-c-arrays]
+static const Command CommandResponse[] = {
+             ^
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memTypes.h:150:14: warning: do not declare C-style arrays, use std::array<> instead [modernize-avoid-c-arrays]
+static const BasicCommandClass BasicCommandClassArr[] = {
+             ^
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memTypes.h:157:14: warning: do not declare C-style arrays, use std::array<> instead [modernize-avoid-c-arrays]
+static const CommandClass CommandClassArr[] = {
+             ^
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memTypes.h:163:14: warning: do not declare C-style arrays, use std::array<> instead [modernize-avoid-c-arrays]
+static const bool CommandCPUSide[] = {
+             ^
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memTypes.h:169:14: warning: do not declare C-style arrays, use std::array<> instead [modernize-avoid-c-arrays]
+static const bool CommandWriteback[] = {
+             ^
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memTypes.h:177:14: warning: do not declare C-style arrays, use std::array<> instead [modernize-avoid-c-arrays]
+static const char *CommandString[] __attribute__((unused)) = {
+             ^
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memTypes.h:183:14: warning: do not declare C-style arrays, use std::array<> instead [modernize-avoid-c-arrays]
+static const MemEventType MemEventTypeArr[] = {
+             ^
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memTypes.h:255:8: warning: use 'using' instead of 'typedef' [modernize-use-using]
+} State;
+       ^
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memTypes.h:259:14: warning: do not declare C-style arrays, use std::array<> instead [modernize-avoid-c-arrays]
+static const char *StateString[] __attribute__((unused)) = {
+             ^
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memTypes.h:265:8: warning: do not declare C-style arrays, use std::array<> instead [modernize-avoid-c-arrays]
+static State NextState[] __attribute__((unused)) = {
+       ^
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/util.h:117:3: warning: use auto when declaring iterators [modernize-use-auto]
+  std::set<std::string>::iterator iter = keys.begin();
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  auto
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/util.h:131:1: warning: use 'using' instead of 'typedef' [modernize-use-using]
+typedef enum { IGNORE, DONE, STALL, BLOCK, REJECT } CacheAction;
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+using CacheAction = enum CacheAction
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/util.h:131:64: warning: use 'using' instead of 'typedef' [modernize-use-using]
+typedef enum { IGNORE, DONE, STALL, BLOCK, REJECT } CacheAction;
+                                                               ^
+/home/sabbir/sst-elements-org/Opal/Opal.cc:127:42: warning: parameter 'fault_level' is unused [misc-unused-parameters]
+void Opal::setNextMemPool( int node, int fault_level )
+                                         ^~~~~~~~~~~
+                                          /*fault_level*/
+/home/sabbir/sst-elements-org/Opal/Opal.cc:198:2: warning: use auto when declaring iterators [modernize-use-auto]
+        std::map<int, std::pair<std::vector<int>*, std::vector<uint64_t>* > >::iterator fileIdHint = opalBase->mmapFileIdHints.find(fileId);
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        auto
+/home/sabbir/sst-elements-org/Opal/Opal.cc:223:3: warning: use auto when initializing with new to avoid duplicating the type name [modernize-use-auto]
+                std::vector<int> *it = new std::vector<int>;
+                ^~~~~~~~~~~~~~~~
+                auto
+/home/sabbir/sst-elements-org/Opal/Opal.cc:224:3: warning: use auto when initializing with new to avoid duplicating the type name [modernize-use-auto]
+                std::vector<uint64_t> *pa = new std::vector<uint64_t>;
+                ^~~~~~~~~~~~~~~~~~~~~
+                auto
+/home/sabbir/sst-elements-org/Opal/Opal.cc:239:7: warning: use auto when declaring iterators [modernize-use-auto]
+        for (std::map<uint64_t, std::pair<int, std::pair<int, int> > >::iterator it= (nodeInfo[node]->reservedSpace).begin(); it!=(nodeInfo[node]->reservedSpace).end(); ++it)
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+             auto
+/home/sabbir/sst-elements-org/Opal/Opal.cc:252:54: warning: parameter 'coreId' is unused [misc-unused-parameters]
+REQRESPONSE Opal::allocateSharedMemory(int node, int coreId, uint64_t vAddress, int fault_level, int pages)
+                                                     ^~~~~~
+                                                      /*coreId*/
+/home/sabbir/sst-elements-org/Opal/Opal.cc:252:71: warning: parameter 'vAddress' is unused [misc-unused-parameters]
+REQRESPONSE Opal::allocateSharedMemory(int node, int coreId, uint64_t vAddress, int fault_level, int pages)
+                                                                      ^~~~~~~~
+                                                                       /*vAddress*/
+/home/sabbir/sst-elements-org/Opal/Opal.cc:467:3: warning: use auto when initializing with new to avoid duplicating the type name [modernize-use-auto]
+                OpalEvent *tse = new OpalEvent(EventType::RESPONSE);
+                ^~~~~~~~~
+                auto
+/home/sabbir/sst-elements-org/Opal/Opal.cc:480:30: warning: parameter 'x' is unused [misc-unused-parameters]
+bool Opal::tick(SST::Cycle_t x)
+                             ^
+                              /*x*/
+/home/sabbir/sst-elements-org/Opal/Opal.cc:556:54: warning: parameter 'N' is unused [misc-unused-parameters]
+void Opal::deallocateSharedMemory(uint64_t page, int N)
+                                                     ^
+                                                      /*N*/
+/home/sabbir/sst-elements-org/Opal/Opal.h:28:10: warning: inclusion of deprecated C++ header 'stdio.h'; consider using 'cstdio' instead [modernize-deprecated-headers]
+#include <stdio.h>
+         ^~~~~~~~~
+         <cstdio>
+/home/sabbir/sst-elements-org/Opal/Opal.h:29:10: warning: inclusion of deprecated C++ header 'stdint.h'; consider using 'cstdint' instead [modernize-deprecated-headers]
+#include <stdint.h>
+         ^~~~~~~~~~
+         <cstdint>
+/home/sabbir/sst-elements-org/Opal/Opal.h:57:5: warning: use '= default' to define a trivial default constructor [modernize-use-equals-default]
+                                OpalBase() { }
+                                ^          ~~~
+                                           = default;
+/home/sabbir/sst-elements-org/Opal/Opal.h:94:5: warning: use '= default' to define a trivial default constructor [modernize-use-equals-default]
+                                MemoryPrivateInfo() { }
+                                ^                   ~~~
+                                                    = default;
+/home/sabbir/sst-elements-org/Opal/Opal.h:112:6: warning: use auto when initializing with a cast to avoid duplicating the type name [modernize-use-auto]
+                                        OpalEvent *ev =  static_cast<OpalComponent::OpalEvent*> (e);
+                                        ^~~~~~~~~
+                                        auto
+/home/sabbir/sst-elements-org/Opal/Opal.h:141:5: warning: use '= default' to define a trivial default constructor [modernize-use-equals-default]
+                                CorePrivateInfo() { }
+                                ^                 ~~~
+                                                  = default;
+/home/sabbir/sst-elements-org/Opal/Opal.h:143:5: warning: use '= default' to define a trivial destructor [modernize-use-equals-default]
+                                ~CorePrivateInfo() { }
+                                ^                  ~~~
+                                                   = default;
+/home/sabbir/sst-elements-org/Opal/Opal.h:151:6: warning: use auto when initializing with a cast to avoid duplicating the type name [modernize-use-auto]
+                                        OpalEvent *ev =  static_cast<OpalComponent::OpalEvent*> (e);
+                                        ^~~~~~~~~
+                                        auto
+/home/sabbir/sst-elements-org/Opal/Opal_Event.h:57:3: warning: use '= default' to define a trivial default constructor [modernize-use-equals-default]
+                OpalEvent() {} // For serialization
+                ^           ~~
+                            = default;
+/home/sabbir/sst-elements-org/Opal/mempool.h:43:31: warning: parameter 'md' is unused [misc-unused-parameters]
+                Frame(uint64_t st, uint64_t md) { starting_address = st; metadata = 0;}
+                                            ^~
+                                             /*md*/
+/home/sabbir/sst-elements-org/Opal/mempool.h:45:3: warning: use '= default' to define a trivial destructor [modernize-use-equals-default]
+                ~Frame(){}
+                ^       ~~
+                        = default;
+clang-tidy -header-filter=/home/sabbir/sst-elements-org/Opal/* -export-fixes /tmp/tmpuyoy6_is/tmpm0fdq4qz.yaml -p=/home/sabbir/sst-elements-org/Opal/build /home/sabbir/sst-elements-org/Opal/opalMemNIC.cc
+/home/sabbir/sst-elements-org/Opal/opalMemNIC.cc:74:5: warning: use auto when initializing with new to avoid duplicating the type name [modernize-use-auto]
+    SST::Interfaces::SimpleNetwork::Request * req = new SST::Interfaces::SimpleNetwork::Request();
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    auto
+/home/sabbir/sst-elements-org/Opal/opalMemNIC.cc:75:5: warning: use auto when initializing with new to avoid duplicating the type name [modernize-use-auto]
+    MemRtrEvent * mre = new MemRtrEvent(ev);
+    ^~~~~~~~~~~
+    auto
+/home/sabbir/sst-elements-org/Opal/opalMemNIC.cc:91:5: warning: use auto when initializing with a cast to avoid duplicating the type name [modernize-use-auto]
+    OpalInitMemRtrEvent* imre = static_cast<OpalInitMemRtrEvent*>(ev);
+    ^~~~~~~~~~~~~~~~~~~
+    auto
+/home/sabbir/sst-elements-org/Opal/opalMemNIC.cc:114:5: warning: use range-based for loop instead [modernize-loop-convert]
+    for (std::set<MemHierarchy::MemLinkBase::EndpointInfo>::const_iterator it = destEndpointInfo.begin(); it != destEndpointInfo.end(); it++) {
+    ^   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        (const auto & it : destEndpointInfo)
+/home/sabbir/sst-elements-org/Opal/opalMemNIC.cc:114:10: warning: use auto when declaring iterators [modernize-use-auto]
+    for (std::set<MemHierarchy::MemLinkBase::EndpointInfo>::const_iterator it = destEndpointInfo.begin(); it != destEndpointInfo.end(); it++) {
+         ^
+note: this fix will not be applied because it overlaps with another fix
+/home/sabbir/sst-elements-org/Opal/opalMemNIC.cc:120:9: warning: use range-based for loop instead [modernize-loop-convert]
+        for (std::set<MemHierarchy::MemLinkBase::EndpointInfo>::const_iterator it = destEndpointInfo.begin(); it != destEndpointInfo.end(); it++) {
+        ^   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            (const auto & it : destEndpointInfo)
+/home/sabbir/sst-elements-org/Opal/opalMemNIC.cc:120:14: warning: use auto when declaring iterators [modernize-use-auto]
+        for (std::set<MemHierarchy::MemLinkBase::EndpointInfo>::const_iterator it = destEndpointInfo.begin(); it != destEndpointInfo.end(); it++) {
+             ^
+note: this fix will not be applied because it overlaps with another fix
+/home/sabbir/sst-elements-org/Opal/opalMemNIC.cc:129:5: warning: use range-based for loop instead [modernize-loop-convert]
+    for (std::set<MemHierarchy::MemLinkBase::EndpointInfo>::const_iterator it = destEndpointInfo.begin(); it != destEndpointInfo.end(); it++) {
+    ^   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        (const auto & it : destEndpointInfo)
+/home/sabbir/sst-elements-org/Opal/opalMemNIC.cc:129:10: warning: use auto when declaring iterators [modernize-use-auto]
+    for (std::set<MemHierarchy::MemLinkBase::EndpointInfo>::const_iterator it = destEndpointInfo.begin(); it != destEndpointInfo.end(); it++) {
+         ^
+note: this fix will not be applied because it overlaps with another fix
+/home/sabbir/sst-elements-org/Opal/opalMemNIC.h:58:13: warning: use '= default' to define a trivial destructor [modernize-use-equals-default]
+    virtual ~OpalMemNIC() { }
+            ^             ~~~
+                          = default;
+/home/sabbir/sst-elements-org/Opal/opalMemNIC.h:65:13: warning: use '= default' to define a trivial default constructor [modernize-use-equals-default]
+            OpalInitMemRtrEvent() {}
+            ^                     ~~
+                                  = default;
+/home/sabbir/sst-elements-org/Opal/opalMemNIC.h:68:34: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+            virtual Event* clone(void) override {
+                                 ^~~~
+/home/sabbir/sst-elements-org/Opal/opalMemNIC.h:69:17: warning: use auto when initializing with new to avoid duplicating the type name [modernize-use-auto]
+                OpalInitMemRtrEvent * imre = new OpalInitMemRtrEvent(*this);
+                ^~~~~~~~~~~~~~~~~~~
+                auto
+/usr/local/include/sst/elements/memHierarchy/memNICBase.h:266:56: warning: Access to field 'event' results in a dereference of a null pointer (loaded from variable 'mre') [clang-analyzer-core.NullDereference]
+        MemEventInit *ev = static_cast<MemEventInit *>(mre->event);
+                                                       ^
+/home/sabbir/sst-elements-org/Opal/opalMemNIC.cc:52:5: note: Calling 'MemNICBase::nicInit'
+    MemNICBase::nicInit(link_control, phase);
+    ^
+/usr/local/include/sst/elements/memHierarchy/memNICBase.h:228:9: note: Assuming 'networkReady' is false
+    if (networkReady && initMsgSent) {
+        ^
+/usr/local/include/sst/elements/memHierarchy/memNICBase.h:228:22: note: Left side of '&&' is false
+    if (networkReady && initMsgSent) {
+                     ^
+/usr/local/include/sst/elements/memHierarchy/memNICBase.h:236:9: note: 'networkReady' is false
+    if (networkReady && !initMsgSent) {
+        ^
+/usr/local/include/sst/elements/memHierarchy/memNICBase.h:236:22: note: Left side of '&&' is false
+    if (networkReady && !initMsgSent) {
+                     ^
+/usr/local/include/sst/elements/memHierarchy/memNICBase.h:254:5: note: Loop condition is true.  Entering loop body
+    while (SST::Interfaces::SimpleNetwork::Request *req =
+    ^
+/usr/local/include/sst/elements/memHierarchy/memNICBase.h:256:24: note: Calling 'Request::takePayload'
+      Event *payload = req->takePayload();
+                       ^
+/usr/local/include/sst/core/interfaces/simpleNetwork.h:84:13: note: 'ret' initialized here
+            Event* ret = payload;
+            ^
+/usr/local/include/sst/core/interfaces/simpleNetwork.h:86:13: note: Returning pointer (loaded from 'ret'), which participates in a condition later
+            return ret;
+            ^
+/usr/local/include/sst/core/interfaces/simpleNetwork.h:86:13: note: Returning pointer (loaded from 'ret')
+/usr/local/include/sst/elements/memHierarchy/memNICBase.h:256:24: note: Returning from 'Request::takePayload'
+      Event *payload = req->takePayload();
+                       ^
+/usr/local/include/sst/elements/memHierarchy/memNICBase.h:256:7: note: 'payload' initialized here
+      Event *payload = req->takePayload();
+      ^
+/usr/local/include/sst/elements/memHierarchy/memNICBase.h:258:11: note: Assuming pointer value is null
+      if (imre) {
+          ^
+/usr/local/include/sst/elements/memHierarchy/memNICBase.h:258:11: note: Assuming 'imre' is null
+/usr/local/include/sst/elements/memHierarchy/memNICBase.h:258:7: note: Taking false branch
+      if (imre) {
+      ^
+/usr/local/include/sst/elements/memHierarchy/memNICBase.h:265:9: note: 'mre' initialized to a null pointer value
+        MemRtrEvent *mre = static_cast<MemRtrEvent *>(payload);
+        ^
+/usr/local/include/sst/elements/memHierarchy/memNICBase.h:266:56: note: Access to field 'event' results in a dereference of a null pointer (loaded from variable 'mre')
+        MemEventInit *ev = static_cast<MemEventInit *>(mre->event);
+                                                       ^
+Applying fixes ...
+Enabled checks:
+    modernize-use-override
+
+clang-apply-replacements version 10.0.0
+clang-tidy -header-filter=/home/sabbir/sst-elements-org/Opal/* -checks=-*,modernize-use-override -export-fixes /tmp/tmptyvnmj27/tmp__vkodxu.yaml -p=/home/sabbir/sst-elements-org/Opal/build /home/sabbir/sst-elements-org/Opal/mempool.cpp
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEvent.h:283:21: warning: 'virtual' is redundant since the function is already declared 'override' [modernize-use-override]
+  virtual MemEvent *clone() override { return new MemEvent(*this); }
+  ~~~~~~~~          ^
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEvent.h:285:23: warning: 'virtual' is redundant since the function is already declared 'override' [modernize-use-override]
+  virtual std::string getVerboseString() override {
+  ~~~~~~~~            ^
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEvent.h:299:23: warning: 'virtual' is redundant since the function is already declared 'override' [modernize-use-override]
+  virtual std::string getBriefString() override {
+  ~~~~~~~~            ^
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEvent.h:309:16: warning: 'virtual' is redundant since the function is already declared 'override' [modernize-use-override]
+  virtual bool doDebug(std::set<Addr> &addr) override {
+  ~~~~~~~~     ^
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEvent.h:315:16: warning: 'virtual' is redundant since the function is already declared 'override' [modernize-use-override]
+  virtual Addr getRoutingAddress() override { return baseAddr_; }
+  ~~~~~~~~     ^
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:207:25: warning: 'virtual' is redundant since the function is already declared 'override' [modernize-use-override]
+  virtual MemEventBase *clone() override { return new MemEventBase(*this); }
+  ~~~~~~~~              ^
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:268:25: warning: 'virtual' is redundant since the function is already declared 'override' [modernize-use-override]
+  virtual MemEventInit *clone() override { return new MemEventInit(*this); }
+  ~~~~~~~~              ^
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:270:23: warning: 'virtual' is redundant since the function is already declared 'override' [modernize-use-override]
+  virtual std::string getVerboseString() override {
+  ~~~~~~~~            ^
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:284:23: warning: 'virtual' is redundant since the function is already declared 'override' [modernize-use-override]
+  virtual std::string getBriefString() override {
+  ~~~~~~~~            ^
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:298:16: warning: 'virtual' is redundant since the function is already declared 'override' [modernize-use-override]
+  virtual Addr getRoutingAddress() override { return addr_; }
+  ~~~~~~~~     ^
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:352:34: warning: 'virtual' is redundant since the function is already declared 'override' [modernize-use-override]
+  virtual MemEventInitCoherence *clone() override {
+  ~~~~~~~~                       ^
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:356:23: warning: 'virtual' is redundant since the function is already declared 'override' [modernize-use-override]
+  virtual std::string getVerboseString() override {
+  ~~~~~~~~            ^
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:401:31: warning: 'virtual' is redundant since the function is already declared 'override' [modernize-use-override]
+  virtual MemEventInitRegion *clone() override {
+  ~~~~~~~~                    ^
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:405:23: warning: 'virtual' is redundant since the function is already declared 'override' [modernize-use-override]
+  virtual std::string getVerboseString() override {
+  ~~~~~~~~            ^
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/util.h:131:26: error: ISO C++ forbids forward references to 'enum' types [clang-diagnostic-error]
+using CacheAction = enum CacheAction;
+                         ^
+clang-tidy -header-filter=/home/sabbir/sst-elements-org/Opal/* -checks=-*,modernize-use-override -export-fixes /tmp/tmptyvnmj27/tmp2ivy94_p.yaml -p=/home/sabbir/sst-elements-org/Opal/build /home/sabbir/sst-elements-org/Opal/opalMemNIC.cc
+/home/sabbir/sst-elements-org/Opal/opalMemNIC.h:58:13: warning: prefer using 'override' or (rarely) 'final' instead of 'virtual' [modernize-use-override]
+    virtual ~OpalMemNIC() = default;
+    ~~~~~~~~^
+                          override 
+/home/sabbir/sst-elements-org/Opal/opalMemNIC.h:68:28: warning: 'virtual' is redundant since the function is already declared 'override' [modernize-use-override]
+            virtual Event* clone() override {
+            ~~~~~~~~       ^
+/home/sabbir/sst-elements-org/Opal/opalMemNIC.h:77:26: warning: 'virtual' is redundant since the function is already declared 'override' [modernize-use-override]
+            virtual bool hasClientData() const override { return false; }
+            ~~~~~~~~     ^
+/home/sabbir/sst-elements-org/Opal/opalMemNIC.h:87:10: warning: annotate this function with 'override' or (rarely) 'final' [modernize-use-override]
+    bool clock();
+         ^
+                 override
+/home/sabbir/sst-elements-org/Opal/opalMemNIC.h:88:10: warning: annotate this function with 'override' or (rarely) 'final' [modernize-use-override]
+    void send(MemHierarchy::MemEventBase *ev);
+         ^
+                                              override
+/home/sabbir/sst-elements-org/Opal/opalMemNIC.h:92:10: warning: annotate this function with 'override' or (rarely) 'final' [modernize-use-override]
+    void init(unsigned int phase);
+         ^
+                                  override
+/home/sabbir/sst-elements-org/Opal/opalMemNIC.h:93:10: warning: annotate this function with 'override' or (rarely) 'final' [modernize-use-override]
+    void finish() { link_control->finish(); }
+         ^
+                  override
+/home/sabbir/sst-elements-org/Opal/opalMemNIC.h:94:10: warning: annotate this function with 'override' or (rarely) 'final' [modernize-use-override]
+    void setup() { link_control->setup(); MemLinkBase::setup(); }
+         ^
+                 override
+/home/sabbir/sst-elements-org/Opal/opalMemNIC.h:96:25: warning: prefer using 'override' or (rarely) 'final' instead of 'virtual' [modernize-use-override]
+    virtual std::string findTargetDestination(MemHierarchy::Addr addr);
+    ~~~~~~~~            ^
+                                                                       override
+/home/sabbir/sst-elements-org/Opal/opalMemNIC.h:99:56: warning: prefer using 'override' or (rarely) 'final' instead of 'virtual' [modernize-use-override]
+    virtual MemHierarchy::MemNICBase::InitMemRtrEvent* createInitMemRtrEvent();
+    ~~~~~~~~                                           ^
+                                                                               override
+/home/sabbir/sst-elements-org/Opal/opalMemNIC.h:100:18: warning: prefer using 'override' or (rarely) 'final' instead of 'virtual' [modernize-use-override]
+    virtual void processInitMemRtrEvent(MemHierarchy::MemNICBase::InitMemRtrEvent* ev);
+    ~~~~~~~~     ^
+                                                                                       override
+clang-tidy -header-filter=/home/sabbir/sst-elements-org/Opal/* -checks=-*,modernize-use-override -export-fixes /tmp/tmptyvnmj27/tmplldcgpsp.yaml -p=/home/sabbir/sst-elements-org/Opal/build /home/sabbir/sst-elements-org/Opal/Opal.cc
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEvent.h:283:21: warning: 'virtual' is redundant since the function is already declared 'override' [modernize-use-override]
+  virtual MemEvent *clone() override { return new MemEvent(*this); }
+  ~~~~~~~~          ^
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEvent.h:285:23: warning: 'virtual' is redundant since the function is already declared 'override' [modernize-use-override]
+  virtual std::string getVerboseString() override {
+  ~~~~~~~~            ^
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEvent.h:299:23: warning: 'virtual' is redundant since the function is already declared 'override' [modernize-use-override]
+  virtual std::string getBriefString() override {
+  ~~~~~~~~            ^
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEvent.h:309:16: warning: 'virtual' is redundant since the function is already declared 'override' [modernize-use-override]
+  virtual bool doDebug(std::set<Addr> &addr) override {
+  ~~~~~~~~     ^
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEvent.h:315:16: warning: 'virtual' is redundant since the function is already declared 'override' [modernize-use-override]
+  virtual Addr getRoutingAddress() override { return baseAddr_; }
+  ~~~~~~~~     ^
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:207:25: warning: 'virtual' is redundant since the function is already declared 'override' [modernize-use-override]
+  virtual MemEventBase *clone() override { return new MemEventBase(*this); }
+  ~~~~~~~~              ^
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:268:25: warning: 'virtual' is redundant since the function is already declared 'override' [modernize-use-override]
+  virtual MemEventInit *clone() override { return new MemEventInit(*this); }
+  ~~~~~~~~              ^
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:270:23: warning: 'virtual' is redundant since the function is already declared 'override' [modernize-use-override]
+  virtual std::string getVerboseString() override {
+  ~~~~~~~~            ^
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:284:23: warning: 'virtual' is redundant since the function is already declared 'override' [modernize-use-override]
+  virtual std::string getBriefString() override {
+  ~~~~~~~~            ^
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:298:16: warning: 'virtual' is redundant since the function is already declared 'override' [modernize-use-override]
+  virtual Addr getRoutingAddress() override { return addr_; }
+  ~~~~~~~~     ^
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:352:34: warning: 'virtual' is redundant since the function is already declared 'override' [modernize-use-override]
+  virtual MemEventInitCoherence *clone() override {
+  ~~~~~~~~                       ^
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:356:23: warning: 'virtual' is redundant since the function is already declared 'override' [modernize-use-override]
+  virtual std::string getVerboseString() override {
+  ~~~~~~~~            ^
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:401:31: warning: 'virtual' is redundant since the function is already declared 'override' [modernize-use-override]
+  virtual MemEventInitRegion *clone() override {
+  ~~~~~~~~                    ^
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/memEventBase.h:405:23: warning: 'virtual' is redundant since the function is already declared 'override' [modernize-use-override]
+  virtual std::string getVerboseString() override {
+  ~~~~~~~~            ^
+/home/sabbir/sst-elements-org/Opal/../memHierarchy/util.h:131:26: error: ISO C++ forbids forward references to 'enum' types [clang-diagnostic-error]
+using CacheAction = enum CacheAction;
+                         ^
+/home/sabbir/sst-elements-org/Opal/Opal.h:263:10: warning: annotate this function with 'override' or (rarely) 'final' [modernize-use-override]
+                                void setup()  { };
+                                     ^
+                                             override
+/home/sabbir/sst-elements-org/Opal/Opal.h:265:10: warning: annotate this function with 'override' or (rarely) 'final' [modernize-use-override]
+                                void finish();
+                                     ^
+                                              override
+/home/sabbir/sst-elements-org/Opal/Opal.h:285:5: warning: annotate this function with 'override' or (rarely) 'final' [modernize-use-override]
+                                ~Opal() {
+                                ^
+                                        override
+Applying fixes ...

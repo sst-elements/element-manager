@@ -8,7 +8,9 @@ fi
 if [ "${@[-1]}" = "--headers" ]; then
     find ${REPO_DIR}/${1} -type f -exec sed -i "s/sst\/elements\/${1}\///g" {} \;
     find ${REPO_DIR}/${1} -type f -exec sed -i "s/<sst_config.h>/<sst\/core\/sst_config.h>/g" {} \;
-    source fix-headers/${1}.sh
+    if [ -a ${1}/fix-headers.sh ]; then
+        source ${1}/fix-headers.sh
+    fi
 fi
 
 if [ "${@[-1]}" = "--tidy" ]; then
@@ -18,9 +20,9 @@ if [ "${@[-1]}" = "--tidy" ]; then
     rm ${REPO_DIR}/${1}/.clang-tidy
 elif [ "${@[-1]}" = "--tidy2" ]; then
     cp .clang-tidy ${REPO_DIR}/${1}
-    find ${REPO_DIR}/${1}/ \( -name "*.cc" -o -name "*.h" -o -name "*.hpp" -o -name "*.cpp" \) \
+    find ${REPO_DIR}/${1} \( -name "*.cc" -o -name "*.h" -o -name "*.hpp" -o -name "*.cpp" \) \
         -exec clang-tidy -p ${REPO_DIR}/${1}/build -header-filter="${REPO_DIR}/${1}/*" -fix-errors {} \;
-    find ${REPO_DIR}/${1}/ \( -name "*.cc" -o -name "*.h" -o -name "*.hpp" -o -name "*.cpp" \) \
+    find ${REPO_DIR}/${1} \( -name "*.cc" -o -name "*.h" -o -name "*.hpp" -o -name "*.cpp" \) \
         -exec clang-tidy -p ${REPO_DIR}/${1}/build -header-filter="${REPO_DIR}/${1}/*" \
         -checks="-*,modernize-use-override" -fix-errors {} \;
     rm ${REPO_DIR}/${1}/.clang-tidy

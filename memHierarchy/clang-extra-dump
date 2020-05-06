@@ -1,0 +1,2273 @@
+Enabled checks:
+    clang-analyzer-apiModeling.StdCLibraryFunctions
+    clang-analyzer-apiModeling.TrustNonnull
+    clang-analyzer-apiModeling.google.GTest
+    clang-analyzer-apiModeling.llvm.CastValue
+    clang-analyzer-apiModeling.llvm.ReturnValue
+    clang-analyzer-core.CallAndMessage
+    clang-analyzer-core.DivideZero
+    clang-analyzer-core.DynamicTypePropagation
+    clang-analyzer-core.NonNullParamChecker
+    clang-analyzer-core.NonnilStringConstants
+    clang-analyzer-core.NullDereference
+    clang-analyzer-core.StackAddrEscapeBase
+    clang-analyzer-core.StackAddressEscape
+    clang-analyzer-core.UndefinedBinaryOperatorResult
+    clang-analyzer-core.VLASize
+    clang-analyzer-core.builtin.BuiltinFunctions
+    clang-analyzer-core.builtin.NoReturnFunctions
+    clang-analyzer-core.uninitialized.ArraySubscript
+    clang-analyzer-core.uninitialized.Assign
+    clang-analyzer-core.uninitialized.Branch
+    clang-analyzer-core.uninitialized.CapturedBlockVariable
+    clang-analyzer-core.uninitialized.UndefReturn
+    clang-analyzer-cplusplus.InnerPointer
+    clang-analyzer-cplusplus.Move
+    clang-analyzer-cplusplus.NewDelete
+    clang-analyzer-cplusplus.NewDeleteLeaks
+    clang-analyzer-cplusplus.PureVirtualCall
+    clang-analyzer-cplusplus.SelfAssignment
+    clang-analyzer-cplusplus.SmartPtr
+    clang-analyzer-cplusplus.VirtualCallModeling
+    clang-analyzer-deadcode.DeadStores
+    clang-analyzer-fuchsia.HandleChecker
+    clang-analyzer-nullability.NullPassedToNonnull
+    clang-analyzer-nullability.NullReturnedFromNonnull
+    clang-analyzer-nullability.NullabilityBase
+    clang-analyzer-nullability.NullableDereferenced
+    clang-analyzer-nullability.NullablePassedToNonnull
+    clang-analyzer-nullability.NullableReturnedFromNonnull
+    clang-analyzer-optin.cplusplus.UninitializedObject
+    clang-analyzer-optin.cplusplus.VirtualCall
+    clang-analyzer-optin.mpi.MPI-Checker
+    clang-analyzer-optin.osx.OSObjectCStyleCast
+    clang-analyzer-optin.osx.cocoa.localizability.EmptyLocalizationContextChecker
+    clang-analyzer-optin.osx.cocoa.localizability.NonLocalizedStringChecker
+    clang-analyzer-optin.performance.GCDAntipattern
+    clang-analyzer-optin.performance.Padding
+    clang-analyzer-optin.portability.UnixAPI
+    clang-analyzer-osx.API
+    clang-analyzer-osx.MIG
+    clang-analyzer-osx.NSOrCFErrorDerefChecker
+    clang-analyzer-osx.NumberObjectConversion
+    clang-analyzer-osx.OSObjectRetainCount
+    clang-analyzer-osx.ObjCProperty
+    clang-analyzer-osx.SecKeychainAPI
+    clang-analyzer-osx.cocoa.AtSync
+    clang-analyzer-osx.cocoa.AutoreleaseWrite
+    clang-analyzer-osx.cocoa.ClassRelease
+    clang-analyzer-osx.cocoa.Dealloc
+    clang-analyzer-osx.cocoa.IncompatibleMethodTypes
+    clang-analyzer-osx.cocoa.Loops
+    clang-analyzer-osx.cocoa.MissingSuperCall
+    clang-analyzer-osx.cocoa.NSAutoreleasePool
+    clang-analyzer-osx.cocoa.NSError
+    clang-analyzer-osx.cocoa.NilArg
+    clang-analyzer-osx.cocoa.NonNilReturnValue
+    clang-analyzer-osx.cocoa.ObjCGenerics
+    clang-analyzer-osx.cocoa.RetainCount
+    clang-analyzer-osx.cocoa.RetainCountBase
+    clang-analyzer-osx.cocoa.RunLoopAutoreleaseLeak
+    clang-analyzer-osx.cocoa.SelfInit
+    clang-analyzer-osx.cocoa.SuperDealloc
+    clang-analyzer-osx.cocoa.UnusedIvars
+    clang-analyzer-osx.cocoa.VariadicMethodTypes
+    clang-analyzer-osx.coreFoundation.CFError
+    clang-analyzer-osx.coreFoundation.CFNumber
+    clang-analyzer-osx.coreFoundation.CFRetainRelease
+    clang-analyzer-osx.coreFoundation.containers.OutOfBounds
+    clang-analyzer-osx.coreFoundation.containers.PointerSizedValues
+    clang-analyzer-security.FloatLoopCounter
+    clang-analyzer-security.insecureAPI.DeprecatedOrUnsafeBufferHandling
+    clang-analyzer-security.insecureAPI.SecuritySyntaxChecker
+    clang-analyzer-security.insecureAPI.UncheckedReturn
+    clang-analyzer-security.insecureAPI.bcmp
+    clang-analyzer-security.insecureAPI.bcopy
+    clang-analyzer-security.insecureAPI.bzero
+    clang-analyzer-security.insecureAPI.decodeValueOfObjCType
+    clang-analyzer-security.insecureAPI.getpw
+    clang-analyzer-security.insecureAPI.gets
+    clang-analyzer-security.insecureAPI.mkstemp
+    clang-analyzer-security.insecureAPI.mktemp
+    clang-analyzer-security.insecureAPI.rand
+    clang-analyzer-security.insecureAPI.strcpy
+    clang-analyzer-security.insecureAPI.vfork
+    clang-analyzer-unix.API
+    clang-analyzer-unix.DynamicMemoryModeling
+    clang-analyzer-unix.Malloc
+    clang-analyzer-unix.MallocSizeof
+    clang-analyzer-unix.MismatchedDeallocator
+    clang-analyzer-unix.Vfork
+    clang-analyzer-unix.cstring.BadSizeArg
+    clang-analyzer-unix.cstring.CStringModeling
+    clang-analyzer-unix.cstring.NullArg
+    clang-analyzer-valist.CopyToSelf
+    clang-analyzer-valist.Uninitialized
+    clang-analyzer-valist.Unterminated
+    clang-analyzer-valist.ValistBase
+    misc-unused-alias-decls
+    misc-unused-parameters
+    misc-unused-using-decls
+    modernize-avoid-bind
+    modernize-avoid-c-arrays
+    modernize-concat-nested-namespaces
+    modernize-deprecated-headers
+    modernize-deprecated-ios-base-aliases
+    modernize-loop-convert
+    modernize-make-shared
+    modernize-make-unique
+    modernize-pass-by-value
+    modernize-raw-string-literal
+    modernize-redundant-void-arg
+    modernize-replace-auto-ptr
+    modernize-replace-random-shuffle
+    modernize-return-braced-init-list
+    modernize-shrink-to-fit
+    modernize-unary-static-assert
+    modernize-use-auto
+    modernize-use-bool-literals
+    modernize-use-default-member-init
+    modernize-use-emplace
+    modernize-use-equals-default
+    modernize-use-equals-delete
+    modernize-use-nodiscard
+    modernize-use-noexcept
+    modernize-use-nullptr
+    modernize-use-transparent-functors
+    modernize-use-uncaught-exceptions
+    modernize-use-using
+
+clang-apply-replacements version 10.0.0
+clang-tidy -export-fixes /tmp/tmpozgf1wl6/tmp38avqbe4.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/bus.cc
+/home/sabbir/sst-elements-org/memHierarchy/bus.cc:58:29: warning: unused parameter 'time' [clang-diagnostic-unused-parameter]
+bool Bus::clockTick(Cycle_t time) {
+                            ^
+/home/sabbir/sst-elements-org/memHierarchy/bus.cc:223:29: warning: unused parameter 'phase' [clang-diagnostic-unused-parameter]
+void Bus::init(unsigned int phase) {
+                            ^
+clang-tidy -export-fixes /tmp/tmpozgf1wl6/tmpmr9enr8o.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/cacheController.cc
+/home/sabbir/sst-elements-org/memHierarchy/cacheController.cc:77:31: warning: unused parameter 'time' [clang-diagnostic-unused-parameter]
+bool Cache::clockTick(Cycle_t time) {
+                              ^
+/home/sabbir/sst-elements-org/memHierarchy/cacheController.cc:105:12: warning: Value stored to 'entries' during its initialization is never read [clang-analyzer-deadcode.DeadStores]
+    size_t entries = retryBuffer_.size();
+           ^
+/home/sabbir/sst-elements-org/memHierarchy/cacheController.cc:105:12: note: Value stored to 'entries' during its initialization is never read
+/home/sabbir/sst-elements-org/memHierarchy/cacheController.cc:105:12: warning: unused variable 'entries' [clang-diagnostic-unused-variable]
+    size_t entries = retryBuffer_.size();
+           ^
+/home/sabbir/sst-elements-org/memHierarchy/cacheController.cc:133:17: warning: Value stored to 'cmd' during its initialization is never read [clang-analyzer-deadcode.DeadStores]
+        Command cmd = (*it)->getCmd();
+                ^
+/home/sabbir/sst-elements-org/memHierarchy/cacheController.cc:133:17: note: Value stored to 'cmd' during its initialization is never read
+/home/sabbir/sst-elements-org/memHierarchy/cacheController.cc:133:17: warning: unused variable 'cmd' [clang-diagnostic-unused-variable]
+        Command cmd = (*it)->getCmd();
+                ^
+/home/sabbir/sst-elements-org/memHierarchy/cacheController.cc:499:23: warning: comparison of integers of different signs: 'int' and 'std::vector::size_type' (aka 'unsigned long') [clang-diagnostic-sign-compare]
+    for (int i = 0; i < listeners_.size(); i++)
+                      ^
+clang-tidy -export-fixes /tmp/tmpozgf1wl6/tmpjitc5_k2.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/cacheFactory.cc
+/home/sabbir/sst-elements-org/memHierarchy/cacheFactory.cc:47:10: warning: unused variable 'found' [clang-diagnostic-unused-variable]
+    bool found;
+         ^
+/home/sabbir/sst-elements-org/memHierarchy/cacheFactory.cc:200:43: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [clang-diagnostic-sign-compare]
+    } else if (found && dropPrefetchLevel >= mshrSize) { // Specified dropPrefetchLevel is bigger than MSHR size
+                                          ^
+/home/sabbir/sst-elements-org/memHierarchy/cacheFactory.cc:588:14: warning: Value stored to 'mshrSize' during its initialization is never read [clang-analyzer-deadcode.DeadStores]
+    uint64_t mshrSize = mshr_->getMaxSize(); // Either negative (unlimited) or 2+ (limited but can't be 0 or 1)
+             ^
+/home/sabbir/sst-elements-org/memHierarchy/cacheFactory.cc:588:14: note: Value stored to 'mshrSize' during its initialization is never read
+/home/sabbir/sst-elements-org/memHierarchy/cacheFactory.cc:588:14: warning: unused variable 'mshrSize' [clang-diagnostic-unused-variable]
+    uint64_t mshrSize = mshr_->getMaxSize(); // Either negative (unlimited) or 2+ (limited but can't be 0 or 1)
+             ^
+/home/sabbir/sst-elements-org/memHierarchy/cacheFactory.cc:660:14: warning: variable length arrays are a C99 feature [clang-diagnostic-vla-extension]
+        int y[N];
+             ^
+/home/sabbir/sst-elements-org/memHierarchy/cacheFactory.cc:695:14: warning: Value stored to 'assoc' during its initialization is never read [clang-analyzer-deadcode.DeadStores]
+    uint64_t assoc = params.find<uint64_t>("associativity", -1, found); // uint64_t to match cache size in case we have a fully associative cache
+             ^
+/home/sabbir/sst-elements-org/memHierarchy/cacheFactory.cc:695:14: note: Value stored to 'assoc' during its initialization is never read
+/home/sabbir/sst-elements-org/memHierarchy/cacheFactory.cc:695:14: warning: unused variable 'assoc' [clang-diagnostic-unused-variable]
+    uint64_t assoc = params.find<uint64_t>("associativity", -1, found); // uint64_t to match cache size in case we have a fully associative cache
+             ^
+/home/sabbir/sst-elements-org/memHierarchy/cacheFactory.cc:699:14: warning: Value stored to 'dEntries' during its initialization is never read [clang-analyzer-deadcode.DeadStores]
+    uint64_t dEntries = params.find<uint64_t>("noninclusive_directory_entries", 0);
+             ^
+/home/sabbir/sst-elements-org/memHierarchy/cacheFactory.cc:699:14: note: Value stored to 'dEntries' during its initialization is never read
+/home/sabbir/sst-elements-org/memHierarchy/cacheFactory.cc:699:14: warning: unused variable 'dEntries' [clang-diagnostic-unused-variable]
+    uint64_t dEntries = params.find<uint64_t>("noninclusive_directory_entries", 0);
+             ^
+/home/sabbir/sst-elements-org/memHierarchy/cacheFactory.cc:700:14: warning: Value stored to 'dAssoc' during its initialization is never read [clang-analyzer-deadcode.DeadStores]
+    uint64_t dAssoc = params.find<uint64_t>("noninclusive_directory_associativity", 1);
+             ^
+/home/sabbir/sst-elements-org/memHierarchy/cacheFactory.cc:700:14: note: Value stored to 'dAssoc' during its initialization is never read
+/home/sabbir/sst-elements-org/memHierarchy/cacheFactory.cc:700:14: warning: unused variable 'dAssoc' [clang-diagnostic-unused-variable]
+    uint64_t dAssoc = params.find<uint64_t>("noninclusive_directory_associativity", 1);
+             ^
+clang-tidy -export-fixes /tmp/tmpozgf1wl6/tmpr1zfci9v.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/memoryController.cc
+/home/sabbir/sst-elements-org/memHierarchy/customcmd/../memEventBase.h:49:9: warning: Call to virtual method 'MemEventBase::setDefaults' during construction bypasses virtual dispatch [clang-analyzer-optin.cplusplus.VirtualCall]
+        setDefaults();
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/memoryController.cc:481:9: note: Assuming 'phase' is 0
+    if (!phase) {
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/memoryController.cc:481:5: note: Taking true branch
+    if (!phase) {
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/memoryController.cc:483:33: note: Calling constructor for 'MemEventInitCoherence'
+        link_->sendInitData(new MemEventInitCoherence(getName(), Endpoint::Memory, true, false, memBackendConvertor_->getRequestWidth(), false));
+                                ^
+/home/sabbir/sst-elements-org/memHierarchy/customcmd/../memEventBase.h:320:9: note: Calling constructor for 'MemEventInit'
+        MemEventInit(src, InitCommand::Coherence), type_(type), inclusive_(inclusive), sendWBAck_(sendWBAck), recvWBAck_(false), lineSize_(lineSize), tracksPresence_(tracksPresence) { }
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/customcmd/../memEventBase.h:248:54: note: Calling constructor for 'MemEventBase'
+    MemEventInit(std::string src, InitCommand cmd) : MemEventBase(src, Command::NULLCMD), initCmd_(cmd) { }
+                                                     ^
+/home/sabbir/sst-elements-org/memHierarchy/customcmd/../memEventBase.h:49:9: note: Call to virtual method 'MemEventBase::setDefaults' during construction bypasses virtual dispatch
+        setDefaults();
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/memoryController.cc:409:48: warning: Called C++ object pointer is null [clang-analyzer-core.CallAndMessage]
+    CustomCmdMemHandler::MemEventInfo evInfo = customCommandHandler_->receive(ev);
+                                               ^
+/home/sabbir/sst-elements-org/memHierarchy/memoryController.cc:314:9: note: Assuming field 'clockOn_' is true
+    if (!clockOn_) {
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/memoryController.cc:314:5: note: Taking false branch
+    if (!clockOn_) {
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/memoryController.cc:321:5: note: Taking false branch
+    if (is_debug_event(meb)) {
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/memoryController.cc:327:9: note: Assuming 'cmd' is equal to CustomReq
+    if (cmd == Command::CustomReq) {
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/memoryController.cc:327:5: note: Taking true branch
+    if (cmd == Command::CustomReq) {
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/memoryController.cc:328:9: note: Calling 'MemController::handleCustomEvent'
+        handleCustomEvent(meb);
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/memoryController.cc:405:9: note: Assuming field 'customCommandHandler_' is null
+    if (!customCommandHandler_)
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/memoryController.cc:405:5: note: Taking true branch
+    if (!customCommandHandler_)
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/memoryController.cc:409:48: note: Called C++ object pointer is null
+    CustomCmdMemHandler::MemEventInfo evInfo = customCommandHandler_->receive(ev);
+                                               ^
+clang-tidy -export-fixes /tmp/tmpozgf1wl6/tmpda0aub4h.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/memoryCacheController.cc
+/home/sabbir/sst-elements-org/memHierarchy/customcmd/../memEventBase.h:49:9: warning: Call to virtual method 'MemEventBase::setDefaults' during construction bypasses virtual dispatch [clang-analyzer-optin.cplusplus.VirtualCall]
+        setDefaults();
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/memoryCacheController.cc:573:9: note: Assuming 'phase' is 0
+    if (!phase) {
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/memoryCacheController.cc:573:5: note: Taking true branch
+    if (!phase) {
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/memoryCacheController.cc:575:33: note: Calling constructor for 'MemEventInitCoherence'
+        link_->sendInitData(new MemEventInitCoherence(getName(), Endpoint::Memory, true, false, memBackendConvertor_->getRequestWidth(), false));
+                                ^
+/home/sabbir/sst-elements-org/memHierarchy/customcmd/../memEventBase.h:320:9: note: Calling constructor for 'MemEventInit'
+        MemEventInit(src, InitCommand::Coherence), type_(type), inclusive_(inclusive), sendWBAck_(sendWBAck), recvWBAck_(false), lineSize_(lineSize), tracksPresence_(tracksPresence) { }
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/customcmd/../memEventBase.h:248:54: note: Calling constructor for 'MemEventBase'
+    MemEventInit(std::string src, InitCommand cmd) : MemEventBase(src, Command::NULLCMD), initCmd_(cmd) { }
+                                                     ^
+/home/sabbir/sst-elements-org/memHierarchy/customcmd/../memEventBase.h:49:9: note: Call to virtual method 'MemEventBase::setDefaults' during construction bypasses virtual dispatch
+        setDefaults();
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/memoryCacheController.cc:85:33: warning: Called C++ object pointer is null [clang-analyzer-core.CallAndMessage]
+    std::string convertortype = memory->getBackendConvertorType();
+                                ^
+/home/sabbir/sst-elements-org/memHierarchy/memoryCacheController.cc:65:9: note: 'debugLevel' is >= 0
+    if (debugLevel < 0 || debugLevel > 10)
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/memoryCacheController.cc:65:9: note: Left side of '||' is false
+/home/sabbir/sst-elements-org/memHierarchy/memoryCacheController.cc:65:27: note: 'debugLevel' is <= 10
+    if (debugLevel < 0 || debugLevel > 10)
+                          ^
+/home/sabbir/sst-elements-org/memHierarchy/memoryCacheController.cc:65:5: note: Taking false branch
+    if (debugLevel < 0 || debugLevel > 10)
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/memoryCacheController.cc:71:5: note: Loop condition is false. Execution continues on line 76
+    for (std::vector<Addr>::iterator it = addrArr.begin(); it != addrArr.end(); it++) {
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/memoryCacheController.cc:80:5: note: 'memory' initialized here
+    MemBackend * memory = loadUserSubComponent<MemBackend>("backend");
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/memoryCacheController.cc:81:9: note: Assuming 'memory' is null
+    if (!memory) {  /* Try to load from our parameters (legacy mode 1) */
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/memoryCacheController.cc:81:5: note: Taking true branch
+    if (!memory) {  /* Try to load from our parameters (legacy mode 1) */
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/memoryCacheController.cc:85:33: note: Called C++ object pointer is null
+    std::string convertortype = memory->getBackendConvertorType();
+                                ^
+/home/sabbir/sst-elements-org/memHierarchy/memoryCacheController.cc:364:10: warning: Value stored to 'blockAddr' during its initialization is never read [clang-analyzer-deadcode.DeadStores]
+    Addr blockAddr = cache_[cacheIndex].addr;
+         ^
+/home/sabbir/sst-elements-org/memHierarchy/memoryCacheController.cc:364:10: note: Value stored to 'blockAddr' during its initialization is never read
+/home/sabbir/sst-elements-org/memHierarchy/memoryCacheController.cc:364:10: warning: unused variable 'blockAddr' [clang-diagnostic-unused-variable]
+    Addr blockAddr = cache_[cacheIndex].addr;
+         ^
+/home/sabbir/sst-elements-org/memHierarchy/memoryCacheController.cc:365:11: warning: Value stored to 'blockState' during its initialization is never read [clang-analyzer-deadcode.DeadStores]
+    State blockState = cache_[cacheIndex].state;
+          ^
+/home/sabbir/sst-elements-org/memHierarchy/memoryCacheController.cc:365:11: note: Value stored to 'blockState' during its initialization is never read
+/home/sabbir/sst-elements-org/memHierarchy/memoryCacheController.cc:365:11: warning: unused variable 'blockState' [clang-diagnostic-unused-variable]
+    State blockState = cache_[cacheIndex].state;
+          ^
+/home/sabbir/sst-elements-org/memHierarchy/memoryCacheController.cc:432:11: warning: Value stored to 'blockState' during its initialization is never read [clang-analyzer-deadcode.DeadStores]
+    State blockState = cache_[cacheIndex].state;
+          ^
+/home/sabbir/sst-elements-org/memHierarchy/memoryCacheController.cc:432:11: note: Value stored to 'blockState' during its initialization is never read
+/home/sabbir/sst-elements-org/memHierarchy/memoryCacheController.cc:432:11: warning: unused variable 'blockState' [clang-diagnostic-unused-variable]
+    State blockState = cache_[cacheIndex].state;
+          ^
+/home/sabbir/sst-elements-org/memHierarchy/memoryCacheController.cc:439:10: warning: unused variable 'localIndex' [clang-diagnostic-unused-variable]
+    Addr localIndex;
+         ^
+clang-tidy -export-fixes /tmp/tmpozgf1wl6/tmpuzlp7ztt.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/coherentMemoryController.cc
+/home/sabbir/sst-elements-org/memHierarchy/coherentMemoryController.cc:449:48: warning: Called C++ object pointer is null [clang-analyzer-core.CallAndMessage]
+    CustomCmdMemHandler::MemEventInfo evInfo = customCommandHandler_->receive(evb);
+                                               ^
+/home/sabbir/sst-elements-org/memHierarchy/coherentMemoryController.cc:143:9: note: Assuming field 'clockOn_' is true
+    if (!clockOn_) {
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherentMemoryController.cc:143:5: note: Taking false branch
+    if (!clockOn_) {
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherentMemoryController.cc:150:5: note: Taking false branch
+    if (is_debug_event(ev)) {
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherentMemoryController.cc:156:5: note: Control jumps to 'case CustomReq:'  at line 171
+    switch (cmd) {
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherentMemoryController.cc:172:13: note: Calling 'CoherentMemController::handleCustomCmd'
+            handleCustomCmd(ev);
+            ^
+/home/sabbir/sst-elements-org/memHierarchy/coherentMemoryController.cc:444:9: note: Assuming field 'customCommandHandler_' is null
+    if (!customCommandHandler_) {
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherentMemoryController.cc:444:5: note: Taking true branch
+    if (!customCommandHandler_) {
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherentMemoryController.cc:449:48: note: Called C++ object pointer is null
+    CustomCmdMemHandler::MemEventInfo evInfo = customCommandHandler_->receive(evb);
+                                               ^
+/home/sabbir/sst-elements-org/memHierarchy/customcmd/../memEventBase.h:49:9: warning: Call to virtual method 'MemEventBase::setDefaults' during construction bypasses virtual dispatch [clang-analyzer-optin.cplusplus.VirtualCall]
+        setDefaults();
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherentMemoryController.cc:62:9: note: Assuming 'phase' is 0
+    if (!phase) {
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherentMemoryController.cc:62:5: note: Taking true branch
+    if (!phase) {
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherentMemoryController.cc:64:33: note: Calling constructor for 'MemEventInitCoherence'
+        link_->sendInitData(new MemEventInitCoherence(getName(), Endpoint::Memory, true, false, memBackendConvertor_->getRequestWidth(), true));
+                                ^
+/home/sabbir/sst-elements-org/memHierarchy/customcmd/../memEventBase.h:320:9: note: Calling constructor for 'MemEventInit'
+        MemEventInit(src, InitCommand::Coherence), type_(type), inclusive_(inclusive), sendWBAck_(sendWBAck), recvWBAck_(false), lineSize_(lineSize), tracksPresence_(tracksPresence) { }
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/customcmd/../memEventBase.h:248:54: note: Calling constructor for 'MemEventBase'
+    MemEventInit(std::string src, InitCommand cmd) : MemEventBase(src, Command::NULLCMD), initCmd_(cmd) { }
+                                                     ^
+/home/sabbir/sst-elements-org/memHierarchy/customcmd/../memEventBase.h:49:9: note: Call to virtual method 'MemEventBase::setDefaults' during construction bypasses virtual dispatch
+        setDefaults();
+        ^
+clang-tidy -export-fixes /tmp/tmpozgf1wl6/tmplhs18yax.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/membackend/simpleMemBackendConvertor.cc
+clang-tidy -export-fixes /tmp/tmpozgf1wl6/tmpxvc3dq19.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/membackend/flagMemBackendConvertor.cc
+clang-tidy -export-fixes /tmp/tmpozgf1wl6/tmp5n2jx7hm.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/membackend/timingDRAMBackend.cc
+/home/sabbir/sst-elements-org/memHierarchy/membackend/timingDRAMBackend.cc:62:27: warning: comparison of integers of different signs: 'unsigned int' and 'int' [clang-diagnostic-sign-compare]
+    for ( unsigned i=0; i < numChannels; i++ ) {
+                          ^
+/home/sabbir/sst-elements-org/memHierarchy/membackend/timingDRAMBackend.cc:82:32: warning: unused parameter 'cycle' [clang-diagnostic-unused-parameter]
+bool TimingDRAM::clock(Cycle_t cycle)
+                               ^
+/home/sabbir/sst-elements-org/memHierarchy/membackend/timingDRAMBackend.cc:97:29: warning: field 'm_responseHandler' will be initialized after field 'm_output' [clang-diagnostic-reorder-ctor]
+    ComponentExtension(id), m_responseHandler(handler), m_output( output ), m_mapper( mapper ), m_nextRankUp(0), m_dataBusAvailCycle(0)
+                            ^
+/home/sabbir/sst-elements-org/memHierarchy/membackend/timingDRAMBackend.cc:177:74: warning: unused parameter 'dataBusAvailCycle' [clang-diagnostic-unused-parameter]
+TimingDRAM::Cmd* TimingDRAM::Channel::popCmd( SimTime_t cycle, SimTime_t dataBusAvailCycle )
+                                                                         ^
+/home/sabbir/sst-elements-org/memHierarchy/membackend/timingDRAMBackend.cc:228:26: warning: comparison of integers of different signs: 'unsigned int' and 'int' [clang-diagnostic-sign-compare]
+    for ( unsigned i=0; i<banks; i++ ) {
+                         ^
+/home/sabbir/sst-elements-org/memHierarchy/membackend/timingDRAMBackend.cc:268:69: warning: field 'm_bank' will be initialized after field 'm_rank' [clang-diagnostic-reorder-ctor]
+    ComponentExtension(id), m_output( output ), m_lastCmd(nullptr), m_bank(myNum), m_rank(rank), m_row( -1 )
+                                                                    ^
+/home/sabbir/sst-elements-org/memHierarchy/membackend/timingDRAMBackend.cc:321:40: warning: comparison of integers of different signs: 'unsigned int' and 'int' [clang-diagnostic-sign-compare]
+    if ( nullptr == m_lastCmd && m_row != -1 && m_pagePolicy->shouldClose( current ) ) {
+                                       ^
+/home/sabbir/sst-elements-org/memHierarchy/membackend/timingDRAMBackend.cc:341:20: warning: comparison of integers of different signs: 'unsigned int' and 'int' [clang-diagnostic-sign-compare]
+        if ( m_row != -1 ) {
+                   ^
+clang-tidy -export-fixes /tmp/tmpozgf1wl6/tmph9rzo1q5.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/membackend/extMemBackendConvertor.cc
+clang-tidy -export-fixes /tmp/tmpozgf1wl6/tmpdimsl3ph.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/membackend/simpleMemBackend.cc
+/home/sabbir/sst-elements-org/memHierarchy/membackend/simpleMemBackend.cc:46:48: warning: unused parameter 'addr' [clang-diagnostic-unused-parameter]
+bool SimpleMemory::issueRequest(ReqId id, Addr addr, bool isWrite, unsigned numBytes ){
+                                               ^
+/home/sabbir/sst-elements-org/memHierarchy/membackend/simpleMemBackend.cc:46:59: warning: unused parameter 'isWrite' [clang-diagnostic-unused-parameter]
+bool SimpleMemory::issueRequest(ReqId id, Addr addr, bool isWrite, unsigned numBytes ){
+                                                          ^
+/home/sabbir/sst-elements-org/memHierarchy/membackend/simpleMemBackend.cc:46:77: warning: unused parameter 'numBytes' [clang-diagnostic-unused-parameter]
+bool SimpleMemory::issueRequest(ReqId id, Addr addr, bool isWrite, unsigned numBytes ){
+                                                                            ^
+clang-tidy -export-fixes /tmp/tmpozgf1wl6/tmp5qeg6t0e.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/membackend/delayBuffer.cc
+/home/sabbir/sst-elements-org/memHierarchy/membackend/delayBuffer.cc:59:49: warning: unused parameter 'event' [clang-diagnostic-unused-parameter]
+void DelayBuffer::handleNextRequest(SST::Event *event) {
+                                                ^
+clang-tidy -export-fixes /tmp/tmpozgf1wl6/tmpuq6b2pap.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/membackend/memBackendConvertor.cc
+/home/sabbir/sst-elements-org/memHierarchy/membackend/memBackendConvertor.cc:34:40: warning: field 'm_reqId' will be initialized after field 'm_backend' [clang-diagnostic-reorder-ctor]
+    SubComponent(id), m_cycleCount(0), m_reqId(0), m_backend(backend)
+                                       ^
+/home/sabbir/sst-elements-org/memHierarchy/membackend/memBackendConvertor.cc:120:56: warning: must specify at least one argument for '...' parameter of variadic macro [clang-diagnostic-gnu-zero-variadic-macro-arguments]
+            Debug(_L10_, "Completed issue of request\n");
+                                                       ^
+/home/sabbir/sst-elements-org/memHierarchy/membackend/memBackendConvertor.cc:29:9: note: macro 'Debug' defined here
+#define Debug(level, fmt, ... )
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/membackend/memBackendConvertor.cc:171:15: warning: unused variable 'resp' [clang-diagnostic-unused-variable]
+    MemEvent* resp = NULL;
+              ^
+clang-tidy -export-fixes /tmp/tmpozgf1wl6/tmp8atalbnk.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/membackend/requestReorderSimple.cc
+/home/sabbir/sst-elements-org/memHierarchy/membackend/requestReorderSimple.cc:89:10: warning: Value stored to 'unclock' during its initialization is never read [clang-analyzer-deadcode.DeadStores]
+    bool unclock = backend->clock(cycle);
+         ^
+/home/sabbir/sst-elements-org/memHierarchy/membackend/requestReorderSimple.cc:89:10: note: Value stored to 'unclock' during its initialization is never read
+/home/sabbir/sst-elements-org/memHierarchy/membackend/requestReorderSimple.cc:89:10: warning: unused variable 'unclock' [clang-diagnostic-unused-variable]
+    bool unclock = backend->clock(cycle);
+         ^
+clang-tidy -export-fixes /tmp/tmpozgf1wl6/tmpwuy87d2_.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/membackend/simpleDRAMBackend.cc
+/home/sabbir/sst-elements-org/memHierarchy/membackend/simpleDRAMBackend.cc:103:23: warning: comparison of integers of different signs: 'int' and 'uint64_t' (aka 'unsigned long') [clang-diagnostic-sign-compare]
+    for (int i = 0; i < banks; i++) {
+                      ^
+/home/sabbir/sst-elements-org/memHierarchy/membackend/simpleDRAMBackend.cc:137:61: warning: unused parameter 'isWrite' [clang-diagnostic-unused-parameter]
+bool SimpleDRAM::issueRequest( ReqId reqId, Addr addr, bool isWrite, unsigned numBytes ){
+                                                            ^
+/home/sabbir/sst-elements-org/memHierarchy/membackend/simpleDRAMBackend.cc:137:79: warning: unused parameter 'numBytes' [clang-diagnostic-unused-parameter]
+bool SimpleDRAM::issueRequest( ReqId reqId, Addr addr, bool isWrite, unsigned numBytes ){
+                                                                              ^
+clang-tidy -export-fixes /tmp/tmpozgf1wl6/tmpi6azarhz.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/membackend/simpleMemScratchBackendConvertor.cc
+clang-tidy -export-fixes /tmp/tmpozgf1wl6/tmpo2wtnx9t.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/membackend/requestReorderByRow.cc
+/home/sabbir/sst-elements-org/memHierarchy/membackend/requestReorderByRow.cc:102:13: warning: unused variable 'reqsSearchedThisCycle' [clang-diagnostic-unused-variable]
+        int reqsSearchedThisCycle = 0;
+            ^
+/home/sabbir/sst-elements-org/memHierarchy/membackend/requestReorderByRow.cc:155:10: warning: Value stored to 'unclock' during its initialization is never read [clang-analyzer-deadcode.DeadStores]
+    bool unclock = backend->clock(cycle);
+         ^
+/home/sabbir/sst-elements-org/memHierarchy/membackend/requestReorderByRow.cc:155:10: note: Value stored to 'unclock' during its initialization is never read
+/home/sabbir/sst-elements-org/memHierarchy/membackend/requestReorderByRow.cc:155:10: warning: unused variable 'unclock' [clang-diagnostic-unused-variable]
+    bool unclock = backend->clock(cycle);
+         ^
+clang-tidy -export-fixes /tmp/tmpozgf1wl6/tmp042w695m.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/membackend/scratchBackendConvertor.cc
+/home/sabbir/sst-elements-org/memHierarchy/membackend/scratchBackendConvertor.cc:112:56: warning: must specify at least one argument for '...' parameter of variadic macro [clang-diagnostic-gnu-zero-variadic-macro-arguments]
+            Debug(_L10_, "Completed issue of request\n");
+                                                       ^
+/home/sabbir/sst-elements-org/memHierarchy/membackend/scratchBackendConvertor.cc:29:9: note: macro 'Debug' defined here
+#define Debug(level, fmt, ... )
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/membackend/scratchBackendConvertor.cc:117:10: warning: Value stored to 'unclock' during its initialization is never read [clang-analyzer-deadcode.DeadStores]
+    bool unclock = m_backend->clock(cycle);
+         ^
+/home/sabbir/sst-elements-org/memHierarchy/membackend/scratchBackendConvertor.cc:117:10: note: Value stored to 'unclock' during its initialization is never read
+/home/sabbir/sst-elements-org/memHierarchy/membackend/scratchBackendConvertor.cc:117:10: warning: unused variable 'unclock' [clang-diagnostic-unused-variable]
+    bool unclock = m_backend->clock(cycle);
+         ^
+clang-tidy -export-fixes /tmp/tmpozgf1wl6/tmpekm_c1b2.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/customcmd/amoCustomCmdHandler.cc
+clang-tidy -export-fixes /tmp/tmpozgf1wl6/tmpsxbcemgk.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/memLink.cc
+/home/sabbir/sst-elements-org/memHierarchy/memEventBase.h:49:9: warning: Call to virtual method 'MemEventBase::setDefaults' during construction bypasses virtual dispatch [clang-analyzer-optin.cplusplus.VirtualCall]
+        setDefaults();
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/memLink.cc:47:9: note: Assuming 'phase' is 0
+    if (!phase) {
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/memLink.cc:47:5: note: Taking true branch
+    if (!phase) {
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/memLink.cc:48:39: note: Calling constructor for 'MemEventInitRegion'
+        MemEventInitRegion * ev = new MemEventInitRegion(info.name, info.region, false);
+                                      ^
+/home/sabbir/sst-elements-org/memHierarchy/memEventBase.h:369:9: note: Calling constructor for 'MemEventInit'
+        MemEventInit(src, InitCommand::Region), region_(region), setRegion_(setRegion) { }
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/memEventBase.h:248:54: note: Calling constructor for 'MemEventBase'
+    MemEventInit(std::string src, InitCommand cmd) : MemEventBase(src, Command::NULLCMD), initCmd_(cmd) { }
+                                                     ^
+/home/sabbir/sst-elements-org/memHierarchy/memEventBase.h:49:9: note: Call to virtual method 'MemEventBase::setDefaults' during construction bypasses virtual dispatch
+        setDefaults();
+        ^
+clang-tidy -export-fixes /tmp/tmpozgf1wl6/tmp_x1co_ia.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/memNICFour.cc
+/home/sabbir/sst-elements-org/memHierarchy/memNICBase.h:229:67: warning: Access to field 'event' results in a dereference of a null pointer (loaded from variable 'mre') [clang-analyzer-core.NullDereference]
+                    MemEventInit *ev = static_cast<MemEventInit*>(mre->event);
+                                                                  ^
+/home/sabbir/sst-elements-org/memHierarchy/memNICFour.cc:91:5: note: Calling 'MemNICBase::nicInit'
+    MemNICBase::nicInit(link_control[DATA], phase);
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/memNICBase.h:194:17: note: Assuming 'networkReady' is false
+            if (networkReady && initMsgSent) {
+                ^
+/home/sabbir/sst-elements-org/memHierarchy/memNICBase.h:194:30: note: Left side of '&&' is false
+            if (networkReady && initMsgSent) {
+                             ^
+/home/sabbir/sst-elements-org/memHierarchy/memNICBase.h:202:17: note: 'networkReady' is false
+            if (networkReady && !initMsgSent) {
+                ^
+/home/sabbir/sst-elements-org/memHierarchy/memNICBase.h:202:30: note: Left side of '&&' is false
+            if (networkReady && !initMsgSent) {
+                             ^
+/home/sabbir/sst-elements-org/memHierarchy/memNICBase.h:219:13: note: Loop condition is true.  Entering loop body
+            while (SST::Interfaces::SimpleNetwork::Request *req = linkcontrol->recvInitData()) {
+            ^
+/home/sabbir/sst-elements-org/memHierarchy/memNICBase.h:220:35: note: Calling 'Request::takePayload'
+                Event * payload = req->takePayload();
+                                  ^
+/usr/local/include/sst/core/interfaces/simpleNetwork.h:84:13: note: 'ret' initialized here
+            Event* ret = payload;
+            ^
+/usr/local/include/sst/core/interfaces/simpleNetwork.h:86:13: note: Returning pointer (loaded from 'ret'), which participates in a condition later
+            return ret;
+            ^
+/usr/local/include/sst/core/interfaces/simpleNetwork.h:86:13: note: Returning pointer (loaded from 'ret')
+/home/sabbir/sst-elements-org/memHierarchy/memNICBase.h:220:35: note: Returning from 'Request::takePayload'
+                Event * payload = req->takePayload();
+                                  ^
+/home/sabbir/sst-elements-org/memHierarchy/memNICBase.h:220:17: note: 'payload' initialized here
+                Event * payload = req->takePayload();
+                ^
+/home/sabbir/sst-elements-org/memHierarchy/memNICBase.h:222:21: note: Assuming pointer value is null
+                if (imre) {
+                    ^
+/home/sabbir/sst-elements-org/memHierarchy/memNICBase.h:222:21: note: Assuming 'imre' is null
+/home/sabbir/sst-elements-org/memHierarchy/memNICBase.h:222:17: note: Taking false branch
+                if (imre) {
+                ^
+/home/sabbir/sst-elements-org/memHierarchy/memNICBase.h:228:21: note: 'mre' initialized to a null pointer value
+                    MemRtrEvent * mre = static_cast<MemRtrEvent*>(payload);
+                    ^
+/home/sabbir/sst-elements-org/memHierarchy/memNICBase.h:229:67: note: Access to field 'event' results in a dereference of a null pointer (loaded from variable 'mre')
+                    MemEventInit *ev = static_cast<MemEventInit*>(mre->event);
+                                                                  ^
+/home/sabbir/sst-elements-org/memHierarchy/memNICFour.cc:43:10: warning: unused variable 'found' [clang-diagnostic-unused-variable]
+    bool found;
+         ^
+clang-tidy -export-fixes /tmp/tmpozgf1wl6/tmpsx3wqs_g.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/memNIC.cc
+/home/sabbir/sst-elements-org/memHierarchy/memNICBase.h:229:67: warning: Access to field 'event' results in a dereference of a null pointer (loaded from variable 'mre') [clang-analyzer-core.NullDereference]
+                    MemEventInit *ev = static_cast<MemEventInit*>(mre->event);
+                                                                  ^
+/home/sabbir/sst-elements-org/memHierarchy/memNIC.cc:69:5: note: Calling 'MemNICBase::nicInit'
+    MemNICBase::nicInit(link_control, phase);
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/memNICBase.h:194:17: note: Assuming 'networkReady' is false
+            if (networkReady && initMsgSent) {
+                ^
+/home/sabbir/sst-elements-org/memHierarchy/memNICBase.h:194:30: note: Left side of '&&' is false
+            if (networkReady && initMsgSent) {
+                             ^
+/home/sabbir/sst-elements-org/memHierarchy/memNICBase.h:202:17: note: 'networkReady' is false
+            if (networkReady && !initMsgSent) {
+                ^
+/home/sabbir/sst-elements-org/memHierarchy/memNICBase.h:202:30: note: Left side of '&&' is false
+            if (networkReady && !initMsgSent) {
+                             ^
+/home/sabbir/sst-elements-org/memHierarchy/memNICBase.h:219:13: note: Loop condition is true.  Entering loop body
+            while (SST::Interfaces::SimpleNetwork::Request *req = linkcontrol->recvInitData()) {
+            ^
+/home/sabbir/sst-elements-org/memHierarchy/memNICBase.h:220:35: note: Calling 'Request::takePayload'
+                Event * payload = req->takePayload();
+                                  ^
+/usr/local/include/sst/core/interfaces/simpleNetwork.h:84:13: note: 'ret' initialized here
+            Event* ret = payload;
+            ^
+/usr/local/include/sst/core/interfaces/simpleNetwork.h:86:13: note: Returning pointer (loaded from 'ret'), which participates in a condition later
+            return ret;
+            ^
+/usr/local/include/sst/core/interfaces/simpleNetwork.h:86:13: note: Returning pointer (loaded from 'ret')
+/home/sabbir/sst-elements-org/memHierarchy/memNICBase.h:220:35: note: Returning from 'Request::takePayload'
+                Event * payload = req->takePayload();
+                                  ^
+/home/sabbir/sst-elements-org/memHierarchy/memNICBase.h:220:17: note: 'payload' initialized here
+                Event * payload = req->takePayload();
+                ^
+/home/sabbir/sst-elements-org/memHierarchy/memNICBase.h:222:21: note: Assuming pointer value is null
+                if (imre) {
+                    ^
+/home/sabbir/sst-elements-org/memHierarchy/memNICBase.h:222:21: note: Assuming 'imre' is null
+/home/sabbir/sst-elements-org/memHierarchy/memNICBase.h:222:17: note: Taking false branch
+                if (imre) {
+                ^
+/home/sabbir/sst-elements-org/memHierarchy/memNICBase.h:228:21: note: 'mre' initialized to a null pointer value
+                    MemRtrEvent * mre = static_cast<MemRtrEvent*>(payload);
+                    ^
+/home/sabbir/sst-elements-org/memHierarchy/memNICBase.h:229:67: note: Access to field 'event' results in a dereference of a null pointer (loaded from variable 'mre')
+                    MemEventInit *ev = static_cast<MemEventInit*>(mre->event);
+                                                                  ^
+clang-tidy -export-fixes /tmp/tmpozgf1wl6/tmps5x6dz6s.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/memHierarchyInterface.cc
+/home/sabbir/sst-elements-org/memHierarchy/customcmd/../memEventBase.h:49:9: warning: Call to virtual method 'MemEventBase::setDefaults' during construction bypasses virtual dispatch [clang-analyzer-optin.cplusplus.VirtualCall]
+        setDefaults();
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/memHierarchyInterface.cc:92:28: note: Calling constructor for 'MemEventInit'
+    MemEventInit *me = new MemEventInit(getName(), Command::GetX, req->addrs[0], req->data);
+                           ^
+/home/sabbir/sst-elements-org/memHierarchy/customcmd/../memEventBase.h:252:9: note: Calling constructor for 'MemEventBase'
+        MemEventBase(src, cmd), initCmd_(InitCommand::Data), addr_(addr), payload_(data) { }
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/customcmd/../memEventBase.h:49:9: note: Call to virtual method 'MemEventBase::setDefaults' during construction bypasses virtual dispatch
+        setDefaults();
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/memHierarchyInterface.cc:213:13: warning: Value stored to 'cmd' during its initialization is never read [clang-analyzer-deadcode.DeadStores]
+    Command cmd = ev->getCmd();
+            ^
+/home/sabbir/sst-elements-org/memHierarchy/memHierarchyInterface.cc:213:13: note: Value stored to 'cmd' during its initialization is never read
+/home/sabbir/sst-elements-org/memHierarchy/memHierarchyInterface.cc:213:13: warning: unused variable 'cmd' [clang-diagnostic-unused-variable]
+    Command cmd = ev->getCmd();
+            ^
+clang-tidy -export-fixes /tmp/tmpozgf1wl6/tmplm25chs4.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/directoryController.cc
+/home/sabbir/sst-elements-org/memHierarchy/directoryController.cc:389:12: warning: Value stored to 'entries' during its initialization is never read [clang-analyzer-deadcode.DeadStores]
+    size_t entries = retryBuffer.size();
+           ^
+/home/sabbir/sst-elements-org/memHierarchy/directoryController.cc:389:12: note: Value stored to 'entries' during its initialization is never read
+/home/sabbir/sst-elements-org/memHierarchy/directoryController.cc:389:12: warning: unused variable 'entries' [clang-diagnostic-unused-variable]
+    size_t entries = retryBuffer.size();
+           ^
+/home/sabbir/sst-elements-org/memHierarchy/directoryController.cc:675:21: warning: misleading indentation; statement is not part of the previous 'else' [clang-diagnostic-misleading-indentation]
+                    memLink->sendInitData(ev);
+                    ^
+/home/sabbir/sst-elements-org/memHierarchy/directoryController.cc:673:17: note: previous statement is here
+                else
+                ^
+/home/sabbir/sst-elements-org/memHierarchy/directoryController.cc:1612:20: warning: unused variable 'status' [clang-diagnostic-unused-variable]
+    MemEventStatus status = MemEventStatus::OK;
+                   ^
+/home/sabbir/sst-elements-org/memHierarchy/directoryController.cc:1731:11: warning: Value stored to 'state' during its initialization is never read [clang-analyzer-deadcode.DeadStores]
+    State state = entry->getState();
+          ^
+/home/sabbir/sst-elements-org/memHierarchy/directoryController.cc:1731:11: note: Value stored to 'state' during its initialization is never read
+/home/sabbir/sst-elements-org/memHierarchy/directoryController.cc:1746:62: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+bool DirectoryController::handleAckInv(MemEvent* event, bool inMSHR) {
+                                                             ^
+/home/sabbir/sst-elements-org/memHierarchy/directoryController.cc:1802:66: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+bool DirectoryController::handleFetchXResp(MemEvent* event, bool inMSHR) {
+                                                                 ^
+/home/sabbir/sst-elements-org/memHierarchy/directoryController.cc:1835:65: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+bool DirectoryController::handleFetchResp(MemEvent* event, bool inMSHR) {
+                                                                ^
+/home/sabbir/sst-elements-org/memHierarchy/directoryController.cc:1847:16: warning: Value stored to 'reqEv' during its initialization is never read [clang-analyzer-deadcode.DeadStores]
+    MemEvent * reqEv = static_cast<MemEvent*>(mshr->getFrontEvent(addr));
+               ^
+/home/sabbir/sst-elements-org/memHierarchy/directoryController.cc:1847:16: note: Value stored to 'reqEv' during its initialization is never read
+/home/sabbir/sst-elements-org/memHierarchy/directoryController.cc:1847:16: warning: unused variable 'reqEv' [clang-diagnostic-unused-variable]
+    MemEvent * reqEv = static_cast<MemEvent*>(mshr->getFrontEvent(addr));
+               ^
+/home/sabbir/sst-elements-org/memHierarchy/directoryController.cc:1872:60: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+bool DirectoryController::handleNACK(MemEvent* event, bool inMSHR) {
+                                                           ^
+/home/sabbir/sst-elements-org/memHierarchy/directoryController.cc:2009:71: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+void DirectoryController::cleanUpAfterResponse(MemEvent * event, bool inMSHR) {
+                                                                      ^
+/home/sabbir/sst-elements-org/memHierarchy/directoryController.cc:2063:55: warning: unused parameter 'entry' [clang-diagnostic-unused-parameter]
+void DirectoryController::sendEntryToMemory(DirEntry *entry) {
+                                                      ^
+/home/sabbir/sst-elements-org/memHierarchy/directoryController.cc:2172:71: warning: unused parameter 'entry' [clang-diagnostic-unused-parameter]
+void DirectoryController::sendDataResponse(MemEvent* event, DirEntry* entry, std::vector<uint8_t>& data, Command cmd, uint32_t flags) {
+                                                                      ^
+/home/sabbir/sst-elements-org/memHierarchy/directoryController.cc:2251:10: warning: Value stored to 'addr' during its initialization is never read [clang-analyzer-deadcode.DeadStores]
+    Addr addr = event->getBaseAddr();
+         ^
+/home/sabbir/sst-elements-org/memHierarchy/directoryController.cc:2251:10: note: Value stored to 'addr' during its initialization is never read
+/home/sabbir/sst-elements-org/memHierarchy/directoryController.cc:2251:10: warning: unused variable 'addr' [clang-diagnostic-unused-variable]
+    Addr addr = event->getBaseAddr();
+         ^
+/home/sabbir/sst-elements-org/memHierarchy/directoryController.cc:2269:10: warning: unused variable 'debugLine' [clang-diagnostic-unused-variable]
+    bool debugLine = false;
+         ^
+/home/sabbir/sst-elements-org/memHierarchy/memEventBase.h:49:9: warning: Call to virtual method 'MemEventBase::setDefaults' during construction bypasses virtual dispatch [clang-analyzer-optin.cplusplus.VirtualCall]
+        setDefaults();
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/directoryController.cc:2030:9: note: Assuming 0 is equal to field 'entryCacheMaxSize'
+    if (0 == entryCacheMaxSize) {
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/directoryController.cc:2030:5: note: Taking true branch
+    if (0 == entryCacheMaxSize) {
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/directoryController.cc:2031:9: note: Calling 'DirectoryController::sendEntryToMemory'
+        sendEntryToMemory(entry);
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/directoryController.cc:2065:25: note: Calling constructor for 'MemEvent'
+    MemEvent * me = new MemEvent(getName(), entryAddr, entryAddr, Command::PutE, lineSize);
+                        ^
+/home/sabbir/sst-elements-org/memHierarchy/memEvent.h:74:87: note: Calling constructor for 'MemEventBase'
+    MemEvent(std::string src, Addr addr, Addr baseAddr, Command cmd, uint32_t size) : MemEventBase(src, cmd) {
+                                                                                      ^
+/home/sabbir/sst-elements-org/memHierarchy/memEventBase.h:49:9: note: Call to virtual method 'MemEventBase::setDefaults' during construction bypasses virtual dispatch
+        setDefaults();
+        ^
+clang-tidy -export-fixes /tmp/tmpozgf1wl6/tmpd35xhmtp.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/memHierarchyScratchInterface.cc
+/home/sabbir/sst-elements-org/memHierarchy/memEventBase.h:49:9: warning: Call to virtual method 'MemEventBase::setDefaults' during construction bypasses virtual dispatch [clang-analyzer-optin.cplusplus.VirtualCall]
+        setDefaults();
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/memHierarchyScratchInterface.cc:88:32: note: Calling constructor for 'MemEventInit'
+    MemEventInit * event = new MemEventInit(getName(), Command::GetX, req->addrs[0], req->data);
+                               ^
+/home/sabbir/sst-elements-org/memHierarchy/memEventBase.h:252:9: note: Calling constructor for 'MemEventBase'
+        MemEventBase(src, cmd), initCmd_(InitCommand::Data), addr_(addr), payload_(data) { }
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/memEventBase.h:49:9: note: Call to virtual method 'MemEventBase::setDefaults' during construction bypasses virtual dispatch
+        setDefaults();
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/memHierarchyScratchInterface.cc:196:13: warning: Value stored to 'cmd' during its initialization is never read [clang-analyzer-deadcode.DeadStores]
+    Command cmd = ev->getCmd();
+            ^
+/home/sabbir/sst-elements-org/memHierarchy/memHierarchyScratchInterface.cc:196:13: note: Value stored to 'cmd' during its initialization is never read
+/home/sabbir/sst-elements-org/memHierarchy/memHierarchyScratchInterface.cc:196:13: warning: unused variable 'cmd' [clang-diagnostic-unused-variable]
+    Command cmd = ev->getCmd();
+            ^
+clang-tidy -export-fixes /tmp/tmpozgf1wl6/tmp3z8rt56r.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/scratchpad.cc
+/home/sabbir/sst-elements-org/memHierarchy/memEventBase.h:49:9: warning: Call to virtual method 'MemEventBase::setDefaults' during construction bypasses virtual dispatch [clang-analyzer-optin.cplusplus.VirtualCall]
+        setDefaults();
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/scratchpad.cc:274:9: note: Assuming field 'linkUp_' is equal to field 'linkDown_'
+    if (linkUp_ != linkDown_) linkDown_->init(phase);
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/scratchpad.cc:274:5: note: Taking false branch
+    if (linkUp_ != linkDown_) linkDown_->init(phase);
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/scratchpad.cc:277:9: note: Assuming 'phase' is 0
+    if (!phase) {
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/scratchpad.cc:277:5: note: Taking true branch
+    if (!phase) {
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/scratchpad.cc:278:37: note: Calling constructor for 'MemEventInitCoherence'
+        linkDown_->sendInitData(new MemEventInitCoherence(getName(), Endpoint::Scratchpad, true, true, scratchLineSize_, true));
+                                    ^
+/home/sabbir/sst-elements-org/memHierarchy/memEventBase.h:320:9: note: Calling constructor for 'MemEventInit'
+        MemEventInit(src, InitCommand::Coherence), type_(type), inclusive_(inclusive), sendWBAck_(sendWBAck), recvWBAck_(false), lineSize_(lineSize), tracksPresence_(tracksPresence) { }
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/memEventBase.h:248:54: note: Calling constructor for 'MemEventBase'
+    MemEventInit(std::string src, InitCommand cmd) : MemEventBase(src, Command::NULLCMD), initCmd_(cmd) { }
+                                                     ^
+/home/sabbir/sst-elements-org/memHierarchy/memEventBase.h:49:9: note: Call to virtual method 'MemEventBase::setDefaults' during construction bypasses virtual dispatch
+        setDefaults();
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/scratchpad.cc:506:10: warning: Value stored to 'addr' during its initialization is never read [clang-analyzer-deadcode.DeadStores]
+    Addr addr = ev->getBaseAddr();
+         ^
+/home/sabbir/sst-elements-org/memHierarchy/scratchpad.cc:506:10: note: Value stored to 'addr' during its initialization is never read
+/home/sabbir/sst-elements-org/memHierarchy/scratchpad.cc:563:10: warning: Value stored to 'addr' during its initialization is never read [clang-analyzer-deadcode.DeadStores]
+    Addr addr = ev->getBaseAddr();
+         ^
+/home/sabbir/sst-elements-org/memHierarchy/scratchpad.cc:563:10: note: Value stored to 'addr' during its initialization is never read
+/home/sabbir/sst-elements-org/memHierarchy/scratchpad.cc:568:10: warning: unused variable 'doWrite' [clang-diagnostic-unused-variable]
+    bool doWrite = false; // Decide whether to handle this write immediately EVEN if a conflict
+         ^
+/home/sabbir/sst-elements-org/memHierarchy/scratchpad.cc:569:10: warning: unused variable 'inserted' [clang-diagnostic-unused-variable]
+    bool inserted = false;
+         ^
+/home/sabbir/sst-elements-org/memHierarchy/scratchpad.cc:638:26: warning: Use of memory after it is freed [clang-analyzer-cplusplus.NewDelete]
+        if (caching_ && !ev->queryFlag(MemEvent::F_NONCACHEABLE)) {
+                         ^
+/home/sabbir/sst-elements-org/memHierarchy/scratchpad.cc:329:9: note: Assuming the condition is false
+    if (ev->getCmd() == Command::GetSResp || ev->getCmd() == Command::GetXResp)
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/scratchpad.cc:329:9: note: Left side of '||' is false
+/home/sabbir/sst-elements-org/memHierarchy/scratchpad.cc:329:46: note: Assuming the condition is false
+    if (ev->getCmd() == Command::GetSResp || ev->getCmd() == Command::GetXResp)
+                                             ^
+/home/sabbir/sst-elements-org/memHierarchy/scratchpad.cc:329:5: note: Taking false branch
+    if (ev->getCmd() == Command::GetSResp || ev->getCmd() == Command::GetXResp)
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/scratchpad.cc:332:9: note: Calling 'Scratchpad::processIncomingCPUEvent'
+        processIncomingCPUEvent(event);
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/scratchpad.cc:347:5: note: Taking false branch
+    if (is_debug_event(ev))
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/scratchpad.cc:353:5: note: Control jumps to 'case GetX:'  at line 357
+    switch(cmd) {
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/scratchpad.cc:361:13: note: Calling 'Scratchpad::handleWrite'
+            handleWrite(ev);
+            ^
+/home/sabbir/sst-elements-org/memHierarchy/scratchpad.cc:484:9: note: Assuming the condition is true
+    if (ev->getAddr() < scratchSize_) {
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/scratchpad.cc:484:5: note: Taking true branch
+    if (ev->getAddr() < scratchSize_) {
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/scratchpad.cc:485:13: note: Assuming the condition is false
+        if (ev->isWriteback() || ev->queryFlag(MemEvent::F_NONCACHEABLE)) {
+            ^
+/home/sabbir/sst-elements-org/memHierarchy/scratchpad.cc:485:13: note: Left side of '||' is false
+/home/sabbir/sst-elements-org/memHierarchy/scratchpad.cc:485:34: note: Assuming the condition is true
+        if (ev->isWriteback() || ev->queryFlag(MemEvent::F_NONCACHEABLE)) {
+                                 ^
+/home/sabbir/sst-elements-org/memHierarchy/scratchpad.cc:485:9: note: Taking true branch
+        if (ev->isWriteback() || ev->queryFlag(MemEvent::F_NONCACHEABLE)) {
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/scratchpad.cc:486:13: note: Calling 'Scratchpad::handleScratchWrite'
+            handleScratchWrite(ev);
+            ^
+/home/sabbir/sst-elements-org/memHierarchy/scratchpad.cc:565:5: note: Taking false branch
+    if (is_debug_addr(addr))
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/scratchpad.cc:571:9: note: Assuming field 'directory_' is true
+    if (!directory_ && ev->isWriteback() && mshr_.find(ev->getBaseAddr()) != mshr_.end()) {
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/scratchpad.cc:571:21: note: Left side of '&&' is false
+    if (!directory_ && ev->isWriteback() && mshr_.find(ev->getBaseAddr()) != mshr_.end()) {
+                    ^
+/home/sabbir/sst-elements-org/memHierarchy/scratchpad.cc:571:5: note: Taking false branch
+    if (!directory_ && ev->isWriteback() && mshr_.find(ev->getBaseAddr()) != mshr_.end()) {
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/scratchpad.cc:588:9: note: Assuming the condition is false
+    if (ev->isWriteback() && !ev->getDirty()) {
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/scratchpad.cc:588:27: note: Left side of '&&' is false
+    if (ev->isWriteback() && !ev->getDirty()) {
+                          ^
+/home/sabbir/sst-elements-org/memHierarchy/scratchpad.cc:609:9: note: Field 'directory_' is true
+    if (directory_ && ev->isWriteback() && mshr_.find(ev->getBaseAddr()) != mshr_.end()) {
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/scratchpad.cc:609:9: note: Left side of '&&' is true
+/home/sabbir/sst-elements-org/memHierarchy/scratchpad.cc:609:23: note: Assuming the condition is false
+    if (directory_ && ev->isWriteback() && mshr_.find(ev->getBaseAddr()) != mshr_.end()) {
+                      ^
+/home/sabbir/sst-elements-org/memHierarchy/scratchpad.cc:609:41: note: Left side of '&&' is false
+    if (directory_ && ev->isWriteback() && mshr_.find(ev->getBaseAddr()) != mshr_.end()) {
+                                        ^
+/home/sabbir/sst-elements-org/memHierarchy/scratchpad.cc:609:5: note: Taking false branch
+    if (directory_ && ev->isWriteback() && mshr_.find(ev->getBaseAddr()) != mshr_.end()) {
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/scratchpad.cc:633:9: note: Assuming the condition is true
+    if (mshr_.find(ev->getBaseAddr()) == mshr_.end()) {
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/scratchpad.cc:633:5: note: Taking true branch
+    if (mshr_.find(ev->getBaseAddr()) == mshr_.end()) {
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/scratchpad.cc:636:9: note: Memory is released
+        delete ev;
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/scratchpad.cc:638:13: note: Assuming field 'caching_' is true
+        if (caching_ && !ev->queryFlag(MemEvent::F_NONCACHEABLE)) {
+            ^
+/home/sabbir/sst-elements-org/memHierarchy/scratchpad.cc:638:13: note: Left side of '&&' is true
+/home/sabbir/sst-elements-org/memHierarchy/scratchpad.cc:638:26: note: Use of memory after it is freed
+        if (caching_ && !ev->queryFlag(MemEvent::F_NONCACHEABLE)) {
+                         ^
+/home/sabbir/sst-elements-org/memHierarchy/scratchpad.cc:668:10: warning: Value stored to 'saddr' during its initialization is never read [clang-analyzer-deadcode.DeadStores]
+    Addr saddr = ev->getSrcBaseAddr();
+         ^
+/home/sabbir/sst-elements-org/memHierarchy/scratchpad.cc:668:10: note: Value stored to 'saddr' during its initialization is never read
+/home/sabbir/sst-elements-org/memHierarchy/scratchpad.cc:669:10: warning: Value stored to 'daddr' during its initialization is never read [clang-analyzer-deadcode.DeadStores]
+    Addr daddr = ev->getDstBaseAddr();
+         ^
+/home/sabbir/sst-elements-org/memHierarchy/scratchpad.cc:669:10: note: Value stored to 'daddr' during its initialization is never read
+clang-tidy -export-fixes /tmp/tmpozgf1wl6/tmpfpk9b94a.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/coherencemgr/coherenceController.cc
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/coherenceController.cc:25:102: warning: unused parameter 'prefetch' [clang-diagnostic-unused-parameter]
+CoherenceController::CoherenceController(ComponentId_t id, Params &params, Params& ownerParams, bool prefetch) : SubComponent(id) {
+                                                                                                     ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/coherenceController.cc:161:25: warning: Value stored to 'ht' is never read [clang-analyzer-deadcode.DeadStores]
+    if (hashFunc == 1)  ht = loadAnonymousSubComponent<HashFunction>("memHierarchy.hash.linear", "hash", 0, ComponentInfo::SHARE_NONE, hparams);
+                        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/coherenceController.cc:161:25: note: Value stored to 'ht' is never read
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/coherenceController.cc:172:60: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+bool CoherenceController::handleGetS(MemEvent* event, bool inMSHR) {
+                                                           ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/coherenceController.cc:178:60: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+bool CoherenceController::handleGetX(MemEvent* event, bool inMSHR) {
+                                                           ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/coherenceController.cc:184:61: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+bool CoherenceController::handleGetSX(MemEvent* event, bool inMSHR) {
+                                                            ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/coherenceController.cc:190:65: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+bool CoherenceController::handleFlushLine(MemEvent* event, bool inMSHR) {
+                                                                ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/coherenceController.cc:196:68: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+bool CoherenceController::handleFlushLineInv(MemEvent* event, bool inMSHR) {
+                                                                   ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/coherenceController.cc:202:60: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+bool CoherenceController::handlePutS(MemEvent* event, bool inMSHR) {
+                                                           ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/coherenceController.cc:208:60: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+bool CoherenceController::handlePutX(MemEvent* event, bool inMSHR) {
+                                                           ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/coherenceController.cc:214:60: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+bool CoherenceController::handlePutE(MemEvent* event, bool inMSHR) {
+                                                           ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/coherenceController.cc:220:60: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+bool CoherenceController::handlePutM(MemEvent* event, bool inMSHR) {
+                                                           ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/coherenceController.cc:226:64: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+bool CoherenceController::handleGetSResp(MemEvent* event, bool inMSHR) {
+                                                               ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/coherenceController.cc:232:64: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+bool CoherenceController::handleGetXResp(MemEvent* event, bool inMSHR) {
+                                                               ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/coherenceController.cc:238:69: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+bool CoherenceController::handleFlushLineResp(MemEvent* event, bool inMSHR) {
+                                                                    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/coherenceController.cc:244:62: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+bool CoherenceController::handleAckPut(MemEvent* event, bool inMSHR) {
+                                                             ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/coherenceController.cc:250:61: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+bool CoherenceController::handleFetch(MemEvent* event, bool inMSHR) {
+                                                            ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/coherenceController.cc:256:64: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+bool CoherenceController::handleFetchInv(MemEvent* event, bool inMSHR) {
+                                                               ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/coherenceController.cc:262:65: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+bool CoherenceController::handleFetchInvX(MemEvent* event, bool inMSHR) {
+                                                                ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/coherenceController.cc:268:64: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+bool CoherenceController::handleForceInv(MemEvent* event, bool inMSHR) {
+                                                               ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/coherenceController.cc:274:59: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+bool CoherenceController::handleInv(MemEvent* event, bool inMSHR) {
+                                                          ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/coherenceController.cc:280:65: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+bool CoherenceController::handleFetchResp(MemEvent* event, bool inMSHR) {
+                                                                ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/coherenceController.cc:286:66: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+bool CoherenceController::handleFetchXResp(MemEvent* event, bool inMSHR) {
+                                                                 ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/coherenceController.cc:292:62: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+bool CoherenceController::handleAckInv(MemEvent* event, bool inMSHR) {
+                                                             ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/coherenceController.cc:298:63: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+bool CoherenceController::handleNULLCMD(MemEvent* event, bool inMSHR) {
+                                                              ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/coherenceController.cc:304:60: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+bool CoherenceController::handleNACK(MemEvent* event, bool inMSHR) {
+                                                           ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/coherenceController.cc:457:23: warning: comparison of integers of different signs: 'int' and 'std::vector::size_type' (aka 'unsigned long') [clang-diagnostic-sign-compare]
+    for (int i = 0; i < listeners_.size(); i++)
+                      ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/coherenceController.cc:465:23: warning: comparison of integers of different signs: 'int' and 'std::vector::size_type' (aka 'unsigned long') [clang-diagnostic-sign-compare]
+    for (int i = 0; i < listeners_.size(); i++) {
+                      ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/coherenceController.cc:554:149: warning: unused parameter 'atomic' [clang-diagnostic-unused-parameter]
+uint64_t CoherenceController::sendResponseUp(MemEvent * event, Command cmd, vector<uint8_t>* data, bool dirty, bool replay, uint64_t baseTime, bool atomic) {
+                                                                                                                                                    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/coherenceController.cc:580:32: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'int' [clang-diagnostic-sign-compare]
+        if (dropPrefetchLevel_ <= mshr_->getSize()) {
+                               ^
+clang-tidy -export-fixes /tmp/tmpozgf1wl6/tmphukj78eo.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_L1.cc
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/../memEventBase.h:49:9: warning: Call to virtual method 'MemEventBase::setDefaults' during construction bypasses virtual dispatch [clang-analyzer-optin.cplusplus.VirtualCall]
+        setDefaults();
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_L1.cc:1449:16: note: Calling constructor for 'MemEventInitCoherence'
+    return new MemEventInitCoherence(cachename_, Endpoint::Cache, true, false, false, lineSize_, true);
+               ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/../memEventBase.h:322:9: note: Calling constructor for 'MemEventInit'
+        MemEventInit(src, InitCommand::Coherence), type_(type), inclusive_(inclusive), sendWBAck_(sendWBAck), recvWBAck_(recvWBAck), lineSize_(lineSize), tracksPresence_(tracksPresence) { }
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/../memEventBase.h:248:54: note: Calling constructor for 'MemEventBase'
+    MemEventInit(std::string src, InitCommand cmd) : MemEventBase(src, Command::NULLCMD), initCmd_(cmd) { }
+                                                     ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/../memEventBase.h:49:9: note: Call to virtual method 'MemEventBase::setDefaults' during construction bypasses virtual dispatch
+        setDefaults();
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_L1.cc:265:10: warning: unused variable 'atomic' [clang-diagnostic-unused-variable]
+    bool atomic = true;
+         ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_L1.cc:283:17: warning: Called C++ object pointer is null [clang-analyzer-core.CallAndMessage]
+                line->setState(IM);
+                ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_L1.cc:248:5: note: 'line' initialized here
+    L1CacheLine * line = cacheArray_->lookup(addr, true);
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_L1.cc:249:19: note: Assuming 'line' is null
+    State state = line ? line->getState() : I;
+                  ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_L1.cc:249:19: note: '?' condition is false
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_L1.cc:251:9: note: Assuming 'inMSHR' is false
+    if (inMSHR)
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_L1.cc:251:5: note: Taking false branch
+    if (inMSHR)
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_L1.cc:254:5: note: Taking false branch
+    if (is_debug_addr(addr))
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_L1.cc:259:9: note: 'state' is not equal to S
+    if (state == S && lastLevel_) {
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_L1.cc:259:20: note: Left side of '&&' is false
+    if (state == S && lastLevel_) {
+                   ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_L1.cc:269:5: note: Control jumps to 'case I:'  at line 270
+    switch (state) {
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_L1.cc:273:17: note: 'status' is equal to OK
+            if (status == MemEventStatus::OK) {
+                ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_L1.cc:273:13: note: Taking true branch
+            if (status == MemEventStatus::OK) {
+            ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_L1.cc:274:21: note: Assuming the condition is false
+                if (!mshr_->getProfiled(addr)) {
+                    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_L1.cc:274:17: note: Taking false branch
+                if (!mshr_->getProfiled(addr)) {
+                ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_L1.cc:283:17: note: Called C++ object pointer is null
+                line->setState(IM);
+                ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_L1.cc:773:5: warning: Called C++ object pointer is null [clang-analyzer-core.CallAndMessage]
+    line->setData(event->getPayload(), 0);
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_L1.cc:759:5: note: 'line' initialized here
+    L1CacheLine * line = cacheArray_->lookup(addr, false);
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_L1.cc:760:19: note: Assuming 'line' is null
+    State state = line ? line->getState() : I;
+                  ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_L1.cc:760:19: note: '?' condition is false
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_L1.cc:765:26: note: Assuming the condition is false
+    bool localPrefetch = req->isPrefetch() && (req->getRqstr() == cachename_);
+                         ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_L1.cc:765:44: note: Left side of '&&' is false
+    bool localPrefetch = req->isPrefetch() && (req->getRqstr() == cachename_);
+                                           ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_L1.cc:767:5: note: Taking false branch
+    if (is_debug_addr(addr))
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_L1.cc:773:5: note: Called C++ object pointer is null
+    line->setData(event->getPayload(), 0);
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_L1.cc:950:51: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+bool MESIL1::handleNULLCMD(MemEvent * event, bool inMSHR) {
+                                                  ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_L1.cc:1003:47: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+bool MESIL1::handleNACK(MemEvent* event, bool inMSHR) {
+                                              ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_L1.cc:1006:11: warning: Value stored to 'state' during its initialization is never read [clang-analyzer-deadcode.DeadStores]
+    State state = line ? line->getState() : I;
+          ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_L1.cc:1006:11: note: Value stored to 'state' during its initialization is never read
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_L1.cc:1159:13: warning: Value stored to 'cmd' during its initialization is never read [clang-analyzer-deadcode.DeadStores]
+    Command cmd = event->getCmd();
+            ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_L1.cc:1159:13: note: Value stored to 'cmd' during its initialization is never read
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_L1.cc:1159:13: warning: unused variable 'cmd' [clang-diagnostic-unused-variable]
+    Command cmd = event->getCmd();
+            ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_L1.cc:1173:17: warning: misleading indentation; statement is not part of the previous 'if' [clang-diagnostic-misleading-indentation]
+                mshr_->addPendingRetry(addr);
+                ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_L1.cc:1171:13: note: previous statement is here
+            if (!mshr_->getInProgress(addr))
+            ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_L1.cc:1188:57: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+void MESIL1::cleanUpAfterResponse(MemEvent* event, bool inMSHR) {
+                                                        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_L1.cc:1251:13: warning: Value stored to 'cmd' during its initialization is never read [clang-analyzer-deadcode.DeadStores]
+    Command cmd = event->getCmd();
+            ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_L1.cc:1251:13: note: Value stored to 'cmd' during its initialization is never read
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_L1.cc:1251:13: warning: unused variable 'cmd' [clang-diagnostic-unused-variable]
+    Command cmd = event->getCmd();
+            ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_L1.cc:1324:10: warning: unused variable 'payload' [clang-diagnostic-unused-variable]
+    bool payload = false;
+         ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_L1.cc:1482:29: warning: unused parameter 'addr' [clang-diagnostic-unused-parameter]
+void MESIL1::printLine(Addr addr) { }
+                            ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_L1.cc:1483:29: warning: unused parameter 'addr' [clang-diagnostic-unused-parameter]
+void MESIL1::printData(Addr addr) { }
+                            ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_L1.cc:1484:41: warning: unused parameter 'data' [clang-diagnostic-unused-parameter]
+void MESIL1::printData(vector<uint8_t>* data, bool set) { }
+                                        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_L1.cc:1484:52: warning: unused parameter 'set' [clang-diagnostic-unused-parameter]
+void MESIL1::printData(vector<uint8_t>* data, bool set) { }
+                                                   ^
+clang-tidy -export-fixes /tmp/tmpozgf1wl6/tmp_6b9vnfg.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Private_Noninclusive.cc
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/../memEventBase.h:49:9: warning: Call to virtual method 'MemEventBase::setDefaults' during construction bypasses virtual dispatch [clang-analyzer-optin.cplusplus.VirtualCall]
+        setDefaults();
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Private_Noninclusive.cc:2318:16: note: Calling constructor for 'MemEventInitCoherence'
+    return new MemEventInitCoherence(cachename_, Endpoint::Cache, false, true, true, lineSize_, true);
+               ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/../memEventBase.h:322:9: note: Calling constructor for 'MemEventInit'
+        MemEventInit(src, InitCommand::Coherence), type_(type), inclusive_(inclusive), sendWBAck_(sendWBAck), recvWBAck_(recvWBAck), lineSize_(lineSize), tracksPresence_(tracksPresence) { }
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/../memEventBase.h:248:54: note: Calling constructor for 'MemEventBase'
+    MemEventInit(std::string src, InitCommand cmd) : MemEventBase(src, Command::NULLCMD), initCmd_(cmd) { }
+                                                     ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/../memEventBase.h:49:9: note: Call to virtual method 'MemEventBase::setDefaults' during construction bypasses virtual dispatch
+        setDefaults();
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Private_Noninclusive.cc:47:13: warning: unused variable 'respcmd' [clang-diagnostic-unused-variable]
+    Command respcmd;
+            ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Private_Noninclusive.cc:66:17: warning: Value stored to 'sendTime' is never read [clang-analyzer-deadcode.DeadStores]
+                sendTime = forwardMessage(event, event->getSize(), 0, nullptr);
+                ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Private_Noninclusive.cc:66:17: note: Value stored to 'sendTime' is never read
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Private_Noninclusive.cc:337:14: warning: unused variable 'sendTime' [clang-diagnostic-unused-variable]
+    uint64_t sendTime;
+             ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Private_Noninclusive.cc:1471:10: warning: Value stored to 'offset' during its initialization is never read [clang-analyzer-deadcode.DeadStores]
+    Addr offset = req->getAddr() - req->getBaseAddr();
+         ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Private_Noninclusive.cc:1471:10: note: Value stored to 'offset' during its initialization is never read
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Private_Noninclusive.cc:1471:10: warning: unused variable 'offset' [clang-diagnostic-unused-variable]
+    Addr offset = req->getAddr() - req->getBaseAddr();
+         ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Private_Noninclusive.cc:1716:64: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+bool MESIPrivNoninclusive::handleNULLCMD(MemEvent* event, bool inMSHR) {
+                                                               ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Private_Noninclusive.cc:1764:61: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+bool MESIPrivNoninclusive::handleNACK(MemEvent* event, bool inMSHR) {
+                                                            ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Private_Noninclusive.cc:1768:24: warning: Value stored to 'line' during its initialization is never read [clang-analyzer-deadcode.DeadStores]
+    PrivateCacheLine * line = cacheArray_->lookup(event->getBaseAddr(), false);
+                       ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Private_Noninclusive.cc:1768:24: note: Value stored to 'line' during its initialization is never read
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Private_Noninclusive.cc:1816:40: warning: Use of memory after it is freed [clang-analyzer-cplusplus.NewDelete]
+                    getName().c_str(), event->getVerboseString().c_str(), nackedEvent ? nackedEvent->getVerboseString().c_str() : "nullptr", getCurrentSimTimeNano());
+                                       ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Private_Noninclusive.cc:1770:9: note: Left side of '||' is false
+    if (is_debug_event(event) || is_debug_event(nackedEvent)) {
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Private_Noninclusive.cc:29:28: note: expanded from macro 'is_debug_event'
+#define is_debug_event(ev) false
+                           ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Private_Noninclusive.cc:1770:5: note: Taking false branch
+    if (is_debug_event(event) || is_debug_event(nackedEvent)) {
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Private_Noninclusive.cc:1774:5: note: Memory is released
+    delete event;
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Private_Noninclusive.cc:1776:5: note: Control jumps to the 'default' case at line 1814
+    switch (cmd) {
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Private_Noninclusive.cc:1816:40: note: Use of memory after it is freed
+                    getName().c_str(), event->getVerboseString().c_str(), nackedEvent ? nackedEvent->getVerboseString().c_str() : "nullptr", getCurrentSimTimeNano());
+                                       ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Private_Noninclusive.cc:1884:10: warning: unused variable 'evict' [clang-diagnostic-unused-variable]
+    bool evict = false;
+         ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Private_Noninclusive.cc:1885:10: warning: unused variable 'wbSent' [clang-diagnostic-unused-variable]
+    bool wbSent = false;
+         ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Private_Noninclusive.cc:2010:13: warning: Value stored to 'cmd' during its initialization is never read [clang-analyzer-deadcode.DeadStores]
+    Command cmd = event->getCmd();
+            ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Private_Noninclusive.cc:2010:13: note: Value stored to 'cmd' during its initialization is never read
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Private_Noninclusive.cc:2010:13: warning: unused variable 'cmd' [clang-diagnostic-unused-variable]
+    Command cmd = event->getCmd();
+            ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Private_Noninclusive.cc:2023:13: warning: Value stored to 'cmd' during its initialization is never read [clang-analyzer-deadcode.DeadStores]
+    Command cmd = event->getCmd();
+            ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Private_Noninclusive.cc:2023:13: note: Value stored to 'cmd' during its initialization is never read
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Private_Noninclusive.cc:2023:13: warning: unused variable 'cmd' [clang-diagnostic-unused-variable]
+    Command cmd = event->getCmd();
+            ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Private_Noninclusive.cc:2047:71: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+void MESIPrivNoninclusive::cleanUpAfterResponse(MemEvent* event, bool inMSHR) {
+                                                                      ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Private_Noninclusive.cc:2201:10: warning: unused variable 'payload' [clang-diagnostic-unused-variable]
+    bool payload = false;
+         ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Private_Noninclusive.cc:2332:56: warning: unused parameter 'data' [clang-diagnostic-unused-parameter]
+void MESIPrivNoninclusive::printData(vector<uint8_t> * data, bool set) {
+                                                       ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Private_Noninclusive.cc:2332:67: warning: unused parameter 'set' [clang-diagnostic-unused-parameter]
+void MESIPrivNoninclusive::printData(vector<uint8_t> * data, bool set) {
+                                                                  ^
+clang-tidy -export-fixes /tmp/tmpozgf1wl6/tmpkyxes0a4.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent_L1.cc
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/../memEventBase.h:49:9: warning: Call to virtual method 'MemEventBase::setDefaults' during construction bypasses virtual dispatch [clang-analyzer-optin.cplusplus.VirtualCall]
+        setDefaults();
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent_L1.cc:811:16: note: Calling constructor for 'MemEventInitCoherence'
+    return new MemEventInitCoherence(cachename_, Endpoint::Cache, true, false, false, lineSize_, true);
+               ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/../memEventBase.h:322:9: note: Calling constructor for 'MemEventInit'
+        MemEventInit(src, InitCommand::Coherence), type_(type), inclusive_(inclusive), sendWBAck_(sendWBAck), recvWBAck_(recvWBAck), lineSize_(lineSize), tracksPresence_(tracksPresence) { }
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/../memEventBase.h:248:54: note: Calling constructor for 'MemEventBase'
+    MemEventInit(std::string src, InitCommand cmd) : MemEventBase(src, Command::NULLCMD), initCmd_(cmd) { }
+                                                     ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/../memEventBase.h:49:9: note: Call to virtual method 'MemEventBase::setDefaults' during construction bypasses virtual dispatch
+        setDefaults();
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent_L1.cc:323:5: warning: Called C++ object pointer is null [clang-analyzer-core.CallAndMessage]
+    line->setData(event->getPayload(), 0);
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent_L1.cc:349:19: note: Assuming 'line' is null
+    State state = line ? line->getState() : I;
+                  ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent_L1.cc:349:19: note: '?' condition is false
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent_L1.cc:352:9: note: Assuming the condition is true
+    if (req->getCmd() == Command::GetS) {
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent_L1.cc:352:5: note: Taking true branch
+    if (req->getCmd() == Command::GetS) {
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent_L1.cc:353:16: note: Calling 'IncoherentL1::handleGetSResp'
+        return handleGetSResp(event, inMSHR);
+               ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent_L1.cc:313:5: note: 'line' initialized here
+    L1CacheLine * line = cacheArray_->lookup(event->getBaseAddr(), false);
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent_L1.cc:314:19: note: Assuming 'line' is null
+    State state = line ? line->getState() : I;
+                  ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent_L1.cc:314:19: note: '?' condition is false
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent_L1.cc:320:26: note: Assuming the condition is false
+    bool localPrefetch = req->isPrefetch() && (req->getRqstr() == cachename_);
+                         ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent_L1.cc:320:44: note: Left side of '&&' is false
+    bool localPrefetch = req->isPrefetch() && (req->getRqstr() == cachename_);
+                                           ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent_L1.cc:323:5: note: Called C++ object pointer is null
+    line->setData(event->getPayload(), 0);
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent_L1.cc:364:5: warning: Called C++ object pointer is null [clang-analyzer-core.CallAndMessage]
+    line->setData(event->getPayload(), 0);
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent_L1.cc:348:5: note: 'line' initialized here
+    L1CacheLine * line = cacheArray_->lookup(event->getBaseAddr(), false);
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent_L1.cc:349:19: note: Assuming 'line' is null
+    State state = line ? line->getState() : I;
+                  ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent_L1.cc:349:19: note: '?' condition is false
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent_L1.cc:352:9: note: Assuming the condition is false
+    if (req->getCmd() == Command::GetS) {
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent_L1.cc:352:5: note: Taking false branch
+    if (req->getCmd() == Command::GetS) {
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent_L1.cc:358:5: note: Taking false branch
+    if (is_debug_event(event))
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent_L1.cc:364:5: note: Called C++ object pointer is null
+    line->setData(event->getPayload(), 0);
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent_L1.cc:434:56: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+bool IncoherentL1::handleNULLCMD(MemEvent* event, bool inMSHR) {
+                                                       ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent_L1.cc:462:53: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+bool IncoherentL1::handleNACK(MemEvent* event, bool inMSHR) {
+                                                    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent_L1.cc:465:11: warning: Value stored to 'state' during its initialization is never read [clang-analyzer-deadcode.DeadStores]
+    State state = line ? line->getState() : I;
+          ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent_L1.cc:465:11: note: Value stored to 'state' during its initialization is never read
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent_L1.cc:465:11: warning: unused variable 'state' [clang-diagnostic-unused-variable]
+    State state = line ? line->getState() : I;
+          ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent_L1.cc:568:13: warning: Value stored to 'cmd' during its initialization is never read [clang-analyzer-deadcode.DeadStores]
+    Command cmd = event->getCmd();
+            ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent_L1.cc:568:13: note: Value stored to 'cmd' during its initialization is never read
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent_L1.cc:568:13: warning: unused variable 'cmd' [clang-diagnostic-unused-variable]
+    Command cmd = event->getCmd();
+            ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent_L1.cc:608:63: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+void IncoherentL1::cleanUpAfterResponse(MemEvent* event, bool inMSHR) {
+                                                              ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent_L1.cc:665:13: warning: Value stored to 'cmd' during its initialization is never read [clang-analyzer-deadcode.DeadStores]
+    Command cmd = event->getCmd();
+            ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent_L1.cc:665:13: note: Value stored to 'cmd' during its initialization is never read
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent_L1.cc:665:13: warning: unused variable 'cmd' [clang-diagnostic-unused-variable]
+    Command cmd = event->getCmd();
+            ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent_L1.cc:734:10: warning: unused variable 'payload' [clang-diagnostic-unused-variable]
+    bool payload = false;
+         ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent_L1.cc:821:48: warning: unused parameter 'data' [clang-diagnostic-unused-parameter]
+void IncoherentL1::printData(vector<uint8_t> * data, bool set) {
+                                               ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent_L1.cc:821:59: warning: unused parameter 'set' [clang-diagnostic-unused-parameter]
+void IncoherentL1::printData(vector<uint8_t> * data, bool set) {
+                                                          ^
+clang-tidy -export-fixes /tmp/tmpozgf1wl6/tmpiki2vv_r.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Inclusive.cc
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/../memEventBase.h:49:9: warning: Call to virtual method 'MemEventBase::setDefaults' during construction bypasses virtual dispatch [clang-analyzer-optin.cplusplus.VirtualCall]
+        setDefaults();
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Inclusive.cc:2310:16: note: Calling constructor for 'MemEventInitCoherence'
+    return new MemEventInitCoherence(cachename_, Endpoint::Cache, true /* inclusive */, false /* sends WBAck */, false /* expects WBAck */, lineSize_, true /* tracks block presence */);
+               ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/../memEventBase.h:322:9: note: Calling constructor for 'MemEventInit'
+        MemEventInit(src, InitCommand::Coherence), type_(type), inclusive_(inclusive), sendWBAck_(sendWBAck), recvWBAck_(recvWBAck), lineSize_(lineSize), tracksPresence_(tracksPresence) { }
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/../memEventBase.h:248:54: note: Calling constructor for 'MemEventBase'
+    MemEventInit(std::string src, InitCommand cmd) : MemEventBase(src, Command::NULLCMD), initCmd_(cmd) { }
+                                                     ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/../memEventBase.h:49:9: note: Call to virtual method 'MemEventBase::setDefaults' during construction bypasses virtual dispatch
+        setDefaults();
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Inclusive.cc:45:22: warning: unused variable 'data' [clang-diagnostic-unused-variable]
+    vector<uint8_t>* data;
+                     ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Inclusive.cc:1303:5: warning: Called C++ object pointer is null [clang-analyzer-core.CallAndMessage]
+    line->setData(event->getPayload(), 0);
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Inclusive.cc:1278:5: note: 'line' initialized here
+    SharedCacheLine * line = cacheArray_->lookup(addr, false);
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Inclusive.cc:1279:19: note: Assuming 'line' is null
+    State state = line ? line->getState() : I;
+                  ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Inclusive.cc:1279:19: note: '?' condition is false
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Inclusive.cc:1281:5: note: Taking false branch
+    if (is_debug_event(event))
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Inclusive.cc:1290:26: note: Assuming the condition is false
+    bool localPrefetch = req->isPrefetch() && (req->getRqstr() == cachename_);
+                         ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Inclusive.cc:1290:44: note: Left side of '&&' is false
+    bool localPrefetch = req->isPrefetch() && (req->getRqstr() == cachename_);
+                                           ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Inclusive.cc:1294:9: note: 'state' is not equal to IS
+    if (state != IS) {
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Inclusive.cc:1294:5: note: Taking true branch
+    if (state != IS) {
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Inclusive.cc:1299:5: note: Taking false branch
+    if (is_debug_addr(line->getAddr()))
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Inclusive.cc:1303:5: note: Called C++ object pointer is null
+    line->setData(event->getPayload(), 0);
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Inclusive.cc:1309:14: warning: Value stored to 'offset' during its initialization is never read [clang-analyzer-deadcode.DeadStores]
+        Addr offset = req->getAddr() - req->getBaseAddr();
+             ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Inclusive.cc:1309:14: note: Value stored to 'offset' during its initialization is never read
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Inclusive.cc:1309:14: warning: unused variable 'offset' [clang-diagnostic-unused-variable]
+        Addr offset = req->getAddr() - req->getBaseAddr();
+             ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Inclusive.cc:1345:10: warning: Value stored to 'offset' during its initialization is never read [clang-analyzer-deadcode.DeadStores]
+    Addr offset = req->getAddr() - req->getBaseAddr();
+         ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Inclusive.cc:1345:10: note: Value stored to 'offset' during its initialization is never read
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Inclusive.cc:1345:10: warning: unused variable 'offset' [clang-diagnostic-unused-variable]
+    Addr offset = req->getAddr() - req->getBaseAddr();
+         ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Inclusive.cc:1450:60: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+bool MESIInclusive::handleFetchResp(MemEvent * event, bool inMSHR) {
+                                                           ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Inclusive.cc:1488:61: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+bool MESIInclusive::handleFetchXResp(MemEvent * event, bool inMSHR) {
+                                                            ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Inclusive.cc:1529:57: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+bool MESIInclusive::handleAckInv(MemEvent * event, bool inMSHR) {
+                                                        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Inclusive.cc:1613:57: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+bool MESIInclusive::handleNULLCMD(MemEvent* event, bool inMSHR) {
+                                                        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Inclusive.cc:1662:55: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+bool MESIInclusive::handleNACK(MemEvent * event, bool inMSHR) {
+                                                      ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Inclusive.cc:1843:13: warning: Value stored to 'cmd' during its initialization is never read [clang-analyzer-deadcode.DeadStores]
+    Command cmd = event->getCmd();
+            ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Inclusive.cc:1843:13: note: Value stored to 'cmd' during its initialization is never read
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Inclusive.cc:1843:13: warning: unused variable 'cmd' [clang-diagnostic-unused-variable]
+    Command cmd = event->getCmd();
+            ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Inclusive.cc:1856:13: warning: Value stored to 'cmd' during its initialization is never read [clang-analyzer-deadcode.DeadStores]
+    Command cmd = event->getCmd();
+            ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Inclusive.cc:1856:13: note: Value stored to 'cmd' during its initialization is never read
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Inclusive.cc:1856:13: warning: unused variable 'cmd' [clang-diagnostic-unused-variable]
+    Command cmd = event->getCmd();
+            ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Inclusive.cc:1879:64: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+void MESIInclusive::cleanUpAfterResponse(MemEvent* event, bool inMSHR) {
+                                                               ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Inclusive.cc:2038:10: warning: unused variable 'payload' [clang-diagnostic-unused-variable]
+    bool payload = false;
+         ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Inclusive.cc:2272:9: warning: Called C++ object pointer is null [clang-analyzer-core.CallAndMessage]
+    if (line->getPrefetch()) {
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Inclusive.cc:770:5: note: 'line' initialized here
+    SharedCacheLine * line = cacheArray_->lookup(addr, false);
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Inclusive.cc:771:19: note: Assuming 'line' is null
+    State state = line ? line->getState() : I;
+                  ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Inclusive.cc:771:19: note: '?' condition is false
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Inclusive.cc:773:5: note: Taking false branch
+    if (is_debug_event(event))
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Inclusive.cc:776:9: note: Assuming 'inMSHR' is false
+    if (inMSHR)
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Inclusive.cc:776:5: note: Taking false branch
+    if (inMSHR)
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Inclusive.cc:781:31: note: Passing null pointer value via 2nd parameter 'line'
+    state = doEviction(event, line, state);
+                              ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Inclusive.cc:781:13: note: Calling 'MESIInclusive::doEviction'
+    state = doEviction(event, line, state);
+            ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Inclusive.cc:1933:26: note: Passing null pointer value via 1st parameter 'line'
+    recordPrefetchResult(line, statPrefetchEvict);
+                         ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Inclusive.cc:1933:5: note: Calling 'MESIInclusive::recordPrefetchResult'
+    recordPrefetchResult(line, statPrefetchEvict);
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Inclusive.cc:2272:9: note: Called C++ object pointer is null
+    if (line->getPrefetch()) {
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Inclusive.cc:2314:49: warning: unused parameter 'data' [clang-diagnostic-unused-parameter]
+void MESIInclusive::printData(vector<uint8_t> * data, bool set) {
+                                                ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Inclusive.cc:2314:60: warning: unused parameter 'set' [clang-diagnostic-unused-parameter]
+void MESIInclusive::printData(vector<uint8_t> * data, bool set) {
+                                                           ^
+clang-tidy -export-fixes /tmp/tmpozgf1wl6/tmpakzmu5id.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/multithreadL1Shim.cc
+/home/sabbir/sst-elements-org/memHierarchy/multithreadL1Shim.cc:98:39: warning: unused parameter 'cycle' [clang-diagnostic-unused-parameter]
+bool MultiThreadL1::tick(SST::Cycle_t cycle) {
+                                      ^
+/home/sabbir/sst-elements-org/memHierarchy/multithreadL1Shim.cc:149:39: warning: unused parameter 'phase' [clang-diagnostic-unused-parameter]
+void MultiThreadL1::init(unsigned int phase) {
+                                      ^
+/home/sabbir/sst-elements-org/memHierarchy/multithreadL1Shim.cc:153:23: warning: comparison of integers of different signs: 'int' and 'std::vector::size_type' (aka 'unsigned long') [clang-diagnostic-sign-compare]
+    for (int i = 0; i < threadLinks.size(); i++) {
+                      ^
+/home/sabbir/sst-elements-org/memHierarchy/multithreadL1Shim.cc:167:31: warning: comparison of integers of different signs: 'int' and 'std::vector::size_type' (aka 'unsigned long') [clang-diagnostic-sign-compare]
+            for (int i = 0; i < threadLinks.size(); i++) {
+                              ^
+clang-tidy -export-fixes /tmp/tmpozgf1wl6/tmptj6gd33r.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/mshr.cc
+/home/sabbir/sst-elements-org/memHierarchy/mshr.cc:275:30: warning: comparison of integers of different signs: 'int' and 'std::__cxx11::list::size_type' (aka 'unsigned long') [clang-diagnostic-sign-compare]
+        if (pos == -1 || pos > mshr_.find(addr)->second.entries.size()) {
+                             ^
+clang-tidy -export-fixes /tmp/tmpozgf1wl6/tmppudnvqs5.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/../memEventBase.h:49:9: warning: Call to virtual method 'MemEventBase::setDefaults' during construction bypasses virtual dispatch [clang-analyzer-optin.cplusplus.VirtualCall]
+        setDefaults();
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:3167:16: note: Calling constructor for 'MemEventInitCoherence'
+    return new MemEventInitCoherence(cachename_, Endpoint::Cache, false, true, false, lineSize_, true);
+               ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/../memEventBase.h:322:9: note: Calling constructor for 'MemEventInit'
+        MemEventInit(src, InitCommand::Coherence), type_(type), inclusive_(inclusive), sendWBAck_(sendWBAck), recvWBAck_(recvWBAck), lineSize_(lineSize), tracksPresence_(tracksPresence) { }
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/../memEventBase.h:248:54: note: Calling constructor for 'MemEventBase'
+    MemEventInit(std::string src, InitCommand cmd) : MemEventBase(src, Command::NULLCMD), initCmd_(cmd) { }
+                                                     ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/../memEventBase.h:49:9: note: Call to virtual method 'MemEventBase::setDefaults' during construction bypasses virtual dispatch
+        setDefaults();
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:111:54: warning: Called C++ object pointer is null [clang-analyzer-core.CallAndMessage]
+                    sendTime = sendResponseUp(event, data->getData(), inMSHR, tag->getTimestamp());
+                                                     ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:37:19: note: Assuming 'tag' is non-null
+    State state = tag ? tag->getState() : I;
+                  ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:37:19: note: '?' condition is true
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:38:24: note: 'tag' is non-null
+    DataLine * data = (tag) ? dataArray_->lookup(addr, true) : nullptr;
+                       ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:38:23: note: '?' condition is true
+    DataLine * data = (tag) ? dataArray_->lookup(addr, true) : nullptr;
+                      ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:38:5: note: 'data' initialized here
+    DataLine * data = (tag) ? dataArray_->lookup(addr, true) : nullptr;
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:39:9: note: Assuming 'data' is null
+    if (data && data->getTag() != tag) data = nullptr;
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:39:14: note: Left side of '&&' is false
+    if (data && data->getTag() != tag) data = nullptr;
+             ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:41:26: note: Assuming the condition is false
+    bool localPrefetch = event->isPrefetch() && (event->getRqstr() == cachename_);
+                         ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:41:46: note: Left side of '&&' is false
+    bool localPrefetch = event->isPrefetch() && (event->getRqstr() == cachename_);
+                                             ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:46:5: note: Taking false branch
+    if (is_debug_event(event))
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:49:9: note: Assuming 'inMSHR' is true
+    if (inMSHR)
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:49:5: note: Taking true branch
+    if (inMSHR)
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:52:5: note: Control jumps to 'case S:'  at line 84
+    switch (state) {
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:85:18: note: 'inMSHR' is true
+            if (!inMSHR || !mshr_->getProfiled(addr)) {
+                 ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:85:17: note: Left side of '||' is false
+            if (!inMSHR || !mshr_->getProfiled(addr)) {
+                ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:85:28: note: Assuming the condition is false
+            if (!inMSHR || !mshr_->getProfiled(addr)) {
+                           ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:85:13: note: Taking false branch
+            if (!inMSHR || !mshr_->getProfiled(addr)) {
+            ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:92:13: note: Taking false branch
+            if (is_debug_event(event))
+            ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:95:17: note: 'localPrefetch' is false
+            if (localPrefetch) {
+                ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:95:13: note: Taking false branch
+            if (localPrefetch) {
+            ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:106:17: note: 'data' is null
+            if (data || mshr_->hasData(addr)) {
+                ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:106:17: note: Left side of '||' is false
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:106:25: note: Assuming the condition is true
+            if (data || mshr_->hasData(addr)) {
+                        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:106:13: note: Taking true branch
+            if (data || mshr_->hasData(addr)) {
+            ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:108:21: note: Assuming the condition is false
+                if (mshr_->hasData(addr))
+                    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:108:17: note: Taking false branch
+                if (mshr_->hasData(addr))
+                ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:111:54: note: Called C++ object pointer is null
+                    sendTime = sendResponseUp(event, data->getData(), inMSHR, tag->getTimestamp());
+                                                     ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:178:54: warning: Called C++ object pointer is null [clang-analyzer-core.CallAndMessage]
+                    sendTime = sendResponseUp(event, data->getData(), inMSHR, tag->getTimestamp(), respcmd);
+                                                     ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:37:19: note: Assuming 'tag' is non-null
+    State state = tag ? tag->getState() : I;
+                  ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:37:19: note: '?' condition is true
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:38:24: note: 'tag' is non-null
+    DataLine * data = (tag) ? dataArray_->lookup(addr, true) : nullptr;
+                       ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:38:23: note: '?' condition is true
+    DataLine * data = (tag) ? dataArray_->lookup(addr, true) : nullptr;
+                      ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:38:5: note: 'data' initialized here
+    DataLine * data = (tag) ? dataArray_->lookup(addr, true) : nullptr;
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:39:9: note: Assuming 'data' is null
+    if (data && data->getTag() != tag) data = nullptr;
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:39:14: note: Left side of '&&' is false
+    if (data && data->getTag() != tag) data = nullptr;
+             ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:41:26: note: Assuming the condition is false
+    bool localPrefetch = event->isPrefetch() && (event->getRqstr() == cachename_);
+                         ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:41:46: note: Left side of '&&' is false
+    bool localPrefetch = event->isPrefetch() && (event->getRqstr() == cachename_);
+                                             ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:46:5: note: Taking false branch
+    if (is_debug_event(event))
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:49:9: note: Assuming 'inMSHR' is true
+    if (inMSHR)
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:49:5: note: Taking true branch
+    if (inMSHR)
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:52:5: note: Control jumps to 'case M:'  at line 133
+    switch (state) {
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:134:18: note: 'inMSHR' is true
+            if (!inMSHR || !mshr_->getProfiled(addr)) {
+                 ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:134:17: note: Left side of '||' is false
+            if (!inMSHR || !mshr_->getProfiled(addr)) {
+                ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:134:28: note: Assuming the condition is false
+            if (!inMSHR || !mshr_->getProfiled(addr)) {
+                           ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:134:13: note: Taking false branch
+            if (!inMSHR || !mshr_->getProfiled(addr)) {
+            ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:141:13: note: Taking false branch
+            if (is_debug_event(event))
+            ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:144:17: note: 'localPrefetch' is false
+            if (localPrefetch) {
+                ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:144:13: note: Taking false branch
+            if (localPrefetch) {
+            ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:153:17: note: Calling 'DirectoryLine::hasOwner'
+            if (tag->hasOwner()) {
+                ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/../lineTypes.h:96:34: note: Assuming the condition is false
+        bool hasOwner() { return !owner_.empty(); }
+                                 ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/../lineTypes.h:96:27: note: Returning zero, which participates in a condition later
+        bool hasOwner() { return !owner_.empty(); }
+                          ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:153:17: note: Returning from 'DirectoryLine::hasOwner'
+            if (tag->hasOwner()) {
+                ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:153:13: note: Taking false branch
+            if (tag->hasOwner()) {
+            ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:166:24: note: 'data' is null
+            } else if (data || mshr_->hasData(addr)) {
+                       ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:166:24: note: Left side of '||' is false
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:166:32: note: Assuming the condition is true
+            } else if (data || mshr_->hasData(addr)) {
+                               ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:166:20: note: Taking true branch
+            } else if (data || mshr_->hasData(addr)) {
+                   ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:168:17: note: Taking true branch
+                if (tag->hasSharers()) {
+                ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:175:21: note: Assuming the condition is false
+                if (mshr_->hasData(addr))
+                    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:175:17: note: Taking false branch
+                if (mshr_->hasData(addr))
+                ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:178:54: note: Called C++ object pointer is null
+                    sendTime = sendResponseUp(event, data->getData(), inMSHR, tag->getTimestamp(), respcmd);
+                                                     ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:231:13: warning: unused variable 'respcmd' [clang-diagnostic-unused-variable]
+    Command respcmd;
+            ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:307:54: warning: Called C++ object pointer is null [clang-analyzer-core.CallAndMessage]
+                    sendTime = sendResponseUp(event, data->getData(), inMSHR, tag->getTimestamp(), Command::GetXResp);
+                                                     ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:355:12: note: Calling 'MESISharNoninclusive::handleGetX'
+    return handleGetX(event, inMSHR);
+           ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:225:19: note: Assuming 'tag' is non-null
+    State state = tag ? tag->getState() : I;
+                  ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:225:19: note: '?' condition is true
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:226:24: note: 'tag' is non-null
+    DataLine * data = (tag) ? dataArray_->lookup(addr, true) : nullptr;
+                       ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:226:23: note: '?' condition is true
+    DataLine * data = (tag) ? dataArray_->lookup(addr, true) : nullptr;
+                      ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:226:5: note: 'data' initialized here
+    DataLine * data = (tag) ? dataArray_->lookup(addr, true) : nullptr;
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:227:9: note: Assuming 'data' is null
+    if (data && data->getTag() != tag) data = nullptr;
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:227:9: note: Assuming pointer value is null
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:227:14: note: Left side of '&&' is false
+    if (data && data->getTag() != tag) data = nullptr;
+             ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:233:9: note: Assuming 'inMSHR' is true
+    if (inMSHR)
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:233:5: note: Taking true branch
+    if (inMSHR)
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:236:5: note: Taking false branch
+    if (is_debug_event(event))
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:239:5: note: Control jumps to 'case M:'  at line 291
+    switch (state) {
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:292:17: note: Left side of '&&' is true
+            if (!tag->hasOtherSharers(event->getSrc()) && !tag->hasOwner()) {
+                ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:292:13: note: Taking true branch
+            if (!tag->hasOtherSharers(event->getSrc()) && !tag->hasOwner()) {
+            ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:293:17: note: Taking false branch
+                if (is_debug_event(event))
+                ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:295:22: note: 'inMSHR' is true
+                if (!inMSHR || !mshr_->getProfiled(addr)) {
+                     ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:295:21: note: Left side of '||' is false
+                if (!inMSHR || !mshr_->getProfiled(addr)) {
+                    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:295:32: note: Assuming the condition is false
+                if (!inMSHR || !mshr_->getProfiled(addr)) {
+                               ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:295:17: note: Taking false branch
+                if (!inMSHR || !mshr_->getProfiled(addr)) {
+                ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:301:21: note: Assuming the condition is false
+                if (tag->isSharer(event->getSrc())) {
+                    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:301:17: note: Taking false branch
+                if (tag->isSharer(event->getSrc())) {
+                ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:304:28: note: Assuming the condition is false
+                } else if (mshr_->hasData(addr))
+                           ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:304:24: note: Taking false branch
+                } else if (mshr_->hasData(addr))
+                       ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:307:54: note: Called C++ object pointer is null
+                    sendTime = sendResponseUp(event, data->getData(), inMSHR, tag->getTimestamp(), Command::GetXResp);
+                                                     ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:489:22: warning: unused variable 'datavec' [clang-diagnostic-unused-variable]
+    vector<uint8_t>* datavec = nullptr;
+                     ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:971:5: warning: Called C++ object pointer is null [clang-analyzer-core.CallAndMessage]
+    tag->removeOwner();
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:960:5: note: 'tag' initialized here
+    DirectoryLine * tag = dirArray_->lookup(addr, false);
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:961:19: note: Assuming 'tag' is null
+    State state = tag ? tag->getState() : I;
+                  ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:961:19: note: '?' condition is false
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:962:24: note: 'tag' is null
+    DataLine * data = (tag) ? dataArray_->lookup(addr, false) : nullptr;
+                       ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:962:23: note: '?' condition is false
+    DataLine * data = (tag) ? dataArray_->lookup(addr, false) : nullptr;
+                      ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:963:9: note: 'data' is null
+    if (data && data->getTag() != tag) data = nullptr;
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:963:14: note: Left side of '&&' is false
+    if (data && data->getTag() != tag) data = nullptr;
+             ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:965:5: note: Taking false branch
+    if (is_debug_event(event))
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:968:9: note: Assuming 'inMSHR' is false
+    if (inMSHR)
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:968:5: note: Taking false branch
+    if (inMSHR)
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:971:5: note: Called C++ object pointer is null
+    tag->removeOwner();
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:1075:25: warning: Value stored to 'sendTime' is never read [clang-analyzer-deadcode.DeadStores]
+                        sendTime = sendFetch(Command::Fetch, event, *(tag->getSharers()->begin()), inMSHR, tag->getTimestamp());
+                        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:1075:25: note: Value stored to 'sendTime' is never read
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:1101:21: warning: Value stored to 'sendTime' is never read [clang-analyzer-deadcode.DeadStores]
+                    sendTime = sendFetch(Command::Fetch, event, *(tag->getSharers()->begin()), inMSHR, tag->getTimestamp());
+                    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:1101:21: note: Value stored to 'sendTime' is never read
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:1125:21: warning: Value stored to 'sendTime' is never read [clang-analyzer-deadcode.DeadStores]
+                    sendTime = sendFetch(Command::Fetch, event, *(tag->getSharers()->begin()), inMSHR, tag->getTimestamp());
+                    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:1125:21: note: Value stored to 'sendTime' is never read
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:1828:5: warning: Called C++ object pointer is null [clang-analyzer-core.CallAndMessage]
+    tag->setState(S);
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:1812:5: note: 'tag' initialized here
+    DirectoryLine * tag = dirArray_->lookup(addr, false);
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:1813:19: note: Assuming 'tag' is null
+    State state = tag ? tag->getState() : I;
+                  ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:1813:19: note: '?' condition is false
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:1814:24: note: 'tag' is null
+    DataLine * data = (tag) ? dataArray_->lookup(addr, false) : nullptr;
+                       ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:1814:23: note: '?' condition is false
+    DataLine * data = (tag) ? dataArray_->lookup(addr, false) : nullptr;
+                      ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:1815:9: note: 'data' is null
+    if (data && data->getTag() != tag) data = nullptr;
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:1815:14: note: Left side of '&&' is false
+    if (data && data->getTag() != tag) data = nullptr;
+             ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:1820:26: note: Assuming the condition is false
+    bool localPrefetch = req->isPrefetch() && (req->getRqstr() == cachename_);
+                         ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:1820:44: note: Left side of '&&' is false
+    bool localPrefetch = req->isPrefetch() && (req->getRqstr() == cachename_);
+                                           ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:1823:5: note: Taking false branch
+    if (is_debug_event(event))
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:1828:5: note: Called C++ object pointer is null
+    tag->setState(S);
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:1998:67: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+bool MESISharNoninclusive::handleFetchResp(MemEvent * event, bool inMSHR) {
+                                                                  ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:2087:68: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+bool MESISharNoninclusive::handleFetchXResp(MemEvent * event, bool inMSHR) {
+                                                                   ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:2108:5: warning: Called C++ object pointer is null [clang-analyzer-core.CallAndMessage]
+    tag->removeOwner();
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:2089:5: note: 'tag' initialized here
+    DirectoryLine * tag = dirArray_->lookup(addr, false);
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:2090:19: note: Assuming 'tag' is null
+    State state = tag ? tag->getState() : I;
+                  ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:2090:19: note: '?' condition is false
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:2091:24: note: 'tag' is null
+    DataLine * data = (tag) ? dataArray_->lookup(addr, false) : nullptr;
+                       ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:2091:23: note: '?' condition is false
+    DataLine * data = (tag) ? dataArray_->lookup(addr, false) : nullptr;
+                      ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:2092:9: note: 'data' is null
+    if (data && data->getTag() != tag) data = nullptr;
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:2092:14: note: Left side of '&&' is false
+    if (data && data->getTag() != tag) data = nullptr;
+             ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:2094:5: note: Taking false branch
+    if (is_debug_event(event)) {
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:2105:9: note: Assuming the condition is false
+    if (responses.find(addr)->second.empty()) responses.erase(addr);
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:2105:5: note: Taking false branch
+    if (responses.find(addr)->second.empty()) responses.erase(addr);
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:2108:5: note: Called C++ object pointer is null
+    tag->removeOwner();
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:2136:64: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+bool MESISharNoninclusive::handleAckInv(MemEvent * event, bool inMSHR) {
+                                                               ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:2147:9: warning: Called C++ object pointer is null [clang-analyzer-core.CallAndMessage]
+    if (tag->isSharer(event->getSrc()))
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:2138:5: note: 'tag' initialized here
+    DirectoryLine * tag = dirArray_->lookup(addr, false);
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:2139:19: note: Assuming 'tag' is null
+    State state = tag ? tag->getState() : I;
+                  ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:2139:19: note: '?' condition is false
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:2140:24: note: 'tag' is null
+    DataLine * data = (tag) ? dataArray_->lookup(addr, false) : nullptr;
+                       ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:2140:23: note: '?' condition is false
+    DataLine * data = (tag) ? dataArray_->lookup(addr, false) : nullptr;
+                      ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:2141:9: note: 'data' is null
+    if (data && data->getTag() != tag) data = nullptr;
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:2141:14: note: Left side of '&&' is false
+    if (data && data->getTag() != tag) data = nullptr;
+             ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:2142:5: note: Taking false branch
+    if (is_debug_event(event))
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:2147:9: note: Called C++ object pointer is null
+    if (tag->isSharer(event->getSrc()))
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:2194:64: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+bool MESISharNoninclusive::handleNULLCMD(MemEvent* event, bool inMSHR) {
+                                                               ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:2313:61: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+bool MESISharNoninclusive::handleNACK(MemEvent* event, bool inMSHR) {
+                                                            ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:2382:115: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+MemEventStatus MESISharNoninclusive::processDataMiss(MemEvent * event, DirectoryLine * tag, DataLine * data, bool inMSHR) {
+                                                                                                                  ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:2559:10: warning: unused variable 'evict' [clang-diagnostic-unused-variable]
+    bool evict = false;
+         ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:2648:13: warning: Value stored to 'cmd' during its initialization is never read [clang-analyzer-deadcode.DeadStores]
+    Command cmd = event->getCmd();
+            ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:2648:13: note: Value stored to 'cmd' during its initialization is never read
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:2648:13: warning: unused variable 'cmd' [clang-diagnostic-unused-variable]
+    Command cmd = event->getCmd();
+            ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:2661:13: warning: Value stored to 'cmd' during its initialization is never read [clang-analyzer-deadcode.DeadStores]
+    Command cmd = event->getCmd();
+            ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:2661:13: note: Value stored to 'cmd' during its initialization is never read
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:2661:13: warning: unused variable 'cmd' [clang-diagnostic-unused-variable]
+    Command cmd = event->getCmd();
+            ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:2685:71: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+void MESISharNoninclusive::cleanUpAfterResponse(MemEvent* event, bool inMSHR) {
+                                                                      ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:3185:56: warning: unused parameter 'data' [clang-diagnostic-unused-parameter]
+void MESISharNoninclusive::printData(vector<uint8_t> * data, bool set) {
+                                                       ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc:3185:67: warning: unused parameter 'set' [clang-diagnostic-unused-parameter]
+void MESISharNoninclusive::printData(vector<uint8_t> * data, bool set) {
+                                                                  ^
+clang-tidy -export-fixes /tmp/tmpozgf1wl6/tmp06u0rt_a.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/testcpu/streamCPU.cc
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/streamCPU.cc:67:12: warning: Potential memory leak [clang-analyzer-cplusplus.NewDeleteLeaks]
+    memory = loadUserSubComponent<Interfaces::SimpleMem>("memory", ComponentInfo::SHARE_NONE, clockTC, new Interfaces::SimpleMem::Handler<streamCPU>(this, &streamCPU::handleEvent));
+           ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/streamCPU.cc:37:9: note: Field 'commFreq' is < 0
+    if (commFreq < 0) {
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/streamCPU.cc:37:5: note: Taking true branch
+    if (commFreq < 0) {
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/streamCPU.cc:42:11: note: Field 'maxAddr' is 4294967294
+    if ( !maxAddr ) {
+          ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/streamCPU.cc:42:5: note: Taking false branch
+    if ( !maxAddr ) {
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/streamCPU.cc:53:9: note: Field 'maxReqsPerIssue' is >= 1
+    if (maxReqsPerIssue < 1) {
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/streamCPU.cc:53:5: note: Taking false branch
+    if (maxReqsPerIssue < 1) {
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/streamCPU.cc:67:104: note: Memory is allocated
+    memory = loadUserSubComponent<Interfaces::SimpleMem>("memory", ComponentInfo::SHARE_NONE, clockTC, new Interfaces::SimpleMem::Handler<streamCPU>(this, &streamCPU::handleEvent));
+                                                                                                       ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/streamCPU.cc:67:12: note: Potential memory leak
+    memory = loadUserSubComponent<Interfaces::SimpleMem>("memory", ComponentInfo::SHARE_NONE, clockTC, new Interfaces::SimpleMem::Handler<streamCPU>(this, &streamCPU::handleEvent));
+           ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/streamCPU.cc:72:16: warning: Potential memory leak [clang-analyzer-cplusplus.NewDeleteLeaks]
+        memory = loadAnonymousSubComponent<Interfaces::SimpleMem>("memHierarchy.memInterface", "memory", 0, ComponentInfo::SHARE_PORTS | ComponentInfo::INSERT_STATS,
+               ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/streamCPU.cc:37:9: note: Field 'commFreq' is < 0
+    if (commFreq < 0) {
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/streamCPU.cc:37:5: note: Taking true branch
+    if (commFreq < 0) {
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/streamCPU.cc:42:11: note: Field 'maxAddr' is 4294967294
+    if ( !maxAddr ) {
+          ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/streamCPU.cc:42:5: note: Taking false branch
+    if ( !maxAddr ) {
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/streamCPU.cc:53:9: note: Field 'maxReqsPerIssue' is >= 1
+    if (maxReqsPerIssue < 1) {
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/streamCPU.cc:53:5: note: Taking false branch
+    if (maxReqsPerIssue < 1) {
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/streamCPU.cc:69:9: note: Assuming field 'memory' is null
+    if (!memory) {
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/streamCPU.cc:69:5: note: Taking true branch
+    if (!memory) {
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/streamCPU.cc:73:43: note: Memory is allocated
+                interfaceParams, clockTC, new Interfaces::SimpleMem::Handler<streamCPU>(this, &streamCPU::handleEvent));
+                                          ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/streamCPU.cc:72:16: note: Potential memory leak
+        memory = loadAnonymousSubComponent<Interfaces::SimpleMem>("memHierarchy.memInterface", "memory", 0, ComponentInfo::SHARE_PORTS | ComponentInfo::INSERT_STATS,
+               ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/streamCPU.cc:124:24: warning: comparison of integers of different signs: 'uint32_t' (aka 'unsigned int') and 'int' [clang-diagnostic-sign-compare]
+        if (reqsToSend > numLS) reqsToSend = numLS;
+                       ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/streamCPU.cc:126:27: warning: comparison of integers of different signs: 'int' and 'uint32_t' (aka 'unsigned int') [clang-diagnostic-sign-compare]
+        for (int i = 0; i < reqsToSend; i++) {
+                          ^
+clang-tidy -export-fixes /tmp/tmpozgf1wl6/tmpueg3x4_2.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/dmaEngine.cc
+/home/sabbir/sst-elements-org/memHierarchy/dmaEngine.cc:62:10: warning: unused variable 'blocksizeSet' [clang-diagnostic-unused-variable]
+    bool blocksizeSet = false;
+         ^
+/home/sabbir/sst-elements-org/memHierarchy/dmaEngine.cc:95:31: warning: unused parameter 'cycle' [clang-diagnostic-unused-parameter]
+bool DMAEngine::clock(Cycle_t cycle)
+                              ^
+/home/sabbir/sst-elements-org/memHierarchy/dmaEngine.cc:104:19: warning: unused variable 'me' [clang-diagnostic-unused-variable]
+    MemEventBase *me = NULL;
+                  ^
+/home/sabbir/sst-elements-org/memHierarchy/dmaEngine.cc:152:39: warning: unused parameter 'req' [clang-diagnostic-unused-parameter]
+void DMAEngine::startRequest(Request *req)
+                                      ^
+/home/sabbir/sst-elements-org/memHierarchy/dmaEngine.cc:174:40: warning: unused parameter 'req' [clang-diagnostic-unused-parameter]
+void DMAEngine::processPacket(Request *req, MemEventBase *ev)
+                                       ^
+/home/sabbir/sst-elements-org/memHierarchy/dmaEngine.cc:174:59: warning: unused parameter 'ev' [clang-diagnostic-unused-parameter]
+void DMAEngine::processPacket(Request *req, MemEventBase *ev)
+                                                          ^
+clang-tidy -export-fixes /tmp/tmpozgf1wl6/tmpmru5nae9.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/testcpu/trivialCPU.cc
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/trivialCPU.cc:79:12: warning: Potential memory leak [clang-analyzer-cplusplus.NewDeleteLeaks]
+    memory = loadUserSubComponent<Interfaces::SimpleMem>("memory", ComponentInfo::SHARE_NONE, clockTC, new Interfaces::SimpleMem::Handler<trivialCPU>(this, &trivialCPU::handleEvent));
+           ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/trivialCPU.cc:40:9: note: Assuming field 'commFreq' is >= 0
+    if (commFreq < 0) {
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/trivialCPU.cc:40:5: note: Taking false branch
+    if (commFreq < 0) {
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/trivialCPU.cc:48:11: note: Field 'maxAddr' is 18446744073709551614
+    if ( !maxAddr ) {
+          ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/trivialCPU.cc:48:5: note: Taking false branch
+    if ( !maxAddr ) {
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/trivialCPU.cc:65:9: note: Field 'maxReqsPerIssue' is >= 1
+    if (maxReqsPerIssue < 1) {
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/trivialCPU.cc:65:5: note: Taking false branch
+    if (maxReqsPerIssue < 1) {
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/trivialCPU.cc:79:104: note: Memory is allocated
+    memory = loadUserSubComponent<Interfaces::SimpleMem>("memory", ComponentInfo::SHARE_NONE, clockTC, new Interfaces::SimpleMem::Handler<trivialCPU>(this, &trivialCPU::handleEvent));
+                                                                                                       ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/trivialCPU.cc:79:12: note: Potential memory leak
+    memory = loadUserSubComponent<Interfaces::SimpleMem>("memory", ComponentInfo::SHARE_NONE, clockTC, new Interfaces::SimpleMem::Handler<trivialCPU>(this, &trivialCPU::handleEvent));
+           ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/trivialCPU.cc:84:16: warning: Potential memory leak [clang-analyzer-cplusplus.NewDeleteLeaks]
+        memory = loadAnonymousSubComponent<Interfaces::SimpleMem>("memHierarchy.memInterface", "memory", 0, ComponentInfo::SHARE_PORTS | ComponentInfo::INSERT_STATS,
+               ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/trivialCPU.cc:40:9: note: Assuming field 'commFreq' is >= 0
+    if (commFreq < 0) {
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/trivialCPU.cc:40:5: note: Taking false branch
+    if (commFreq < 0) {
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/trivialCPU.cc:48:11: note: Field 'maxAddr' is 18446744073709551614
+    if ( !maxAddr ) {
+          ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/trivialCPU.cc:48:5: note: Taking false branch
+    if ( !maxAddr ) {
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/trivialCPU.cc:65:9: note: Field 'maxReqsPerIssue' is >= 1
+    if (maxReqsPerIssue < 1) {
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/trivialCPU.cc:65:5: note: Taking false branch
+    if (maxReqsPerIssue < 1) {
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/trivialCPU.cc:81:9: note: Assuming field 'memory' is null
+    if (!memory) {
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/trivialCPU.cc:81:5: note: Taking true branch
+    if (!memory) {
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/trivialCPU.cc:85:43: note: Memory is allocated
+                interfaceParams, clockTC, new Interfaces::SimpleMem::Handler<trivialCPU>(this, &trivialCPU::handleEvent));
+                                          ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/trivialCPU.cc:84:16: note: Potential memory leak
+        memory = loadAnonymousSubComponent<Interfaces::SimpleMem>("memHierarchy.memInterface", "memory", 0, ComponentInfo::SHARE_PORTS | ComponentInfo::INSERT_STATS,
+               ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/trivialCPU.cc:140:28: warning: comparison of integers of different signs: 'uint32_t' (aka 'unsigned int') and 'int' [clang-diagnostic-sign-compare]
+            if (reqsToSend > numLS) reqsToSend = numLS;
+                           ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/trivialCPU.cc:142:31: warning: comparison of integers of different signs: 'int' and 'uint32_t' (aka 'unsigned int') [clang-diagnostic-sign-compare]
+            for (int i = 0; i < reqsToSend; i++) {
+                              ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/trivialCPU.cc:157:21: warning: Value stored to 'size' is never read [clang-analyzer-deadcode.DeadStores]
+                    size = lineSize;
+                    ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/trivialCPU.cc:157:21: note: Value stored to 'size' is never read
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/trivialCPU.cc:165:21: warning: Value stored to 'size' is never read [clang-analyzer-deadcode.DeadStores]
+                    size = lineSize;
+                    ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/trivialCPU.cc:165:21: note: Value stored to 'size' is never read
+clang-tidy -export-fixes /tmp/tmpozgf1wl6/tmp9_d1gobg.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent.cc
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/../memEventBase.h:49:9: warning: Call to virtual method 'MemEventBase::setDefaults' during construction bypasses virtual dispatch [clang-analyzer-optin.cplusplus.VirtualCall]
+        setDefaults();
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent.cc:785:16: note: Calling constructor for 'MemEventInitCoherence'
+    return new MemEventInitCoherence(cachename_, Endpoint::Cache, false, false, false, lineSize_, true);
+               ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/../memEventBase.h:322:9: note: Calling constructor for 'MemEventInit'
+        MemEventInit(src, InitCommand::Coherence), type_(type), inclusive_(inclusive), sendWBAck_(sendWBAck), recvWBAck_(recvWBAck), lineSize_(lineSize), tracksPresence_(tracksPresence) { }
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/../memEventBase.h:248:54: note: Calling constructor for 'MemEventBase'
+    MemEventInit(std::string src, InitCommand cmd) : MemEventBase(src, Command::NULLCMD), initCmd_(cmd) { }
+                                                     ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/../memEventBase.h:49:9: note: Call to virtual method 'MemEventBase::setDefaults' during construction bypasses virtual dispatch
+        setDefaults();
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent.cc:193:17: warning: Called C++ object pointer is null [clang-analyzer-core.CallAndMessage]
+        state = line->getState();
+                ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent.cc:179:5: note: 'line' initialized here
+    PrivateCacheLine * line = cacheArray_->lookup(addr, false);
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent.cc:180:19: note: Assuming 'line' is null
+    State state = line ? line->getState() : I;
+                  ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent.cc:180:19: note: '?' condition is false
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent.cc:182:5: note: Taking false branch
+    if (is_debug_event(event))
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent.cc:185:29: note: Assuming 'inMSHR' is true
+    MemEventStatus status = inMSHR ? MemEventStatus::OK : allocateMSHR(event, false);
+                            ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent.cc:185:29: note: '?' condition is true
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent.cc:186:10: note: 'inMSHR' is true
+    if (!inMSHR)
+         ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent.cc:186:5: note: Taking false branch
+    if (!inMSHR)
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent.cc:191:9: note: Assuming the condition is true
+    if (event->getEvict()) {
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent.cc:191:5: note: Taking true branch
+    if (event->getEvict()) {
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent.cc:193:17: note: Called C++ object pointer is null
+        state = line->getState();
+                ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent.cc:243:17: warning: Called C++ object pointer is null [clang-analyzer-core.CallAndMessage]
+        state = line->getState();
+                ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent.cc:229:5: note: 'line' initialized here
+    PrivateCacheLine * line = cacheArray_->lookup(addr, false);
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent.cc:230:19: note: Assuming 'line' is null
+    State state = line ? line->getState() : I;
+                  ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent.cc:230:19: note: '?' condition is false
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent.cc:232:5: note: Taking false branch
+    if (is_debug_event(event))
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent.cc:235:29: note: Assuming 'inMSHR' is true
+    MemEventStatus status = inMSHR ? MemEventStatus::OK : allocateMSHR(event, false);
+                            ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent.cc:235:29: note: '?' condition is true
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent.cc:236:10: note: 'inMSHR' is true
+    if (!inMSHR)
+         ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent.cc:236:5: note: Taking false branch
+    if (!inMSHR)
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent.cc:241:9: note: Assuming the condition is true
+    if (event->getEvict()) {
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent.cc:241:5: note: Taking true branch
+    if (event->getEvict()) {
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent.cc:243:17: note: Called C++ object pointer is null
+        state = line->getState();
+                ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent.cc:367:56: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+bool Incoherent::handleGetSResp(MemEvent * event, bool inMSHR) {
+                                                       ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent.cc:401:56: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+bool Incoherent::handleGetXResp(MemEvent * event, bool inMSHR) {
+                                                       ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent.cc:422:61: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+bool Incoherent::handleFlushLineResp(MemEvent * event, bool inMSHR) {
+                                                            ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent.cc:463:54: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+bool Incoherent::handleNULLCMD(MemEvent* event, bool inMSHR) {
+                                                     ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent.cc:492:51: warning: unused parameter 'inMSHR' [clang-diagnostic-unused-parameter]
+bool Incoherent::handleNACK(MemEvent* event, bool inMSHR) {
+                                                  ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent.cc:496:11: warning: Value stored to 'state' during its initialization is never read [clang-analyzer-deadcode.DeadStores]
+    State state = line ? line->getState() : I;
+          ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent.cc:496:11: note: Value stored to 'state' during its initialization is never read
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent.cc:727:110: warning: unused parameter 'time' [clang-diagnostic-unused-parameter]
+void Incoherent::forwardFlush(MemEvent * event, bool evict, std::vector<uint8_t>* data, bool dirty, uint64_t time) {
+                                                                                                             ^
+/home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent.cc:820:33: warning: unused parameter 'addr' [clang-diagnostic-unused-parameter]
+void Incoherent::printLine(Addr addr) { }
+                                ^
+clang-tidy -export-fixes /tmp/tmpozgf1wl6/tmpq5edugtq.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/testcpu/scratchCPU.cc
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/scratchCPU.cc:69:12: warning: Potential memory leak [clang-analyzer-cplusplus.NewDeleteLeaks]
+    memory = loadUserSubComponent<Interfaces::SimpleMem>("memory", ComponentInfo::SHARE_NONE, clockTC, new Interfaces::SimpleMem::Handler<ScratchCPU>(this, &ScratchCPU::handleEvent) );
+           ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/scratchCPU.cc:40:9: note: Assuming field 'scratchSize' is not equal to 0
+    if (!scratchSize) out.fatal(CALL_INFO, -1, "Error (%s): invalid param 'scratchSize' - must be at least 1", getName().c_str());
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/scratchCPU.cc:40:5: note: Taking false branch
+    if (!scratchSize) out.fatal(CALL_INFO, -1, "Error (%s): invalid param 'scratchSize' - must be at least 1", getName().c_str());
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/scratchCPU.cc:41:9: note: Assuming field 'maxAddr' is > field 'scratchSize'
+    if (maxAddr <= scratchSize) out.fatal(CALL_INFO, -1, "Error (%s): invalid param 'maxAddr' - must be larger than 'scratchSize'", getName().c_str());
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/scratchCPU.cc:41:5: note: Taking false branch
+    if (maxAddr <= scratchSize) out.fatal(CALL_INFO, -1, "Error (%s): invalid param 'maxAddr' - must be larger than 'scratchSize'", getName().c_str());
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/scratchCPU.cc:42:9: note: Assuming field 'scratchLineSize' is < 1
+    if (scratchLineSize < 1) out.fatal(CALL_INFO, -1, "Error (%s): invalid param 'scratchLineSize' - must be greater than 0\n", getName().c_str());
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/scratchCPU.cc:42:5: note: Taking true branch
+    if (scratchLineSize < 1) out.fatal(CALL_INFO, -1, "Error (%s): invalid param 'scratchLineSize' - must be greater than 0\n", getName().c_str());
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/scratchCPU.cc:43:9: note: Field 'memLineSize' is >= field 'scratchLineSize'
+    if (memLineSize < scratchLineSize) out.fatal(CALL_INFO, -1, "Error (%s): invalid param 'memLineSize' - must be greater than or equal to 'scratchLineSize'\n", getName().c_str());
+        ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/scratchCPU.cc:43:5: note: Taking false branch
+    if (memLineSize < scratchLineSize) out.fatal(CALL_INFO, -1, "Error (%s): invalid param 'memLineSize' - must be greater than or equal to 'scratchLineSize'\n", getName().c_str());
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/scratchCPU.cc:44:5: note: Taking false branch
+    if (!isPowerOfTwo(scratchLineSize)) out.fatal(CALL_INFO, -1, "Error (%s): invalid param 'scratchLineSize' - must be a power of 2\n", getName().c_str());
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/scratchCPU.cc:45:5: note: Taking false branch
+    if (!isPowerOfTwo(memLineSize)) out.fatal(CALL_INFO, -1, "Error (%s): invalid param 'memLineSize' - must be a power of 2\n", getName().c_str());
+    ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/scratchCPU.cc:69:104: note: Memory is allocated
+    memory = loadUserSubComponent<Interfaces::SimpleMem>("memory", ComponentInfo::SHARE_NONE, clockTC, new Interfaces::SimpleMem::Handler<ScratchCPU>(this, &ScratchCPU::handleEvent) );
+                                                                                                       ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/scratchCPU.cc:69:12: note: Potential memory leak
+    memory = loadUserSubComponent<Interfaces::SimpleMem>("memory", ComponentInfo::SHARE_NONE, clockTC, new Interfaces::SimpleMem::Handler<ScratchCPU>(this, &ScratchCPU::handleEvent) );
+           ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/scratchCPU.cc:91:31: warning: unused parameter 'time' [clang-diagnostic-unused-parameter]
+bool ScratchCPU::tick(Cycle_t time) {
+                              ^
+/home/sabbir/sst-elements-org/memHierarchy/testcpu/scratchCPU.cc:106:31: warning: comparison of integers of different signs: 'int' and 'uint32_t' (aka 'unsigned int') [clang-diagnostic-sign-compare]
+            for (int i = 0; i < reqCount; i++) {
+                              ^
+clang-tidy -export-fixes /tmp/tmpozgf1wl6/tmpyipe752k.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/networkMemInspector.cc
+/home/sabbir/sst-elements-org/memHierarchy/networkMemInspector.cc:24:68: warning: unused parameter 'params' [clang-diagnostic-unused-parameter]
+networkMemInspector::networkMemInspector(ComponentId_t id, Params &params, const std::string& sub_id)
+                                                                   ^
+Applying fixes ...
+Enabled checks:
+    modernize-use-override
+
+clang-apply-replacements version 10.0.0
+clang-tidy -checks=-*,modernize-use-override -export-fixes /tmp/tmpvb216v4z/tmp893z1xjs.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/bus.cc
+clang-tidy -checks=-*,modernize-use-override -export-fixes /tmp/tmpvb216v4z/tmpfxzy42m8.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/cacheController.cc
+clang-tidy -checks=-*,modernize-use-override -export-fixes /tmp/tmpvb216v4z/tmpfrjp9_9e.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/cacheFactory.cc
+clang-tidy -checks=-*,modernize-use-override -export-fixes /tmp/tmpvb216v4z/tmpg26szzxw.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/memoryController.cc
+clang-tidy -checks=-*,modernize-use-override -export-fixes /tmp/tmpvb216v4z/tmpc77veb25.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/memoryCacheController.cc
+clang-tidy -checks=-*,modernize-use-override -export-fixes /tmp/tmpvb216v4z/tmpsvcg793u.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/coherentMemoryController.cc
+clang-tidy -checks=-*,modernize-use-override -export-fixes /tmp/tmpvb216v4z/tmpp9q96mzj.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/membackend/timingDRAMBackend.cc
+clang-tidy -checks=-*,modernize-use-override -export-fixes /tmp/tmpvb216v4z/tmpnqwbw3s9.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/membackend/memBackendConvertor.cc
+clang-tidy -checks=-*,modernize-use-override -export-fixes /tmp/tmpvb216v4z/tmpza3werby.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/membackend/simpleMemBackendConvertor.cc
+clang-tidy -checks=-*,modernize-use-override -export-fixes /tmp/tmpvb216v4z/tmp2xvpvc2x.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/membackend/flagMemBackendConvertor.cc
+clang-tidy -checks=-*,modernize-use-override -export-fixes /tmp/tmpvb216v4z/tmpi46t5p0o.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/membackend/extMemBackendConvertor.cc
+clang-tidy -checks=-*,modernize-use-override -export-fixes /tmp/tmpvb216v4z/tmpyt9yrpqf.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/membackend/delayBuffer.cc
+clang-tidy -checks=-*,modernize-use-override -export-fixes /tmp/tmpvb216v4z/tmp7reek7fh.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/membackend/simpleMemBackend.cc
+clang-tidy -checks=-*,modernize-use-override -export-fixes /tmp/tmpvb216v4z/tmpwia8prmo.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/membackend/simpleDRAMBackend.cc
+clang-tidy -checks=-*,modernize-use-override -export-fixes /tmp/tmpvb216v4z/tmplmh95esf.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/membackend/requestReorderSimple.cc
+clang-tidy -checks=-*,modernize-use-override -export-fixes /tmp/tmpvb216v4z/tmp4hl66xj2.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/membackend/requestReorderByRow.cc
+clang-tidy -checks=-*,modernize-use-override -export-fixes /tmp/tmpvb216v4z/tmpakmb1s0d.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/memLink.cc
+clang-tidy -checks=-*,modernize-use-override -export-fixes /tmp/tmpvb216v4z/tmpj8tcsob5.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/membackend/scratchBackendConvertor.cc
+clang-tidy -checks=-*,modernize-use-override -export-fixes /tmp/tmpvb216v4z/tmp5zm2b5p8.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/membackend/simpleMemScratchBackendConvertor.cc
+clang-tidy -checks=-*,modernize-use-override -export-fixes /tmp/tmpvb216v4z/tmpnq4ti3lk.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/memNIC.cc
+clang-tidy -checks=-*,modernize-use-override -export-fixes /tmp/tmpvb216v4z/tmpyyo1ai76.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/customcmd/amoCustomCmdHandler.cc
+clang-tidy -checks=-*,modernize-use-override -export-fixes /tmp/tmpvb216v4z/tmpspv3gw7m.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/memNICFour.cc
+clang-tidy -checks=-*,modernize-use-override -export-fixes /tmp/tmpvb216v4z/tmpu6srgf2x.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/directoryController.cc
+clang-tidy -checks=-*,modernize-use-override -export-fixes /tmp/tmpvb216v4z/tmpeai8ye19.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/scratchpad.cc
+clang-tidy -checks=-*,modernize-use-override -export-fixes /tmp/tmpvb216v4z/tmp77unqke9.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/memHierarchyInterface.cc
+clang-tidy -checks=-*,modernize-use-override -export-fixes /tmp/tmpvb216v4z/tmpjhjz3_b9.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/coherencemgr/coherenceController.cc
+clang-tidy -checks=-*,modernize-use-override -export-fixes /tmp/tmpvb216v4z/tmpc3owhyrm.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/memHierarchyScratchInterface.cc
+clang-tidy -checks=-*,modernize-use-override -export-fixes /tmp/tmpvb216v4z/tmprzm2jyv0.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_L1.cc
+clang-tidy -checks=-*,modernize-use-override -export-fixes /tmp/tmpvb216v4z/tmpn0h4_9nk.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Inclusive.cc
+clang-tidy -checks=-*,modernize-use-override -export-fixes /tmp/tmpvb216v4z/tmp9jyzm6y4.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Private_Noninclusive.cc
+clang-tidy -checks=-*,modernize-use-override -export-fixes /tmp/tmpvb216v4z/tmpct614o90.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/coherencemgr/MESI_Shared_Noninclusive.cc
+clang-tidy -checks=-*,modernize-use-override -export-fixes /tmp/tmpvb216v4z/tmptqbv3h15.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent_L1.cc
+clang-tidy -checks=-*,modernize-use-override -export-fixes /tmp/tmpvb216v4z/tmp73yuwblz.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/multithreadL1Shim.cc
+clang-tidy -checks=-*,modernize-use-override -export-fixes /tmp/tmpvb216v4z/tmppb0cu5vt.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/coherencemgr/Incoherent.cc
+clang-tidy -checks=-*,modernize-use-override -export-fixes /tmp/tmpvb216v4z/tmpmtmivw_m.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/mshr.cc
+clang-tidy -checks=-*,modernize-use-override -export-fixes /tmp/tmpvb216v4z/tmp648wphx5.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/testcpu/trivialCPU.cc
+clang-tidy -checks=-*,modernize-use-override -export-fixes /tmp/tmpvb216v4z/tmpem4aevms.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/testcpu/streamCPU.cc
+clang-tidy -checks=-*,modernize-use-override -export-fixes /tmp/tmpvb216v4z/tmp9vx_gpgb.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/testcpu/scratchCPU.cc
+clang-tidy -checks=-*,modernize-use-override -export-fixes /tmp/tmpvb216v4z/tmp1y5hcxsx.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/dmaEngine.cc
+clang-tidy -checks=-*,modernize-use-override -export-fixes /tmp/tmpvb216v4z/tmper7jq4oe.yaml -p=/home/sabbir/sst-elements-org/memHierarchy/build /home/sabbir/sst-elements-org/memHierarchy/networkMemInspector.cc
+Applying fixes ...
