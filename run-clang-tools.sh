@@ -8,7 +8,7 @@ fi
 if [ "${@[-1]}" = "--headers" ]; then
     find ${REPO_DIR}/${1} -type f -exec sed -i "s/sst\/elements\/${1}\///g" {} \;
     find ${REPO_DIR}/${1} -type f -exec sed -i "s/<sst_config.h>/<sst\/core\/sst_config.h>/g" {} \;
-    if [ -a ${1}/fix-headers.sh ]; then
+    if [[ -a ${1}/fix-headers.sh ]]; then
         source ${1}/fix-headers.sh
     fi
 fi
@@ -29,6 +29,8 @@ elif [ "${@[-1]}" = "--tidy2" ]; then
 fi
 
 if [ "${@[-1]}" = "--format" ]; then
+    cp .clang-format ${REPO_DIR}/${1}
     find ${REPO_DIR}/${1} \( -name "*.cc" -o -name "*.h" -o -name "*.hpp" -o -name "*.cpp" \) \
         -exec clang-format -i {} \;
+    rm ${REPO_DIR}/${1}/.clang-format
 fi

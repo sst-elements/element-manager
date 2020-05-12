@@ -138,7 +138,7 @@ Enabled checks:
     modernize-use-using
 
 clang-apply-replacements version 10.0.0
-clang-tidy -export-fixes /tmp/tmpinwxwl4a/tmpydf_q17k.yaml -p=kingsley/build /home/sabbir/sst-elements-org/kingsley/linkControl.cc
+clang-tidy -header-filter=/home/sabbir/sst-elements-org/kingsley/* -export-fixes /tmp/tmpe6ijd6je/tmp4p0ub1js.yaml -p=/home/sabbir/sst-elements-org/kingsley/build /home/sabbir/sst-elements-org/kingsley/linkControl.cc
 /home/sabbir/sst-elements-org/kingsley/linkControl.cc:32:14: warning: use nullptr [modernize-use-nullptr]
     rtr_link(NULL), output_timing(NULL),
              ^~~~
@@ -303,7 +303,76 @@ void LinkControl::handle_output(Event* ev)
             if ( !keep ) sendFunctor = NULL;
                                        ^~~~
                                        nullptr
-clang-tidy -export-fixes /tmp/tmpinwxwl4a/tmpqqlj8qy2.yaml -p=kingsley/build /home/sabbir/sst-elements-org/kingsley/noc_mesh.cc
+/home/sabbir/sst-elements-org/kingsley/nocEvents.h:54:5: warning: use '= default' to define a trivial default constructor [modernize-use-equals-default]
+    BaseNocEvent()  {} // For Serialization only
+    ^               ~~
+                    = default;
+/home/sabbir/sst-elements-org/kingsley/nocEvents.h:85:30: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+    virtual NocPacket* clone(void)  override {
+                             ^~~~
+/home/sabbir/sst-elements-org/kingsley/nocEvents.h:86:9: warning: use auto when initializing with new to avoid duplicating the type name [modernize-use-auto]
+        NocPacket *ret = new NocPacket(*this);
+        ^~~~~~~~~
+        auto
+/home/sabbir/sst-elements-org/kingsley/nocEvents.h:91:39: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+    inline SimTime_t getInjectionTime(void) const { return injectionTime; }
+                                      ^~~~
+/home/sabbir/sst-elements-org/kingsley/nocEvents.h:101:43: warning: use nullptr [modernize-use-nullptr]
+        if ( request->inspectPayload() != NULL) request->inspectPayload()->print("  -> ", out);
+                                          ^~~~
+                                          nullptr
+/home/sabbir/sst-elements-org/kingsley/nocEvents.h:113:15: warning: use default member initializer for 'injectionTime' [modernize-use-default-member-init]
+    SimTime_t injectionTime;
+              ^
+                           {0}
+/home/sabbir/sst-elements-org/kingsley/nocEvents.h:167:33: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+    virtual NocInitEvent* clone(void)  override {
+                                ^~~~
+/home/sabbir/sst-elements-org/kingsley/nocEvents.h:168:9: warning: use auto when initializing with new to avoid duplicating the type name [modernize-use-auto]
+        NocInitEvent *ret = new NocInitEvent(*this);
+        ^~~~~~~~~~~~
+        auto
+clang-tidy -header-filter=/home/sabbir/sst-elements-org/kingsley/* -export-fixes /tmp/tmpe6ijd6je/tmpjx_5pydl.yaml -p=/home/sabbir/sst-elements-org/kingsley/build /home/sabbir/sst-elements-org/kingsley/noc_mesh.cc
+/home/sabbir/sst-elements-org/kingsley/lru_unit.h:30:5: warning: do not declare C-style arrays, use std::array<> instead [modernize-avoid-c-arrays]
+    std::vector<T> priority[2];
+    ^
+/home/sabbir/sst-elements-org/kingsley/lru_unit.h:34:10: warning: use default member initializer for 'finalized' [modernize-use-default-member-init]
+    bool finalized;
+         ^
+                  {false}
+/home/sabbir/sst-elements-org/kingsley/lru_unit.h:35:9: warning: use default member initializer for 'current' [modernize-use-default-member-init]
+    int current;
+        ^
+               {0}
+/home/sabbir/sst-elements-org/kingsley/nocEvents.h:54:5: warning: use '= default' to define a trivial default constructor [modernize-use-equals-default]
+    BaseNocEvent()  {} // For Serialization only
+    ^               ~~
+                    = default;
+/home/sabbir/sst-elements-org/kingsley/nocEvents.h:85:30: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+    virtual NocPacket* clone(void)  override {
+                             ^~~~
+/home/sabbir/sst-elements-org/kingsley/nocEvents.h:86:9: warning: use auto when initializing with new to avoid duplicating the type name [modernize-use-auto]
+        NocPacket *ret = new NocPacket(*this);
+        ^~~~~~~~~
+        auto
+/home/sabbir/sst-elements-org/kingsley/nocEvents.h:91:39: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+    inline SimTime_t getInjectionTime(void) const { return injectionTime; }
+                                      ^~~~
+/home/sabbir/sst-elements-org/kingsley/nocEvents.h:101:43: warning: use nullptr [modernize-use-nullptr]
+        if ( request->inspectPayload() != NULL) request->inspectPayload()->print("  -> ", out);
+                                          ^~~~
+                                          nullptr
+/home/sabbir/sst-elements-org/kingsley/nocEvents.h:113:15: warning: use default member initializer for 'injectionTime' [modernize-use-default-member-init]
+    SimTime_t injectionTime;
+              ^
+                           {0}
+/home/sabbir/sst-elements-org/kingsley/nocEvents.h:167:33: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+    virtual NocInitEvent* clone(void)  override {
+                                ^~~~
+/home/sabbir/sst-elements-org/kingsley/nocEvents.h:168:9: warning: use auto when initializing with new to avoid duplicating the type name [modernize-use-auto]
+        NocInitEvent *ret = new NocInitEvent(*this);
+        ^~~~~~~~~~~~
+        auto
 /home/sabbir/sst-elements-org/kingsley/noc_mesh.cc:28:10: warning: inclusion of deprecated C++ header 'signal.h'; consider using 'csignal' instead [modernize-deprecated-headers]
 #include <signal.h>
          ^~~~~~~~~~
@@ -807,11 +876,163 @@ noc_mesh::complete(unsigned int phase)
         if ( ports[pinfo.second] != NULL ) {
                                     ^~~~
                                     nullptr
+/home/sabbir/sst-elements-org/kingsley/noc_mesh.h:185:20: warning: use nullptr [modernize-use-nullptr]
+        encap_ev = NULL;
+                   ^~~~
+                   nullptr
+/home/sabbir/sst-elements-org/kingsley/noc_mesh.h:193:26: warning: use nullptr [modernize-use-nullptr]
+        if ( encap_ev != NULL ) delete encap_ev;
+                         ^~~~
+                         nullptr
+/home/sabbir/sst-elements-org/kingsley/noc_mesh.h:196:35: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+    virtual noc_mesh_event* clone(void) override {
+                                  ^~~~
+/home/sabbir/sst-elements-org/kingsley/noc_mesh.h:197:9: warning: use auto when initializing with new to avoid duplicating the type name [modernize-use-auto]
+        noc_mesh_event* ret = new noc_mesh_event(*this);
+        ^~~~~~~~~~~~~~
+        auto
 Applying fixes ...
 Enabled checks:
     modernize-use-override
 
 clang-apply-replacements version 10.0.0
-clang-tidy -checks=-*,modernize-use-override -export-fixes /tmp/tmph88_mgwz/tmpeull4401.yaml -p=kingsley/build /home/sabbir/sst-elements-org/kingsley/linkControl.cc
-clang-tidy -checks=-*,modernize-use-override -export-fixes /tmp/tmph88_mgwz/tmp_c3p9xba.yaml -p=kingsley/build /home/sabbir/sst-elements-org/kingsley/noc_mesh.cc
+clang-tidy -header-filter=/home/sabbir/sst-elements-org/kingsley/* -checks=-*,modernize-use-override -export-fixes /tmp/tmpz65c70z2/tmp6n8zwpd3.yaml -p=/home/sabbir/sst-elements-org/kingsley/build /home/sabbir/sst-elements-org/kingsley/linkControl.cc
+/home/sabbir/sst-elements-org/kingsley/linkControl.h:133:5: warning: annotate this function with 'override' or (rarely) 'final' [modernize-use-override]
+    ~LinkControl();
+    ^
+                   override
+/home/sabbir/sst-elements-org/kingsley/linkControl.h:141:10: warning: annotate this function with 'override' or (rarely) 'final' [modernize-use-override]
+    void setup();
+         ^
+                 override
+/home/sabbir/sst-elements-org/kingsley/linkControl.h:142:10: warning: annotate this function with 'override' or (rarely) 'final' [modernize-use-override]
+    void init(unsigned int phase);
+         ^
+                                  override
+/home/sabbir/sst-elements-org/kingsley/linkControl.h:143:10: warning: annotate this function with 'override' or (rarely) 'final' [modernize-use-override]
+    void complete(unsigned int phase);
+         ^
+                                      override
+/home/sabbir/sst-elements-org/kingsley/linkControl.h:144:10: warning: annotate this function with 'override' or (rarely) 'final' [modernize-use-override]
+    void finish();
+         ^
+                  override
+/home/sabbir/sst-elements-org/kingsley/linkControl.h:148:10: warning: annotate this function with 'override' or (rarely) 'final' [modernize-use-override]
+    bool send(SST::Interfaces::SimpleNetwork::Request* req, int vn);
+         ^
+                                                                    override
+/home/sabbir/sst-elements-org/kingsley/linkControl.h:152:10: warning: annotate this function with 'override' or (rarely) 'final' [modernize-use-override]
+    bool spaceToSend(int vn, int flits);
+         ^
+                                        override
+/home/sabbir/sst-elements-org/kingsley/linkControl.h:156:46: warning: annotate this function with 'override' or (rarely) 'final' [modernize-use-override]
+    SST::Interfaces::SimpleNetwork::Request* recv(int vn);
+                                             ^
+                                                          override
+/home/sabbir/sst-elements-org/kingsley/linkControl.h:160:10: warning: annotate this function with 'override' or (rarely) 'final' [modernize-use-override]
+    bool requestToReceive( int vn ) { return ! input_buf[vn].empty(); }
+         ^
+                                    override
+/home/sabbir/sst-elements-org/kingsley/linkControl.h:162:10: warning: annotate this function with 'override' or (rarely) 'final' [modernize-use-override]
+    void sendInitData(SST::Interfaces::SimpleNetwork::Request* ev);
+         ^
+                                                                   override
+/home/sabbir/sst-elements-org/kingsley/linkControl.h:163:46: warning: annotate this function with 'override' or (rarely) 'final' [modernize-use-override]
+    SST::Interfaces::SimpleNetwork::Request* recvInitData();
+                                             ^
+                                                            override
+/home/sabbir/sst-elements-org/kingsley/linkControl.h:167:17: warning: annotate this function with 'override' or (rarely) 'final' [modernize-use-override]
+    inline void setNotifyOnReceive(HandlerBase* functor) { receiveFunctor = functor; }
+                ^
+                                                         override
+/home/sabbir/sst-elements-org/kingsley/linkControl.h:168:17: warning: annotate this function with 'override' or (rarely) 'final' [modernize-use-override]
+    inline void setNotifyOnSend(HandlerBase* functor) { sendFunctor = functor; }
+                ^
+                                                      override
+/home/sabbir/sst-elements-org/kingsley/linkControl.h:170:17: warning: annotate this function with 'override' or (rarely) 'final' [modernize-use-override]
+    inline bool isNetworkInitialized() const { return network_initialized; }
+                ^
+                                             override
+/home/sabbir/sst-elements-org/kingsley/linkControl.h:171:18: warning: annotate this function with 'override' or (rarely) 'final' [modernize-use-override]
+    inline nid_t getEndpointID() const { return id; }
+                 ^
+                                       override
+/home/sabbir/sst-elements-org/kingsley/linkControl.h:172:31: warning: annotate this function with 'override' or (rarely) 'final' [modernize-use-override]
+    inline const UnitAlgebra& getLinkBW() const { return link_bw; }
+                              ^
+                                                override
+/home/sabbir/sst-elements-org/kingsley/linkControl.h:174:10: warning: annotate this function with 'override' or (rarely) 'final' [modernize-use-override]
+    void printStatus(Output& out);
+         ^
+                                  override
+/home/sabbir/sst-elements-org/kingsley/nocEvents.h:78:5: warning: annotate this function with 'override' or (rarely) 'final' [modernize-use-override]
+    ~NocPacket()
+    ^
+                 override
+/home/sabbir/sst-elements-org/kingsley/nocEvents.h:85:24: warning: 'virtual' is redundant since the function is already declared 'override' [modernize-use-override]
+    virtual NocPacket* clone()  override {
+    ~~~~~~~~           ^
+/home/sabbir/sst-elements-org/kingsley/nocEvents.h:98:18: warning: 'virtual' is redundant since the function is already declared 'override' [modernize-use-override]
+    virtual void print(const std::string& header, Output &out) const  override {
+    ~~~~~~~~     ^
+/home/sabbir/sst-elements-org/kingsley/nocEvents.h:135:18: warning: 'virtual' is redundant since the function is already declared 'override' [modernize-use-override]
+    virtual void print(const std::string& header, Output &out) const  override {
+    ~~~~~~~~     ^
+/home/sabbir/sst-elements-org/kingsley/nocEvents.h:167:27: warning: 'virtual' is redundant since the function is already declared 'override' [modernize-use-override]
+    virtual NocInitEvent* clone()  override {
+    ~~~~~~~~              ^
+/home/sabbir/sst-elements-org/kingsley/nocEvents.h:172:18: warning: 'virtual' is redundant since the function is already declared 'override' [modernize-use-override]
+    virtual void print(const std::string& header, Output &out) const  override {
+    ~~~~~~~~     ^
+clang-tidy -header-filter=/home/sabbir/sst-elements-org/kingsley/* -checks=-*,modernize-use-override -export-fixes /tmp/tmpz65c70z2/tmpj9jnxn4j.yaml -p=/home/sabbir/sst-elements-org/kingsley/build /home/sabbir/sst-elements-org/kingsley/noc_mesh.cc
+/home/sabbir/sst-elements-org/kingsley/nocEvents.h:78:5: warning: annotate this function with 'override' or (rarely) 'final' [modernize-use-override]
+    ~NocPacket()
+    ^
+                 override
+/home/sabbir/sst-elements-org/kingsley/nocEvents.h:85:24: warning: 'virtual' is redundant since the function is already declared 'override' [modernize-use-override]
+    virtual NocPacket* clone()  override {
+    ~~~~~~~~           ^
+/home/sabbir/sst-elements-org/kingsley/nocEvents.h:98:18: warning: 'virtual' is redundant since the function is already declared 'override' [modernize-use-override]
+    virtual void print(const std::string& header, Output &out) const  override {
+    ~~~~~~~~     ^
+/home/sabbir/sst-elements-org/kingsley/nocEvents.h:135:18: warning: 'virtual' is redundant since the function is already declared 'override' [modernize-use-override]
+    virtual void print(const std::string& header, Output &out) const  override {
+    ~~~~~~~~     ^
+/home/sabbir/sst-elements-org/kingsley/nocEvents.h:167:27: warning: 'virtual' is redundant since the function is already declared 'override' [modernize-use-override]
+    virtual NocInitEvent* clone()  override {
+    ~~~~~~~~              ^
+/home/sabbir/sst-elements-org/kingsley/nocEvents.h:172:18: warning: 'virtual' is redundant since the function is already declared 'override' [modernize-use-override]
+    virtual void print(const std::string& header, Output &out) const  override {
+    ~~~~~~~~     ^
+/home/sabbir/sst-elements-org/kingsley/noc_mesh.h:156:5: warning: annotate this function with 'override' or (rarely) 'final' [modernize-use-override]
+    ~noc_mesh();
+    ^
+                override
+/home/sabbir/sst-elements-org/kingsley/noc_mesh.h:158:10: warning: annotate this function with 'override' or (rarely) 'final' [modernize-use-override]
+    void init(unsigned int phase);
+         ^
+                                  override
+/home/sabbir/sst-elements-org/kingsley/noc_mesh.h:159:10: warning: annotate this function with 'override' or (rarely) 'final' [modernize-use-override]
+    void complete(unsigned int phase);
+         ^
+                                      override
+/home/sabbir/sst-elements-org/kingsley/noc_mesh.h:160:10: warning: annotate this function with 'override' or (rarely) 'final' [modernize-use-override]
+    void setup();
+         ^
+                 override
+/home/sabbir/sst-elements-org/kingsley/noc_mesh.h:161:10: warning: annotate this function with 'override' or (rarely) 'final' [modernize-use-override]
+    void finish();
+         ^
+                  override
+/home/sabbir/sst-elements-org/kingsley/noc_mesh.h:167:10: warning: annotate this function with 'override' or (rarely) 'final' [modernize-use-override]
+    void printStatus(Output& out);
+         ^
+                                  override
+/home/sabbir/sst-elements-org/kingsley/noc_mesh.h:192:13: warning: prefer using 'override' or (rarely) 'final' instead of 'virtual' [modernize-use-override]
+    virtual ~noc_mesh_event() {
+    ~~~~~~~~^
+                              override
+/home/sabbir/sst-elements-org/kingsley/noc_mesh.h:196:29: warning: 'virtual' is redundant since the function is already declared 'override' [modernize-use-override]
+    virtual noc_mesh_event* clone() override {
+    ~~~~~~~~                ^
 Applying fixes ...
