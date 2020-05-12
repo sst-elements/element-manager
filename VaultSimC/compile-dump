@@ -1,155 +1,164 @@
-In file included from /home/sabbir/sst-elements-org/VaultSimC/logicLayer.cpp:16:
-/home/sabbir/sst-elements-org/VaultSimC/logicLayer.h:42:42: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
-      {"clock", "Logic Layer Clock Rate."},
-                                         ^
-/home/sabbir/sst-elements-org/VaultSimC/logicLayer.h:43:57: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
-      {"llID", "Logic Layer ID (Unique id within chain)"},
-                                                        ^
-/home/sabbir/sst-elements-org/VaultSimC/logicLayer.h:45:76: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
-       "Number of memory events which can be processed per cycle per link."},
-                                                                           ^
-/home/sabbir/sst-elements-org/VaultSimC/logicLayer.h:49:56: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
-                  "vaultGlobals.h and is 8 by default."},
-                                                       ^
-/home/sabbir/sst-elements-org/VaultSimC/logicLayer.h:50:57: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
-      {"terminal", "Is this the last cube in the chain?"},
-                                                        ^
-/home/sabbir/sst-elements-org/VaultSimC/logicLayer.h:51:46: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
-      {"vaults", "Number of vaults per cube."},
-                                             ^
-/home/sabbir/sst-elements-org/VaultSimC/logicLayer.h:52:76: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
-      {"debug", "0 (default): No debugging, 1: STDOUT, 2: STDERR, 3: FILE."});
-                                                                           ^
-In file included from /home/sabbir/sst-elements-org/VaultSimC/logicLayer.cpp:19:
-In file included from /home/sabbir/sst-elements-org/VaultSimC/memReqEvent.h:19:
-/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.h:58:2: warning: embedding a directive within macro arguments has undefined behavior [-Wembedded-directive]
+[0/1] Re-running CMake...
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/sabbir/sst-elements-org/VaultSimC/build
+[1/5] Building CXX object CMakeFiles/libVaultSimC.so.dir/app.cpp.o
+In file included from ../app.cpp:17:
+In file included from ../cpu.h:20:
+In file included from ../memReqEvent.h:20:
+../VaultSimC.h:55:2: warning: embedding a directive within macro arguments has undefined behavior [-Wembedded-directive]
 #if !(HAVE_LIBPHX == 1)
  ^
-/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.h:60:2: warning: embedding a directive within macro arguments has undefined behavior [-Wembedded-directive]
+../VaultSimC.h:57:2: warning: embedding a directive within macro arguments has undefined behavior [-Wembedded-directive]
 #endif /* HAVE_LIBPHX */
  ^
-/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.h:55:57: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
-                     "log_2(number of vaults per cube))"},
-                                                        ^
-/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.h:56:54: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
-      {"VaultID", "Vault Unique ID (Unique to cube)."},
-                                                     ^
-/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.h:57:76: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
-      {"debug", "0 (default): No debugging, 1: STDOUT, 2: STDERR, 3: FILE."},
+../VaultSimC.h:52:113: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
+                             "Number of bits to determine vault address (i.e. log_2(number of vaults per cube))"},
+                                                                                                                ^
+../VaultSimC.h:53:76: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
+                            {"VaultID", "Vault Unique ID (Unique to cube)."},
                                                                            ^
-/home/sabbir/sst-elements-org/VaultSimC/logicLayer.cpp:29:22: warning: named variadic macros are a GNU extension [-Wvariadic-macros]
-#define DBG(fmt, args...)                                                      \
-                     ^
-/home/sabbir/sst-elements-org/VaultSimC/logicLayer.cpp:91:61: warning: format specifies type 'void *' but the argument has type 'SST::Link *' [-Wformat-pedantic]
-  dbg.output(CALL_INFO, "made logicLayer %d %p %p\n", llID, toMem, toCPU);
-                                            ~~              ^~~~~
-/home/sabbir/sst-elements-org/VaultSimC/logicLayer.cpp:91:68: warning: format specifies type 'void *' but the argument has type 'SST::Link *' [-Wformat-pedantic]
-  dbg.output(CALL_INFO, "made logicLayer %d %p %p\n", llID, toMem, toCPU);
-                                               ~~                  ^~~~~
-/home/sabbir/sst-elements-org/VaultSimC/logicLayer.cpp:204:18: warning: format specifies type 'void *' but the argument has type 'SST::VaultSim::MemReqEvent *' [-Wformat-pedantic]
-                 event, current);
-                 ^~~~~
-/home/sabbir/sst-elements-org/VaultSimC/logicLayer.cpp:211:64: warning: format specifies type 'void *' but the argument has type 'SST::VaultSim::MemReqEvent *' [-Wformat-pedantic]
-        dbg.output(CALL_INFO, "ll%d sends %p to next\n", llID, event);
-                                          ~~                   ^~~~~
-/home/sabbir/sst-elements-org/VaultSimC/logicLayer.cpp:230:24: warning: format specifies type 'void *' but the argument has type 'SST::VaultSim::MemRespEvent *' [-Wformat-pedantic]
-                 llID, event, event->getID().first, event->getID().second);
-                       ^~~~~
-/home/sabbir/sst-elements-org/VaultSimC/logicLayer.cpp:248:24: warning: format specifies type 'void *' but the argument has type 'SST::VaultSim::MemRespEvent *' [-Wformat-pedantic]
-                 llID, event, current);
-                       ^~~~~
-19 warnings generated.
-In file included from /home/sabbir/sst-elements-org/VaultSimC/cpu.cpp:16:
-In file included from /home/sabbir/sst-elements-org/VaultSimC/cpu.h:19:
-In file included from /home/sabbir/sst-elements-org/VaultSimC/memReqEvent.h:19:
-/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.h:58:2: warning: embedding a directive within macro arguments has undefined behavior [-Wembedded-directive]
-#if !(HAVE_LIBPHX == 1)
- ^
-/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.h:60:2: warning: embedding a directive within macro arguments has undefined behavior [-Wembedded-directive]
-#endif /* HAVE_LIBPHX */
- ^
-/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.h:55:57: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
-                     "log_2(number of vaults per cube))"},
-                                                        ^
-/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.h:56:54: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
-      {"VaultID", "Vault Unique ID (Unique to cube)."},
-                                                     ^
-/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.h:57:76: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
-      {"debug", "0 (default): No debugging, 1: STDOUT, 2: STDERR, 3: FILE."},
-                                                                           ^
-In file included from /home/sabbir/sst-elements-org/VaultSimC/cpu.cpp:16:
-/home/sabbir/sst-elements-org/VaultSimC/cpu.h:43:41: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
-      {"clock", "Simple CPU Clock Rate."},
-                                        ^
-/home/sabbir/sst-elements-org/VaultSimC/cpu.h:44:56: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
-      {"threads", "Number of simulated threads in cpu."},
-                                                       ^
-/home/sabbir/sst-elements-org/VaultSimC/cpu.h:46:38: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
-              "app.cpp for details)."},
-                                     ^
-/home/sabbir/sst-elements-org/VaultSimC/cpu.h:49:69: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
-                  "most 2 outstanding memory references at a time. "},
-                                                                    ^
-/home/sabbir/sst-elements-org/VaultSimC/cpu.h:51:36: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
-               "uses srandomdev()."})
-                                   ^
+../VaultSimC.h:54:98: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
+                            {"debug", "0 (default): No debugging, 1: STDOUT, 2: STDERR, 3: FILE."},
+                                                                                                 ^
+In file included from ../app.cpp:17:
+../cpu.h:41:63: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
+    SST_ELI_DOCUMENT_PARAMS({"clock", "Simple CPU Clock Rate."}, {"threads", "Number of simulated threads in cpu."},
+                                                              ^
+../cpu.h:41:115: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
+    SST_ELI_DOCUMENT_PARAMS({"clock", "Simple CPU Clock Rate."}, {"threads", "Number of simulated threads in cpu."},
+                                                                                                                  ^
+../cpu.h:42:118: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
+                            {"app", "Synthetic Application. 0:miniMD-like 1:phdMesh-like. (See app.cpp for details)."},
+                                                                                                                     ^
+../cpu.h:45:104: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
+                             "thread can only have at most 2 outstanding memory references at a time. "},
+                                                                                                       ^
+../cpu.h:46:118: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
+                            {"seed", "Optional random number generator seed. If not defined or 0, uses srandomdev()."})
+                                                                                                                     ^
 10 warnings generated.
-In file included from /home/sabbir/sst-elements-org/VaultSimC/app.cpp:16:
-In file included from /home/sabbir/sst-elements-org/VaultSimC/cpu.h:19:
-In file included from /home/sabbir/sst-elements-org/VaultSimC/memReqEvent.h:19:
-/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.h:58:2: warning: embedding a directive within macro arguments has undefined behavior [-Wembedded-directive]
+[2/5] Building CXX object CMakeFiles/libVaultSimC.so.dir/VaultSimC.cpp.o
+In file included from ../VaultSimC.cpp:17:
+../VaultSimC.h:55:2: warning: embedding a directive within macro arguments has undefined behavior [-Wembedded-directive]
 #if !(HAVE_LIBPHX == 1)
  ^
-/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.h:60:2: warning: embedding a directive within macro arguments has undefined behavior [-Wembedded-directive]
+../VaultSimC.h:57:2: warning: embedding a directive within macro arguments has undefined behavior [-Wembedded-directive]
 #endif /* HAVE_LIBPHX */
  ^
-/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.h:55:57: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
-                     "log_2(number of vaults per cube))"},
-                                                        ^
-/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.h:56:54: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
-      {"VaultID", "Vault Unique ID (Unique to cube)."},
-                                                     ^
-/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.h:57:76: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
-      {"debug", "0 (default): No debugging, 1: STDOUT, 2: STDERR, 3: FILE."},
+../VaultSimC.h:52:113: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
+                             "Number of bits to determine vault address (i.e. log_2(number of vaults per cube))"},
+                                                                                                                ^
+../VaultSimC.h:53:76: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
+                            {"VaultID", "Vault Unique ID (Unique to cube)."},
                                                                            ^
-In file included from /home/sabbir/sst-elements-org/VaultSimC/app.cpp:16:
-/home/sabbir/sst-elements-org/VaultSimC/cpu.h:43:41: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
-      {"clock", "Simple CPU Clock Rate."},
-                                        ^
-/home/sabbir/sst-elements-org/VaultSimC/cpu.h:44:56: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
-      {"threads", "Number of simulated threads in cpu."},
-                                                       ^
-/home/sabbir/sst-elements-org/VaultSimC/cpu.h:46:38: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
-              "app.cpp for details)."},
-                                     ^
-/home/sabbir/sst-elements-org/VaultSimC/cpu.h:49:69: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
-                  "most 2 outstanding memory references at a time. "},
-                                                                    ^
-/home/sabbir/sst-elements-org/VaultSimC/cpu.h:51:36: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
-               "uses srandomdev()."})
-                                   ^
-10 warnings generated.
-In file included from /home/sabbir/sst-elements-org/VaultSimC/VaultSimC.cpp:16:
-/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.h:58:2: warning: embedding a directive within macro arguments has undefined behavior [-Wembedded-directive]
-#if !(HAVE_LIBPHX == 1)
- ^
-/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.h:60:2: warning: embedding a directive within macro arguments has undefined behavior [-Wembedded-directive]
-#endif /* HAVE_LIBPHX */
- ^
-/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.h:55:57: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
-                     "log_2(number of vaults per cube))"},
-                                                        ^
-/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.h:56:54: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
-      {"VaultID", "Vault Unique ID (Unique to cube)."},
-                                                     ^
-/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.h:57:76: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
-      {"debug", "0 (default): No debugging, 1: STDOUT, 2: STDERR, 3: FILE."},
-                                                                           ^
-/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.cpp:99:10: warning: unused variable 'memSize' [-Wunused-variable]
-  size_t memSize = MEMSIZE;
-         ^
-In file included from /home/sabbir/sst-elements-org/VaultSimC/VaultSimC.cpp:16:
-/home/sabbir/sst-elements-org/VaultSimC/VaultSimC.h:100:12: warning: private field 'memBuffer' is not used [-Wunused-private-field]
-  uint8_t *memBuffer;
+../VaultSimC.h:54:98: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
+                            {"debug", "0 (default): No debugging, 1: STDOUT, 2: STDERR, 3: FILE."},
+                                                                                                 ^
+../VaultSimC.cpp:94:12: warning: unused variable 'memSize' [-Wunused-variable]
+    size_t memSize = MEMSIZE;
            ^
+In file included from ../VaultSimC.cpp:17:
+../VaultSimC.h:95:14: warning: private field 'memBuffer' is not used [-Wunused-private-field]
+    uint8_t *memBuffer;
+             ^
 7 warnings generated.
+[3/5] Building CXX object CMakeFiles/libVaultSimC.so.dir/cpu.cpp.o
+In file included from ../cpu.cpp:17:
+In file included from ../cpu.h:20:
+In file included from ../memReqEvent.h:20:
+../VaultSimC.h:55:2: warning: embedding a directive within macro arguments has undefined behavior [-Wembedded-directive]
+#if !(HAVE_LIBPHX == 1)
+ ^
+../VaultSimC.h:57:2: warning: embedding a directive within macro arguments has undefined behavior [-Wembedded-directive]
+#endif /* HAVE_LIBPHX */
+ ^
+../VaultSimC.h:52:113: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
+                             "Number of bits to determine vault address (i.e. log_2(number of vaults per cube))"},
+                                                                                                                ^
+../VaultSimC.h:53:76: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
+                            {"VaultID", "Vault Unique ID (Unique to cube)."},
+                                                                           ^
+../VaultSimC.h:54:98: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
+                            {"debug", "0 (default): No debugging, 1: STDOUT, 2: STDERR, 3: FILE."},
+                                                                                                 ^
+In file included from ../cpu.cpp:17:
+../cpu.h:41:63: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
+    SST_ELI_DOCUMENT_PARAMS({"clock", "Simple CPU Clock Rate."}, {"threads", "Number of simulated threads in cpu."},
+                                                              ^
+../cpu.h:41:115: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
+    SST_ELI_DOCUMENT_PARAMS({"clock", "Simple CPU Clock Rate."}, {"threads", "Number of simulated threads in cpu."},
+                                                                                                                  ^
+../cpu.h:42:118: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
+                            {"app", "Synthetic Application. 0:miniMD-like 1:phdMesh-like. (See app.cpp for details)."},
+                                                                                                                     ^
+../cpu.h:45:104: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
+                             "thread can only have at most 2 outstanding memory references at a time. "},
+                                                                                                       ^
+../cpu.h:46:118: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
+                            {"seed", "Optional random number generator seed. If not defined or 0, uses srandomdev()."})
+                                                                                                                     ^
+10 warnings generated.
+[4/5] Building CXX object CMakeFiles/libVaultSimC.so.dir/logicLayer.cpp.o
+In file included from ../logicLayer.cpp:17:
+../logicLayer.h:40:44: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
+        {"clock", "Logic Layer Clock Rate."}, {"llID", "Logic Layer ID (Unique id within chain)"},
+                                           ^
+../logicLayer.h:40:97: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
+        {"clock", "Logic Layer Clock Rate."}, {"llID", "Logic Layer ID (Unique id within chain)"},
+                                                                                                ^
+../logicLayer.h:41:89: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
+        {"bwlimit", "Number of memory events which can be processed per cycle per link."},
+                                                                                        ^
+../logicLayer.h:44:106: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
+         "& LL_MASK) == llID) || (LL_MASK == 0)). LL_SHIFT is set in vaultGlobals.h and is 8 by default."},
+                                                                                                         ^
+../logicLayer.h:45:59: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
+        {"terminal", "Is this the last cube in the chain?"}, {"vaults", "Number of vaults per cube."},
+                                                          ^
+../logicLayer.h:45:101: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
+        {"terminal", "Is this the last cube in the chain?"}, {"vaults", "Number of vaults per cube."},
+                                                                                                    ^
+../logicLayer.h:46:78: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
+        {"debug", "0 (default): No debugging, 1: STDOUT, 2: STDERR, 3: FILE."});
+                                                                             ^
+In file included from ../logicLayer.cpp:21:
+In file included from ../memReqEvent.h:20:
+../VaultSimC.h:55:2: warning: embedding a directive within macro arguments has undefined behavior [-Wembedded-directive]
+#if !(HAVE_LIBPHX == 1)
+ ^
+../VaultSimC.h:57:2: warning: embedding a directive within macro arguments has undefined behavior [-Wembedded-directive]
+#endif /* HAVE_LIBPHX */
+ ^
+../VaultSimC.h:52:113: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
+                             "Number of bits to determine vault address (i.e. log_2(number of vaults per cube))"},
+                                                                                                                ^
+../VaultSimC.h:53:76: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
+                            {"VaultID", "Vault Unique ID (Unique to cube)."},
+                                                                           ^
+../VaultSimC.h:54:98: warning: missing field 'defaultValue' initializer [-Wmissing-field-initializers]
+                            {"debug", "0 (default): No debugging, 1: STDOUT, 2: STDERR, 3: FILE."},
+                                                                                                 ^
+../logicLayer.cpp:29:22: warning: named variadic macros are a GNU extension [-Wvariadic-macros]
+#define DBG(fmt, args...) m_dbg.write("%s():%d: " fmt, __FUNCTION__, __LINE__, ##args)
+                     ^
+../logicLayer.cpp:87:63: warning: format specifies type 'void *' but the argument has type 'SST::Link *' [-Wformat-pedantic]
+    dbg.output(CALL_INFO, "made logicLayer %d %p %p\n", llID, toMem, toCPU);
+                                              ~~              ^~~~~
+../logicLayer.cpp:87:70: warning: format specifies type 'void *' but the argument has type 'SST::Link *' [-Wformat-pedantic]
+    dbg.output(CALL_INFO, "made logicLayer %d %p %p\n", llID, toMem, toCPU);
+                                                 ~~                  ^~~~~
+../logicLayer.cpp:189:83: warning: format specifies type 'void *' but the argument has type 'SST::VaultSim::MemReqEvent *' [-Wformat-pedantic]
+            dbg.output(CALL_INFO, "ll%d sends %p to vault @ %" PRIu64 "\n", llID, event, current);
+                                              ~~                                  ^~~~~
+../logicLayer.cpp:196:72: warning: format specifies type 'void *' but the argument has type 'SST::VaultSim::MemReqEvent *' [-Wformat-pedantic]
+                dbg.output(CALL_INFO, "ll%d sends %p to next\n", llID, event);
+                                                  ~~                   ^~~~~
+../logicLayer.cpp:214:89: warning: format specifies type 'void *' but the argument has type 'SST::VaultSim::MemRespEvent *' [-Wformat-pedantic]
+            dbg.output(CALL_INFO, "ll%d sends %p towards cpu (%" PRIu64 " %d)\n", llID, event, event->getID().first,
+                                              ~~                                        ^~~~~
+../logicLayer.cpp:232:30: warning: format specifies type 'void *' but the argument has type 'SST::VaultSim::MemRespEvent *' [-Wformat-pedantic]
+                       llID, event, current);
+                             ^~~~~
+19 warnings generated.
+[5/5] Linking CXX executable libVaultSimC.so
