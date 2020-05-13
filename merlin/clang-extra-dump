@@ -2197,6 +2197,9 @@ char pymerlin_base[] = {
 /home/sabbir/sst-elements-org/merlin/merlin.cc:47:1: warning: do not declare C-style arrays, use std::array<> instead [modernize-avoid-c-arrays]
 char pymerlin_topology[] = {
 ^
+/home/sabbir/sst-elements-org/merlin/build/CMakeFiles/3.16.2/CompilerIdCXX/CMakeCXXCompilerId.cpp:552:1: warning: do not declare C-style arrays, use std::array<> instead [modernize-avoid-c-arrays]
+char const info_version[] = {
+^
 /usr/local/include/sst/core/eli/elementbuilder.h:132:3: warning: Potential leak of memory pointed to by 'loader' [clang-analyzer-cplusplus.NewDeleteLeaks]
   return ELI::LoadedLibraries::addLoader(elemlib, elem, loader);
   ^

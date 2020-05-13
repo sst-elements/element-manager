@@ -1,3 +1,62 @@
+/home/sabbir/sst-elements-org/Messier/Cache.h:36:10: warning: inclusion of deprecated C++ header 'stdio.h'; consider using 'cstdio' instead [modernize-deprecated-headers]
+#include <stdio.h>
+         ^~~~~~~~~
+         <cstdio>
+/home/sabbir/sst-elements-org/Messier/Cache.h:36:10: note: FIX-IT applied suggested code changes
+/home/sabbir/sst-elements-org/Messier/Cache.h:37:10: warning: inclusion of deprecated C++ header 'stdint.h'; consider using 'cstdint' instead [modernize-deprecated-headers]
+#include <stdint.h>
+         ^~~~~~~~~~
+         <cstdint>
+/home/sabbir/sst-elements-org/Messier/Cache.h:37:10: note: FIX-IT applied suggested code changes
+/home/sabbir/sst-elements-org/Messier/NVM_Request.h:38:3: warning: use '= default' to define a trivial default constructor [modernize-use-equals-default]
+                NVM_Request() {}
+                ^             ~~
+                              = default;
+/home/sabbir/sst-elements-org/Messier/NVM_Request.h:38:17: note: FIX-IT applied suggested code changes
+                NVM_Request() {}
+                              ^
+/home/sabbir/sst-elements-org/Messier/memReqEvent.h:27:1: warning: use 'using' instead of 'typedef' [modernize-use-using]
+typedef uint64_t Addr;
+^~~~~~~~~~~~~~~~~~~~~
+using Addr = uint64_t
+/home/sabbir/sst-elements-org/Messier/memReqEvent.h:27:1: note: FIX-IT applied suggested code changes
+/home/sabbir/sst-elements-org/Messier/memReqEvent.h:28:1: warning: use 'using' instead of 'typedef' [modernize-use-using]
+typedef uint64_t ReqId;
+^~~~~~~~~~~~~~~~~~~~~~
+using ReqId = uint64_t
+/home/sabbir/sst-elements-org/Messier/memReqEvent.h:28:1: note: FIX-IT applied suggested code changes
+/home/sabbir/sst-elements-org/Messier/memReqEvent.h:44:16: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+        id_type getID(void) const { return eventID; }
+                      ^~~~
+/home/sabbir/sst-elements-org/Messier/memReqEvent.h:44:16: note: FIX-IT applied suggested code changes
+/home/sabbir/sst-elements-org/Messier/memReqEvent.h:47:5: warning: use '= default' to define a trivial default constructor [modernize-use-equals-default]
+    MemReqEvent() {} // For Serialization only
+    ^             ~~
+                  = default;
+/home/sabbir/sst-elements-org/Messier/memReqEvent.h:47:19: note: FIX-IT applied suggested code changes
+    MemReqEvent() {} // For Serialization only
+                  ^
+/home/sabbir/sst-elements-org/Messier/memReqEvent.h:81:16: warning: redundant void argument list in function definition [modernize-redundant-void-arg]
+        id_type getID(void) const { return eventID; }
+                      ^~~~
+/home/sabbir/sst-elements-org/Messier/memReqEvent.h:81:16: note: FIX-IT applied suggested code changes
+/home/sabbir/sst-elements-org/Messier/memReqEvent.h:84:5: warning: use '= default' to define a trivial default constructor [modernize-use-equals-default]
+    MemRespEvent() {} // For Serialization only
+    ^              ~~
+                   = default;
+/home/sabbir/sst-elements-org/Messier/memReqEvent.h:84:20: note: FIX-IT applied suggested code changes
+    MemRespEvent() {} // For Serialization only
+                   ^
+/home/sabbir/sst-elements-org/Messier/WriteBuffer.cc:83:10: warning: use nullptr [modernize-use-nullptr]
+                return NULL;
+                       ^~~~
+                       nullptr
+/home/sabbir/sst-elements-org/Messier/WriteBuffer.cc:83:10: note: FIX-IT applied suggested code changes
+/home/sabbir/sst-elements-org/Messier/WriteBuffer.cc:93:10: warning: use nullptr [modernize-use-nullptr]
+                return NULL;
+                       ^~~~
+                       nullptr
+/home/sabbir/sst-elements-org/Messier/WriteBuffer.cc:93:10: note: FIX-IT applied suggested code changes
 /home/sabbir/sst-elements-org/Messier/Messier.cc:182:53: warning: Potential leak of memory pointed to by 'link_buffer' [clang-analyzer-unix.Malloc]
         event_link = configureSelfLink(link_buffer, "1ns", new Event::Handler<NVM_DIMM>(DIMM, &NVM_DIMM::handleEvent));
                                                     ^
@@ -7,43 +66,120 @@
 /home/sabbir/sst-elements-org/Messier/Messier.cc:182:53: note: Potential leak of memory pointed to by 'link_buffer'
         event_link = configureSelfLink(link_buffer, "1ns", new Event::Handler<NVM_DIMM>(DIMM, &NVM_DIMM::handleEvent));
                                                     ^
-/home/sabbir/sst-elements-org/Messier/Messier.cc:211:33: warning: unused parameter 'x' [clang-diagnostic-unused-parameter]
+/home/sabbir/sst-elements-org/Messier/Messier.cc:211:33: warning: parameter 'x' is unused [misc-unused-parameters]
 bool Messier::tick(SST::Cycle_t x)
                                 ^
-/home/sabbir/sst-elements-org/Messier/Messier.h:118:34: warning: unused parameter 'event' [clang-diagnostic-unused-parameter]
-                                void handleEvent(SST::Event* event) {};
-                                                             ^
-/home/sabbir/sst-elements-org/Messier/Messier.h:129:31: warning: unused parameter 'prog_binary' [clang-diagnostic-unused-parameter]
+                                 /*x*/
+/home/sabbir/sst-elements-org/Messier/Messier.cc:211:33: note: FIX-IT applied suggested code changes
+/home/sabbir/sst-elements-org/Messier/Messier.h:35:10: warning: inclusion of deprecated C++ header 'stdio.h'; consider using 'cstdio' instead [modernize-deprecated-headers]
+#include <stdio.h>
+         ^~~~~~~~~
+         <cstdio>
+/home/sabbir/sst-elements-org/Messier/Messier.h:35:10: note: FIX-IT applied suggested code changes
+/home/sabbir/sst-elements-org/Messier/Messier.h:36:10: warning: inclusion of deprecated C++ header 'stdint.h'; consider using 'cstdint' instead [modernize-deprecated-headers]
+#include <stdint.h>
+         ^~~~~~~~~~
+         <cstdint>
+/home/sabbir/sst-elements-org/Messier/Messier.h:36:10: note: FIX-IT applied suggested code changes
+/home/sabbir/sst-elements-org/Messier/Messier.h:126:5: warning: use '= delete' to prohibit calling of a special member function [modernize-use-equals-delete]
+                                Messier(const Messier&); // do not implement
+                                ^
+                                                        = delete
+/home/sabbir/sst-elements-org/Messier/Messier.h:126:28: note: FIX-IT applied suggested code changes
+                                Messier(const Messier&); // do not implement
+                                                       ^
+/home/sabbir/sst-elements-org/Messier/Messier.h:127:10: warning: use '= delete' to prohibit calling of a special member function [modernize-use-equals-delete]
+                                void operator=(const Messier&); // do not implement
+                                     ^
+                                                               = delete
+/home/sabbir/sst-elements-org/Messier/Messier.h:127:35: note: FIX-IT applied suggested code changes
+                                void operator=(const Messier&); // do not implement
+                                                              ^
+/home/sabbir/sst-elements-org/Messier/Messier.h:129:31: warning: parameter 'prog_binary' is unused [misc-unused-parameters]
                                 int create_pinchild(char* prog_binary, char** arg_list){return 0;}
-                                                          ^
-/home/sabbir/sst-elements-org/Messier/Messier.h:129:51: warning: unused parameter 'arg_list' [clang-diagnostic-unused-parameter]
+                                                          ^~~~~~~~~~~
+                                                           /*prog_binary*/
+/home/sabbir/sst-elements-org/Messier/Messier.h:129:31: note: FIX-IT applied suggested code changes
+/home/sabbir/sst-elements-org/Messier/Messier.h:129:51: warning: parameter 'arg_list' is unused [misc-unused-parameters]
                                 int create_pinchild(char* prog_binary, char** arg_list){return 0;}
-                                                                              ^
-/home/sabbir/sst-elements-org/Messier/NVM_Params.h:157:8: warning: definition of implicit copy constructor for 'NVM_PARAMS' is deprecated because it has a user-declared copy assignment operator [clang-diagnostic-deprecated-copy]
-                void operator = (const NVM_PARAMS &D ) {
-                     ^
-/home/sabbir/sst-elements-org/Messier/Messier.cc:175:42: note: in implicit copy constructor for 'SST::MessierComponent::NVM_PARAMS' first required here
-        DIMM = loadComponentExtension<NVM_DIMM>(*nvm_params);
-                                                ^
-/home/sabbir/sst-elements-org/Messier/Messier.h:118:34: warning: unused parameter 'event' [clang-diagnostic-unused-parameter]
-                                void handleEvent(SST::Event* event) {};
-                                                             ^
-/home/sabbir/sst-elements-org/Messier/Messier.h:129:31: warning: unused parameter 'prog_binary' [clang-diagnostic-unused-parameter]
-                                int create_pinchild(char* prog_binary, char** arg_list){return 0;}
-                                                          ^
-/home/sabbir/sst-elements-org/Messier/Messier.h:129:51: warning: unused parameter 'arg_list' [clang-diagnostic-unused-parameter]
-                                int create_pinchild(char* prog_binary, char** arg_list){return 0;}
-                                                                              ^
+                                                                              ^~~~~~~~
+                                                                               /*arg_list*/
+/home/sabbir/sst-elements-org/Messier/Messier.h:129:51: note: FIX-IT applied suggested code changes
+/home/sabbir/sst-elements-org/Messier/Messier_Event.h:49:3: warning: use '= default' to define a trivial default constructor [modernize-use-equals-default]
+                MessierEvent() { } // For serialization
+                ^              ~~~
+                               = default;
+/home/sabbir/sst-elements-org/Messier/Messier_Event.h:49:18: note: FIX-IT applied suggested code changes
+                MessierEvent() { } // For serialization
+                               ^
+/home/sabbir/sst-elements-org/Messier/Messier.h:126:5: warning: deleted member function should be public [modernize-use-equals-delete]
+                                Messier(const Messier&) = delete; // do not implement
+                                ^
+/home/sabbir/sst-elements-org/Messier/Messier.h:127:10: warning: deleted member function should be public [modernize-use-equals-delete]
+                                void operator=(const Messier&) = delete; // do not implement
+                                     ^
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:47:1: warning: do not declare C-style arrays, use std::array<> instead [modernize-avoid-c-arrays]
+int SIZE_DIST[10000];
+^
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:81:11: warning: use nullptr [modernize-use-nullptr]
+                cache = NULL;
+                        ^~~~
+                        nullptr
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:81:11: note: FIX-IT applied suggested code changes
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:325:20: warning: use nullptr [modernize-use-nullptr]
+                        if(temp_bank == NULL)
+                                        ^~~~
+                                        nullptr
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:325:20: note: FIX-IT applied suggested code changes
 /home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:344:5: warning: Value stored to 'removed' is never read [clang-analyzer-deadcode.DeadStores]
                                 removed = true;
                                 ^
 /home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:344:5: note: Value stored to 'removed' is never read
-/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:454:292: warning: comparison of integers of different signs: 'std::__cxx11::list::size_type' (aka 'unsigned long') and 'int' [clang-diagnostic-sign-compare]
-                if ((!params->adaptive_writes || group_locked!=(WhichBank(temp->Address)/params->group_size)) &&  (HOLD.find(temp->req_ID)==HOLD.end()) && temp->Read && (corresp_rank->getBusyUntil() < cycles) && (corresp_bank->getBusyUntil() < cycles) && !corresp_bank->getLocked() && (outstanding.size() < params->max_outstanding))
-                                                                                                                                                                                                                                                                                                                 ^
-/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:575:444: warning: comparison of integers of different signs: 'std::__cxx11::list::size_type' (aka 'unsigned long') and 'int' [clang-diagnostic-sign-compare]
-                                        if ((!params->adaptive_writes || group_locked!=(WhichBank(temp->Address)/params->group_size)) && (HOLD.find(temp->req_ID)==HOLD.end()) &&   (corresp_rank->getBusyUntil() < cycles) && (((corresp_bank->getBusyUntil() < cycles) && !corresp_bank->getLocked()) || (params->write_cancel && !WB->flush() && !corresp_bank->read() &&(corresp_bank->getBusyUntil() - cycles < (100-4*WB->getSize())*1.0*params->tCL_W/100.0 ))) && (outstanding.size() < params->max_outstanding))
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:376:36: warning: use nullptr [modernize-use-nullptr]
+        if(WB->find_entry(temp->Address)!=NULL)
+                                          ^~~~
+                                          nullptr
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:376:36: note: FIX-IT applied suggested code changes
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:379:3: warning: use auto when initializing with new to avoid duplicating the type name [modernize-use-auto]
+                MemRespEvent *respEvent = new MemRespEvent(
+                ^~~~~~~~~~~~
+                auto
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:379:3: note: FIX-IT applied suggested code changes
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:525:6: warning: use auto when initializing with new to avoid duplicating the type name [modernize-use-auto]
+                                        NVM_Request * write_req = new NVM_Request();
+                                        ^~~~~~~~~~~
+                                        auto
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:525:6: note: FIX-IT applied suggested code changes
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:534:6: warning: use auto when initializing with new to avoid duplicating the type name [modernize-use-auto]
+                                        MemRespEvent *respEvent = new MemRespEvent(
+                                        ^~~~~~~~~~~~
+                                        auto
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:534:6: note: FIX-IT applied suggested code changes
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:540:16: warning: use nullptr [modernize-use-nullptr]
+                                        if(cache!=NULL)
+                                                  ^~~~
+                                                  nullptr
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:540:16: note: FIX-IT applied suggested code changes
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:585:7: warning: use auto when initializing with new to avoid duplicating the type name [modernize-use-auto]
+                                                NVM_Request * evicted = new NVM_Request();
+                                                ^~~~~~~~~~~
+                                                auto
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:585:7: note: FIX-IT applied suggested code changes
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:655:10: warning: use nullptr [modernize-use-nullptr]
+                return NULL;
+                       ^~~~
+                       nullptr
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:655:10: note: FIX-IT applied suggested code changes
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:670:2: warning: use auto when initializing with a cast to avoid duplicating the type name [modernize-use-auto]
+        MessierEvent * temp_ptr =  dynamic_cast<MessierComponent::MessierEvent*> (e);
+        ^~~~~~~~~~~~
+        auto
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:670:2: note: FIX-IT applied suggested code changes
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:672:15: warning: use nullptr [modernize-use-nullptr]
+        if(temp_ptr==NULL)
+                     ^~~~
+                     nullptr
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:672:15: note: FIX-IT applied suggested code changes
 /home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:675:21: warning: Forming reference to null pointer [clang-analyzer-core.NonNullParamChecker]
         MessierEvent tmp = *temp_ptr;
                            ^
@@ -59,6 +195,81 @@ bool Messier::tick(SST::Cycle_t x)
 /home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:675:21: note: Forming reference to null pointer
         MessierEvent tmp = *temp_ptr;
                            ^
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:693:5: warning: use auto when initializing with new to avoid duplicating the type name [modernize-use-auto]
+                                MemRespEvent *respEvent = new MemRespEvent(
+                                ^~~~~~~~~~~~
+                                auto
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:693:5: note: FIX-IT applied suggested code changes
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:704:14: warning: use nullptr [modernize-use-nullptr]
+                        if(cache!=NULL)
+                                  ^~~~
+                                  nullptr
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:704:14: note: FIX-IT applied suggested code changes
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:734:9: warning: use auto when initializing with new to avoid duplicating the type name [modernize-use-auto]
+                                                                NVM_Request * evicted = new NVM_Request();
+                                                                ^~~~~~~~~~~
+                                                                auto
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:734:9: note: FIX-IT applied suggested code changes
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:791:5: warning: use auto when initializing with new to avoid duplicating the type name [modernize-use-auto]
+                                MemRespEvent *respEvent = new MemRespEvent(
+                                ^~~~~~~~~~~~
+                                auto
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:791:5: note: FIX-IT applied suggested code changes
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:826:7: warning: use auto when initializing with new to avoid duplicating the type name [modernize-use-auto]
+                                                NVM_Request * evicted = new NVM_Request();
+                                                ^~~~~~~~~~~
+                                                auto
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:826:7: note: FIX-IT applied suggested code changes
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:833:7: warning: use auto when initializing with new to avoid duplicating the type name [modernize-use-auto]
+                                                MemRespEvent *respEvent = new MemRespEvent(
+                                                ^~~~~~~~~~~~
+                                                auto
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:833:7: note: FIX-IT applied suggested code changes
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:838:17: warning: use nullptr [modernize-use-nullptr]
+                                                if(cache!=NULL)
+                                                          ^~~~
+                                                          nullptr
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:838:17: note: FIX-IT applied suggested code changes
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:865:6: warning: use auto when initializing with new to avoid duplicating the type name [modernize-use-auto]
+                                        MemRespEvent *respEvent = new MemRespEvent(
+                                        ^~~~~~~~~~~~
+                                        auto
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:865:6: note: FIX-IT applied suggested code changes
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:870:16: warning: use nullptr [modernize-use-nullptr]
+                                        if(cache!=NULL)
+                                                  ^~~~
+                                                  nullptr
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:870:16: note: FIX-IT applied suggested code changes
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:924:2: warning: use auto when initializing with a cast to avoid duplicating the type name [modernize-use-auto]
+        MessierComponent::MemReqEvent *event  = dynamic_cast<MessierComponent::MemReqEvent*>(e);
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        auto
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:924:2: note: FIX-IT applied suggested code changes
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:926:2: warning: use auto when initializing with new to avoid duplicating the type name [modernize-use-auto]
+        NVM_Request * tmp = new NVM_Request();
+        ^~~~~~~~~~~
+        auto
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:926:2: note: FIX-IT applied suggested code changes
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:955:12: warning: use nullptr [modernize-use-nullptr]
+        if(cache!=NULL)
+                  ^~~~
+                  nullptr
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:955:12: note: FIX-IT applied suggested code changes
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:958:3: warning: use auto when initializing with new to avoid duplicating the type name [modernize-use-auto]
+                NVM_Request * tmp2 = new NVM_Request();
+                ^~~~~~~~~~~
+                auto
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:958:3: note: FIX-IT applied suggested code changes
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:978:4: warning: use auto when initializing with new to avoid duplicating the type name [modernize-use-auto]
+                        MessierEvent * mess = new MessierEvent(tmp2, params->cache_persistent?EventType::HIT_MISS:EventType::INVALIDATE_WRITE);
+                        ^~~~~~~~~~~~
+                        auto
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:978:4: note: FIX-IT applied suggested code changes
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:999:43: warning: use nullptr [modernize-use-nullptr]
+        if(!(params->cache_persistent && (cache!=NULL) && (!tmp->Read)))
+                                                 ^~~~
+                                                 nullptr
+/home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:999:43: note: FIX-IT applied suggested code changes
 /home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:1001:1: warning: Potential leak of memory pointed to by 'tmp' [clang-analyzer-cplusplus.NewDeleteLeaks]
 }
 ^
@@ -93,15 +304,15 @@ bool Messier::tick(SST::Cycle_t x)
 /home/sabbir/sst-elements-org/Messier/NVM_DIMM.cc:1001:1: note: Potential leak of memory pointed to by 'tmp'
 }
 ^
-/home/sabbir/sst-elements-org/Messier/Messier.h:118:34: warning: unused parameter 'event' [clang-diagnostic-unused-parameter]
-                                void handleEvent(SST::Event* event) {};
-                                                             ^
-/home/sabbir/sst-elements-org/Messier/Messier.h:129:31: warning: unused parameter 'prog_binary' [clang-diagnostic-unused-parameter]
-                                int create_pinchild(char* prog_binary, char** arg_list){return 0;}
-                                                          ^
-/home/sabbir/sst-elements-org/Messier/Messier.h:129:51: warning: unused parameter 'arg_list' [clang-diagnostic-unused-parameter]
-                                int create_pinchild(char* prog_binary, char** arg_list){return 0;}
-                                                                              ^
+/home/sabbir/sst-elements-org/Messier/build/CMakeFiles/3.16.2/CompilerIdCXX/CMakeCXXCompilerId.cpp:552:1: warning: do not declare C-style arrays, use std::array<> instead [modernize-avoid-c-arrays]
+char const info_version[] = {
+^
+/home/sabbir/sst-elements-org/Messier/Messier.h:126:5: warning: deleted member function should be public [modernize-use-equals-delete]
+                                Messier(const Messier&) = delete; // do not implement
+                                ^
+/home/sabbir/sst-elements-org/Messier/Messier.h:127:10: warning: deleted member function should be public [modernize-use-equals-delete]
+                                void operator=(const Messier&) = delete; // do not implement
+                                     ^
 /home/sabbir/sst-elements-org/Messier/NVM_DIMM.h:129:8: warning: annotate this function with 'override' or (rarely) 'final' [modernize-use-override]
                 void finish(){}
                      ^

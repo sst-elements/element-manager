@@ -10,8 +10,8 @@
 - [ ] hermes
 - [x] kingsley
 - [ ] memHierarchy
-- [ ] merlin
-- [ ] Messier
+- [x] merlin
+- [x] Messier
 - [ ] miranda
 - [ ] Opal
 - [ ] prospero
@@ -26,31 +26,42 @@
 
 ## Test statuses
 
-|Element|Test|Monolithic|Split|
-|-------|----|----------|-----|
-|ariel|`None`|⛔|⛔|
-|cacheTracer||Not tested|Not tested|
-|cassini||Not tested|Not tested|
-|CramSim||Not tested|Not tested|
-|ember||Not tested|Not tested|
-|firefly||Not tested|Not tested|
-|GNA|`test.py`|✔️|✔️|
-|hermes||Not tested|Not tested|
-|kingsley|`noc_mesh_32_test.py`|✔️|✔️|
-|memHierarchy||Not tested|Not tested|
-|merlin||Not tested|Not tested|
-|Messier||Not tested|Not tested|
-|miranda||Not tested|Not tested|
-|Opal||Not tested|Not tested|
-|prospero||Not tested|Not tested|
-|Samba||Not tested|Not tested|
-|scheduler||Not tested|Not tested|
-|shogun||Not tested|Not tested|
-|simpleElementExample||Not tested|Not tested|
-|simpleSimulation||Not tested|Not tested|
-|thornhill||Not tested|Not tested|
-|VaultSimC|`pimExper.py`|❌`[SST Core] can't find requested component or subcomponent 'ariel.ariel'`|❌`[SST Core] can't find requested component or subcomponent 'ariel.ariel'`|
-||`sdl1.py`|✔️|✔️|
-||`sdl2.py`|✔️|⚠️ 21× additional runtime|
-||`sdl3.py`|❌`[Python] NameError: global name 'memctrl' is not defined`|❌`[Python] NameError: global name 'memctrl' is not defined`|
-|zodiac||Not tested||
+|Element|Test|Monolithic|Split|Notes|
+|-------|----|:--------:|:---:|-----|
+|ariel|`None`|⛔|⛔||
+|cacheTracer|||||
+|cassini|||||
+|CramSim|||||
+|ember|||||
+|firefly|||||
+|GNA|`test.py`|✔️|✔️||
+|hermes|||||
+|kingsley|`noc_mesh_32_test.py`|✔️|✔️||
+|memHierarchy|||||
+|merlin|`dragon_128_test.py`|✔️|✔️||
+||`dragon_72_test.py`|✔️|✔️||
+||`fattree_128_test.py`|✔️|✔️||
+||`fattree_256_test.py`|✔️|✔️||
+||`torus_128_test.py`|✔️|✔️||
+||`torus_5_trafficgen.py`|✔️|✔️||
+||`torus_64_test.py`|✔️|✔️||
+|Messier|`gupsgen_2RANKS.py`|✔️|⚠️|8.7× additional runtime after refactor|
+||`gupsgen_fastNVM.py`|✔️|⚠️|8.1× additional runtime after refactor|
+||`gupsgen.py`|✔️|⚠️|8.8× additional runtime after refactor|
+||`stencil3dbench_messier.py`|✔️|⚠️|1.5× additional runtime after refactor|
+||`streambench_messier.py`|✔️|⚠️|8.5× additional runtime after refactor|
+|miranda|||||
+|Opal|`basic_1node_1smp.py`|❌|❌|`[SST Core] can't find requested component or subcomponent 'ariel.ariel'`|
+||`basic_2node_1smp.py`|❌|❌|`[SST Core] can't find requested component or subcomponent 'ariel.ariel'`|
+|prospero|||||
+|Samba|||||
+|scheduler|||||
+|shogun|||||
+|simpleElementExample|||||
+|simpleSimulation|||||
+|thornhill|||||
+|VaultSimC|`pimExper.py`|❌|❌|`[SST Core] can't find requested component or subcomponent 'ariel.ariel'`|
+||`sdl1.py`|✔️|✔️||
+||`sdl2.py`|✔️|⚠️|21× additional runtime after refactor|
+||`sdl3.py`|❌|❌|`[Python] NameError: global name 'memctrl' is not defined`|
+|zodiac|||||
