@@ -6,14 +6,12 @@
 - [ ] CramSim
 - [ ] ember
 - [ ] firefly
-- [x] GNA
 - [ ] hermes
 - [x] kingsley
 - [ ] memHierarchy
 - [x] merlin
 - [x] Messier
 - [ ] miranda
-- [ ] Opal
 - [ ] prospero
 - [ ] Samba
 - [ ] scheduler
@@ -34,7 +32,6 @@
 |CramSim|||||
 |ember|||||
 |firefly|||||
-|GNA|`test.py`|✔️|✔️||
 |hermes|||||
 |kingsley|`noc_mesh_32_test.py`|✔️|✔️||
 |memHierarchy|||||
@@ -51,8 +48,6 @@
 ||`stencil3dbench_messier.py`|✔️|⚠️|1.5× additional runtime after refactor|
 ||`streambench_messier.py`|✔️|⚠️|8.5× additional runtime after refactor|
 |miranda|||||
-|Opal|`basic_1node_1smp.py`|❌|❌|`[SST Core] can't find requested component or subcomponent 'ariel.ariel'`|
-||`basic_2node_1smp.py`|❌|❌|`[SST Core] can't find requested component or subcomponent 'ariel.ariel'`|
 |prospero|||||
 |Samba|||||
 |scheduler|||||
