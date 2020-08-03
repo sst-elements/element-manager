@@ -1,24 +1,24 @@
 ## Built through CMake
 
 - [ ] ariel
-- [ ] cacheTracer
+- [x] cacheTracer
 - [ ] cassini
 - [ ] CramSim
 - [ ] ember
 - [ ] firefly
-- [ ] hermes
+- [x] hermes
 - [x] kingsley
 - [ ] memHierarchy
 - [x] merlin
 - [x] Messier
-- [ ] miranda
+- [x] miranda
 - [ ] prospero
 - [ ] Samba
 - [ ] scheduler
 - [ ] shogun
 - [ ] simpleElementExample
 - [ ] simpleSimulation
-- [ ] thornhill
+- [x] thornhill
 - [x] VaultSimC
 - [ ] zodiac
 
